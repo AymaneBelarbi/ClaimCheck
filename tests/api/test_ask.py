@@ -9,11 +9,11 @@ from mcp import MCPError
 from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanExporter
 from sqlalchemy import select
 
-from api.deps import get_embedder, get_llm
-from api.main import app
-from db.models import AuditLog
-from db.session import SessionFactory
-from gateway.base import (
+from claimcheck.api.deps import get_embedder, get_llm
+from claimcheck.api.main import app
+from claimcheck.db.models import AuditLog
+from claimcheck.db.session import SessionFactory
+from claimcheck.gateway.base import (
     CassetteMissError,
     ChatTurn,
     GatewayError,
@@ -22,7 +22,7 @@ from gateway.base import (
     ToolSpec,
     Usage,
 )
-from gateway.tracing import TracingGateway
+from claimcheck.gateway.tracing import TracingGateway
 from tests.api.conftest import Headers
 from tests.fakes import FakeGateway, HashingEmbedder
 from tests.mcp_server.factories import CLAIMANT, add_reviewed_claim
@@ -116,7 +116,7 @@ def test_adjuster_gets_a_cited_answer(
 def test_a_cloud_backend_never_sees_the_claimants_name(
     agent_client: TestClient, adjuster: Headers, claim_id: uuid.UUID
 ) -> None:
-    from gateway.redaction import RedactingGateway
+    from claimcheck.gateway.redaction import RedactingGateway
 
     inner = FakeGateway(
         chat_turns=[
@@ -198,7 +198,7 @@ def test_a_tool_server_failure_is_502(
     async def broken(*args: object, **kwargs: object) -> None:
         raise MCPError(code=-32603, message="tool server crashed")
 
-    monkeypatch.setattr("api.routes.claims.answer_question", broken)
+    monkeypatch.setattr("claimcheck.api.routes.claims.answer_question", broken)
 
     response = agent_client.post(
         f"/claims/{claim_id}/ask", headers=adjuster, json={"question": QUESTION}
@@ -227,7 +227,7 @@ def test_a_question_past_the_deadline_is_504(
     claim_id: uuid.UUID,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    monkeypatch.setattr("api.routes.claims.ASK_DEADLINE_SECONDS", 0.2)
+    monkeypatch.setattr("claimcheck.api.routes.claims.ASK_DEADLINE_SECONDS", 0.2)
     app.dependency_overrides[get_llm] = lambda: _SlowGateway(chat_turns=_turns())
     started = time.monotonic()
 

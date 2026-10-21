@@ -2,6 +2,13 @@
 
 All notable changes to this project are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Changed
+
+- Application code moved under `src/claimcheck/` as one installable package; imports are now `claimcheck.*`.
+- The seed command moved from `db/seed.py` to `evals/seed.py` (`python -m evals.seed`), so the database layer no longer depends on the eval tooling.
+
 ## [0.1.0] - 2026-10-21
 
 ### Added

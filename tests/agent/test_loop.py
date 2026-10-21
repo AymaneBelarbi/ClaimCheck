@@ -8,9 +8,15 @@ import pytest
 from mcp.server.mcpserver import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 
-from agent.loop import BUDGET_MESSAGE, AgentAnswer, FinalMessage, answer_question, parse_final
-from gateway.base import ChatTurn, GatewayError, ToolCall, Usage
-from mcp_server.server import connect
+from claimcheck.agent.loop import (
+    BUDGET_MESSAGE,
+    AgentAnswer,
+    FinalMessage,
+    answer_question,
+    parse_final,
+)
+from claimcheck.gateway.base import ChatTurn, GatewayError, ToolCall, Usage
+from claimcheck.mcp_server.server import connect
 from tests.fakes import FakeGateway
 
 CLAIM_ID = uuid.UUID("00000000-0000-4000-8000-000000000001")

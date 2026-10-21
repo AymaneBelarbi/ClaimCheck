@@ -8,16 +8,16 @@ from fastapi.testclient import TestClient
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from api import limits
-from api.routes import claims as claim_routes
-from core.review import ReviewFile
-from core.types import ClaimStatus
-from db.models import AuditLog, Claim, ClaimDocument, Job, Policy, ValidationResult
-from db.session import SessionFactory
+from claimcheck.api import limits
+from claimcheck.api.routes import claims as claim_routes
+from claimcheck.core.review import ReviewFile
+from claimcheck.core.types import ClaimStatus
+from claimcheck.db.models import AuditLog, Claim, ClaimDocument, Job, Policy, ValidationResult
+from claimcheck.db.session import SessionFactory
+from claimcheck.worker.review_file import build_review_file
+from claimcheck.worker.storage import Storage
 from tests.api.conftest import Headers
 from tests.worker.factories import add_claim
-from worker.review_file import build_review_file
-from worker.storage import Storage
 
 pytestmark = pytest.mark.db
 

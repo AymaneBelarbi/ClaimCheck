@@ -5,7 +5,7 @@ from typing import Any
 import pytest
 from pydantic import BaseModel
 
-from gateway.base import strict_schema
+from claimcheck.gateway.base import strict_schema
 
 
 class LLMField[T](BaseModel):

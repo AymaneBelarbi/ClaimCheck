@@ -16,7 +16,7 @@ import math
 from collections.abc import Sequence
 from typing import Any
 
-from gateway.tracing import UsageLedger
+from claimcheck.gateway.tracing import UsageLedger
 
 # Nearest-rank percentile: the smallest value with at least p percent of the values at or below it.
 _P95 = 95

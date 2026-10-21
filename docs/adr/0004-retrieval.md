@@ -10,7 +10,7 @@ The corpus is small: a few policies, a few versions each, 15 clauses per version
 
 ## Decision
 
-**pgvector in the same Postgres.** Clauses live in `policy_clauses` with a 384-dimension `vector` column and an HNSW index on cosine distance. The embeddings are a derived index: `python -m db.seed --reembed` rebuilds them from the policy markdown.
+**pgvector in the same Postgres.** Clauses live in `policy_clauses` with a 384-dimension `vector` column and an HNSW index on cosine distance. The embeddings are a derived index: `python -m evals.seed --reembed` rebuilds them from the policy markdown.
 
 **Local embeddings.** `BAAI/bge-small-en-v1.5` through fastembed (ONNX, CPU), cached under `var/models`. Nothing is sent out for embedding, and a model change is a re-embed rather than a new vendor. The text embedded for a clause is `"{title}\n{text}"`; the queries are embedded as they are.
 

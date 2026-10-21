@@ -1,6 +1,6 @@
 """One claim through the running stack, end to end.
 
-    make up && make demo          (or: uv run python scripts/demo.py [--packet PKT-050])
+    make up && make demo          (or: uv run python -m scripts.demo [--packet PKT-050])
 
 Waits for the API, seeds the policies, uploads one generated packet as an adjuster, waits for
 the worker to finish it, prints the review summary and asks the agent one question about the
@@ -25,10 +25,10 @@ from typing import Any
 
 import httpx
 
-from api.tokens import compose_secret, issue_token
-from core.types import Role
-from db.seed import main as seed
+from claimcheck.api.tokens import compose_secret, issue_token
+from claimcheck.core.types import Role
 from evals.dataset.types import GroundTruth
+from evals.seed import main as seed
 
 DEFAULT_PACKET = "PKT-050"
 DEFAULT_QUESTION = "What is the most the policy pays for broken glass on this claim?"

@@ -2,12 +2,12 @@ import pytest
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from core.types import ClaimStatus
-from db.models import AuditLog, Claim
-from db.session import SessionFactory
+from claimcheck.core.types import ClaimStatus
+from claimcheck.db.models import AuditLog, Claim
+from claimcheck.db.session import SessionFactory
+from claimcheck.worker.audit import record
+from claimcheck.worker.state_machine import ALLOWED, InvalidTransition, transition
 from tests.worker.factories import add_claim, add_policy
-from worker.audit import record
-from worker.state_machine import ALLOWED, InvalidTransition, transition
 
 pytestmark = pytest.mark.db
 

@@ -2,14 +2,14 @@ from pathlib import Path
 
 import pytest
 
-from core.settings import Settings
-from gateway.anthropic import AnthropicGateway
-from gateway.factory import get_gateway
-from gateway.ollama import OllamaGateway
-from gateway.openai import OpenAIGateway
-from gateway.redaction import RedactingGateway
-from gateway.replay import ReplayGateway
-from gateway.tracing import TracingGateway, unwrap
+from claimcheck.core.settings import Settings
+from claimcheck.gateway.anthropic import AnthropicGateway
+from claimcheck.gateway.factory import get_gateway
+from claimcheck.gateway.ollama import OllamaGateway
+from claimcheck.gateway.openai import OpenAIGateway
+from claimcheck.gateway.redaction import RedactingGateway
+from claimcheck.gateway.replay import ReplayGateway
+from claimcheck.gateway.tracing import TracingGateway, unwrap
 
 
 def make_settings(monkeypatch: pytest.MonkeyPatch, **env: str) -> Settings:

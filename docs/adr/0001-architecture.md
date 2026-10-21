@@ -37,7 +37,7 @@ Postgres is also the source of truth for policies, versions, claims, extracted f
 
 ## Consequences
 
-- Adding a rule is adding a file in `pipeline/validate/`. Adding a doc type touches the classifier prototypes, one extraction schema and the required-documents table. Nothing else.
+- Adding a rule is adding a file in `src/claimcheck/pipeline/validate/`. Adding a doc type touches the classifier prototypes, one extraction schema and the required-documents table. Nothing else.
 - Enqueueing is transactional with the claim row, so there is no state where a claim exists with no job or a job with no claim. The cost is that queue throughput is bounded by Postgres and polling adds up to one poll interval of latency. Both are fine at this scale; if volume grew by orders of magnitude, a dedicated broker would be the thing to revisit, and the job table is small enough to migrate away from.
 - Retries and the dead state are plain rows, so a failed packet can be inspected and reprocessed with SQL.
 - Extraction quality depends on the model, so it is gated by its own eval metric, and the backend switch (`LLM_BACKEND`) is a config change rather than a code change. Cloud backends only see redacted text; raw text goes to the local backend only.

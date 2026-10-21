@@ -5,7 +5,7 @@ from fastapi import FastAPI, Request, UploadFile
 from fastapi.testclient import TestClient
 from starlette.types import Message
 
-from api.limits import BodyLimitMiddleware
+from claimcheck.api.limits import BodyLimitMiddleware
 
 
 def _app(max_bytes: int) -> TestClient:
@@ -57,7 +57,7 @@ def test_oversize_multipart_is_413_not_a_parse_error() -> None:
 
 
 def test_unauthenticated_upload_is_refused_without_reading_the_body() -> None:
-    from api.main import app
+    from claimcheck.api.main import app
 
     read: list[str] = []
 
@@ -89,7 +89,7 @@ def test_unauthenticated_upload_is_refused_without_reading_the_body() -> None:
 
 
 def test_early_refusals_carry_cors_headers(adjuster: dict[str, str]) -> None:
-    from api.main import app
+    from claimcheck.api.main import app
 
     client = TestClient(app)
     origin = {"Origin": "http://localhost:5173"}
@@ -106,7 +106,7 @@ def test_early_refusals_carry_cors_headers(adjuster: dict[str, str]) -> None:
 
 
 def test_bad_token_on_a_write_is_refused_early() -> None:
-    from api.main import app
+    from claimcheck.api.main import app
 
     response = TestClient(app).post(
         "/claims", headers={"Authorization": "Bearer nope"}, content=b"x"

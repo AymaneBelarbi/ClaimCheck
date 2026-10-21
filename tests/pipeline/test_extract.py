@@ -6,12 +6,11 @@ from typing import Any
 import pytest
 from pydantic import BaseModel
 
-from core.types import DocType, Verdict
-from evals.dataset.types import FIELD_NAMES
-from gateway.base import GatewayError, SchemaError
-from gateway.replay import ReplayGateway
-from pipeline.extract import MAX_CHARS, FieldResult, extract
-from pipeline.schemas import (
+from claimcheck.core.types import DocType, Verdict
+from claimcheck.gateway.base import GatewayError, SchemaError
+from claimcheck.gateway.replay import ReplayGateway
+from claimcheck.pipeline.extract import MAX_CHARS, FieldResult, extract
+from claimcheck.pipeline.schemas import (
     SCHEMAS,
     ClaimFormOut,
     IdCardOut,
@@ -20,7 +19,8 @@ from pipeline.schemas import (
     LineItem,
     LLMField,
 )
-from pipeline.types import OcrPage, OcrResult, OcrWord
+from claimcheck.pipeline.types import OcrPage, OcrResult, OcrWord
+from evals.dataset.types import FIELD_NAMES
 from tests.fakes import FakeCall, FakeGateway
 
 CLAIM_TEXT = (

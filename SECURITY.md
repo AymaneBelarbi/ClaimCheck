@@ -8,7 +8,7 @@ Use GitHub's private vulnerability reporting: the **Security** tab of this repos
 
 ## In scope
 
-- a customer token reading or changing another customer's claim, through the API or around it (row-level security in `db/migrations/`)
+- a customer token reading or changing another customer's claim, through the API or around it (row-level security in `src/claimcheck/db/migrations/`)
 - the adjuster agent reaching a tool outside the MCP allowlist, acting on a claim it was not asked about, or writing without human confirmation
 - names or ID numbers reaching a cloud LLM backend in a way the documented limits in [ADR-006](docs/adr/0006-llm-gateway-and-redaction.md) do not already cover
 - document text, prompts or model output ending up in traces

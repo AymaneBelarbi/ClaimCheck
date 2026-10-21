@@ -7,9 +7,9 @@ import pytest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from reportlab.pdfgen.canvas import Canvas
 
-import pipeline.ocr
-from pipeline.ocr import MAX_PAGES, OCR_TIMEOUT_SECONDS, run_ocr, span_confidence
-from pipeline.types import OcrResult, OcrWord, UnsupportedDocumentError
+import claimcheck.pipeline.ocr
+from claimcheck.pipeline.ocr import MAX_PAGES, OCR_TIMEOUT_SECONDS, run_ocr, span_confidence
+from claimcheck.pipeline.types import OcrResult, OcrWord, UnsupportedDocumentError
 
 pytestmark = [
     pytest.mark.ocr,
@@ -167,7 +167,7 @@ def test_a_pdf_over_the_page_limit_is_refused_before_any_ocr(
 
 
 def test_a_pdf_at_the_page_limit_is_read(monkeypatch: pytest.MonkeyPatch) -> None:
-    monkeypatch.setattr(pipeline.ocr, "MAX_PAGES", 2)
+    monkeypatch.setattr(claimcheck.pipeline.ocr, "MAX_PAGES", 2)
 
     result = run_ocr(_pdf([["First page alpha"], ["Second page bravo"]]), "two.pdf")
 
@@ -176,8 +176,8 @@ def test_a_pdf_at_the_page_limit_is_read(monkeypatch: pytest.MonkeyPatch) -> Non
 
 def test_pdf_pages_are_rendered_one_at_a_time(monkeypatch: pytest.MonkeyPatch) -> None:
     events: list[str] = []
-    render = pipeline.ocr._render_page
-    ocr_page = pipeline.ocr._ocr_page
+    render = claimcheck.pipeline.ocr._render_page
+    ocr_page = claimcheck.pipeline.ocr._ocr_page
 
     def spy_render(*args: Any) -> Any:
         events.append("render")
@@ -187,8 +187,8 @@ def test_pdf_pages_are_rendered_one_at_a_time(monkeypatch: pytest.MonkeyPatch) -
         events.append("ocr")
         return ocr_page(*args)
 
-    monkeypatch.setattr(pipeline.ocr, "_render_page", spy_render)
-    monkeypatch.setattr(pipeline.ocr, "_ocr_page", spy_ocr)
+    monkeypatch.setattr(claimcheck.pipeline.ocr, "_render_page", spy_render)
+    monkeypatch.setattr(claimcheck.pipeline.ocr, "_ocr_page", spy_ocr)
 
     run_ocr(_pdf([["one"], ["two"], ["three"]]), "three.pdf")
 

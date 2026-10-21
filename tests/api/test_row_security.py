@@ -7,11 +7,11 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import Engine, text
 
-from api.auth import Principal
-from api.deps import api_engine, get_session
-from core.types import Role
-from db.models import Claim, Policy
-from db.session import SessionFactory
+from claimcheck.api.auth import Principal
+from claimcheck.api.deps import api_engine, get_session
+from claimcheck.core.types import Role
+from claimcheck.db.models import Claim, Policy
+from claimcheck.db.session import SessionFactory
 from tests.api.conftest import Headers
 
 PROBE = text(

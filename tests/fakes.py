@@ -8,7 +8,7 @@ from dataclasses import dataclass, field
 import numpy as np
 from pydantic import BaseModel
 
-from gateway.base import ChatTurn, LLMResult, Message, ToolSpec, Usage
+from claimcheck.gateway.base import ChatTurn, LLMResult, Message, ToolSpec, Usage
 
 
 class HashingEmbedder:

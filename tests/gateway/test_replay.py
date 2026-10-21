@@ -5,7 +5,7 @@ from typing import Any
 import pytest
 from pydantic import BaseModel
 
-from gateway.base import (
+from claimcheck.gateway.base import (
     CassetteMissError,
     ChatTurn,
     GatewayError,
@@ -16,7 +16,7 @@ from gateway.base import (
     ToolSpec,
     Usage,
 )
-from gateway.replay import ReplayGateway, cassette_filename
+from claimcheck.gateway.replay import ReplayGateway, cassette_filename
 
 
 class Invoice(BaseModel):

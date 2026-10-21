@@ -5,8 +5,8 @@ from decimal import Decimal
 
 from sqlalchemy.orm import Session
 
-from core.types import ClaimStatus, DocType, Verdict
-from db.models import Claim, ClaimDocument, ExtractedField, ValidationResult
+from claimcheck.core.types import ClaimStatus, DocType, Verdict
+from claimcheck.db.models import Claim, ClaimDocument, ExtractedField, ValidationResult
 from tests.worker.factories import add_claim, add_policy
 
 CLAIMANT = "Jane Doe"

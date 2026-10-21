@@ -21,7 +21,7 @@ from enum import StrEnum
 from faker import Faker
 from rapidfuzz import fuzz, utils
 
-from core.types import ClaimType, DocType, Verdict
+from claimcheck.core.types import ClaimType, DocType, Verdict
 from evals.dataset.policies import (
     LATEST_INCIDENT,
     POLICIES,

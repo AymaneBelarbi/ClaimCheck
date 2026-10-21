@@ -2,9 +2,9 @@ from collections.abc import Callable
 
 import pytest
 
-from core.types import ClaimType, DocType, Verdict
-from pipeline.validate.base import ClaimContext
-from pipeline.validate.invoice_after_incident import InvoiceAfterIncident
+from claimcheck.core.types import ClaimType, DocType, Verdict
+from claimcheck.pipeline.validate.base import ClaimContext
+from claimcheck.pipeline.validate.invoice_after_incident import InvoiceAfterIncident
 from tests.pipeline.validate.factories import doc, passing_documents, without
 
 Make = Callable[..., ClaimContext]

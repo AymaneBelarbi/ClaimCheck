@@ -24,7 +24,7 @@ migrate:
 	uv run alembic upgrade head
 
 seed:
-	uv run python -m db.seed --data evals/data
+	uv run python -m evals.seed --data evals/data
 
 dataset:
 	uv run python -m evals.generate_dataset --out evals/data --seed 20261020
@@ -48,7 +48,7 @@ record-holdout:
 # splits.json is written after the packets, so its presence means a complete dataset.
 demo:
 	@test -f evals/data/splits.json || $(MAKE) dataset
-	uv run python scripts/demo.py
+	uv run python -m scripts.demo
 
 # Records the classification fallback for every document of the demo packet, so `make demo`
 # under replay never misses when another Tesseract build tips an embedding margin. Uses a split
@@ -68,7 +68,7 @@ record-demo:
 ROLE ?= adjuster
 SUB ?= adj-1
 token:
-	@uv run python -m api.tokens --role $(ROLE) --sub $(SUB) --compose-default
+	@uv run python -m claimcheck.api.tokens --role $(ROLE) --sub $(SUB) --compose-default
 
 # The adjuster review UI on http://localhost:5173.
 ui:

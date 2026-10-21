@@ -1,6 +1,6 @@
 from decimal import Decimal
 
-from rag.chunking import chunk_clauses
+from claimcheck.rag.chunking import chunk_clauses
 
 POLICY = """# Northgate Mutual private motor policy AUT-104233, version 2
 

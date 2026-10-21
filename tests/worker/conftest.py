@@ -18,8 +18,8 @@ from alembic import command
 from sqlalchemy import Engine, create_engine, text
 from sqlalchemy.engine import URL, make_url
 
-from core.types import Role
-from db.session import SYSTEM, SessionFactory, session_factory
+from claimcheck.core.types import Role
+from claimcheck.db.session import SYSTEM, SessionFactory, session_factory
 from tests.db.conftest import alembic_config, as_role
 
 TABLES = (

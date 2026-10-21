@@ -8,11 +8,18 @@ import pytest
 import respx
 from pydantic import BaseModel, Field
 
-from gateway.anthropic import AnthropicGateway
-from gateway.base import GatewayError, LLMGateway, Message, SchemaError, ToolCall, ToolSpec
-from gateway.ollama import OllamaGateway
-from gateway.openai import OpenAIGateway
-from gateway.pricing import cost
+from claimcheck.gateway.anthropic import AnthropicGateway
+from claimcheck.gateway.base import (
+    GatewayError,
+    LLMGateway,
+    Message,
+    SchemaError,
+    ToolCall,
+    ToolSpec,
+)
+from claimcheck.gateway.ollama import OllamaGateway
+from claimcheck.gateway.openai import OpenAIGateway
+from claimcheck.gateway.pricing import cost
 
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 OPENAI_URL = "https://api.openai.com/v1/chat/completions"
@@ -502,8 +509,8 @@ def test_cloud_flags_and_models() -> None:
 
 def test_anthropic_waits_longer_than_the_shared_timeout() -> None:
     """A reply of up to MAX_TOKENS, thinking included, can take minutes."""
-    from gateway.anthropic import TIMEOUT_SECONDS as ANTHROPIC_TIMEOUT
-    from gateway.base import TIMEOUT_SECONDS
+    from claimcheck.gateway.anthropic import TIMEOUT_SECONDS as ANTHROPIC_TIMEOUT
+    from claimcheck.gateway.base import TIMEOUT_SECONDS
 
     gateway = AnthropicGateway(api_key="sk-test", model="claude-haiku-5-5")
 

@@ -14,19 +14,19 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import Engine
 
-from api.deps import get_engine, get_storage
-from api.main import app
-from api.tokens import issue_token
-from core.types import Role
-from db.models import Policy
-from db.session import SessionFactory
+from claimcheck.api.deps import get_engine, get_storage
+from claimcheck.api.main import app
+from claimcheck.api.tokens import issue_token
+from claimcheck.core.types import Role
+from claimcheck.db.models import Policy
+from claimcheck.db.session import SessionFactory
+from claimcheck.worker.storage import Storage
 from tests.worker.conftest import (  # noqa: F401
     app_role_engine,
     engine,
     sessions,
     worker_db_url,
 )
-from worker.storage import Storage
 
 Headers = dict[str, str]
 

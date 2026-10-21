@@ -8,14 +8,14 @@ from mcp.server.mcpserver import MCPServer
 from sqlalchemy import Engine, select, text
 from sqlalchemy.engine import URL
 
-from core.settings import get_settings
-from core.types import ClaimStatus
-from db.models import AuditLog, Claim
-from db.session import SessionFactory
-from mcp_server import __main__ as stdio
-from mcp_server import allowlist
-from mcp_server.allowlist import ALLOWED_TOOLS, WRITE_TOOLS
-from mcp_server.server import build_server, connect, tool_sessions
+from claimcheck.core.settings import get_settings
+from claimcheck.core.types import ClaimStatus
+from claimcheck.db.models import AuditLog, Claim
+from claimcheck.db.session import SessionFactory
+from claimcheck.mcp_server import __main__ as stdio
+from claimcheck.mcp_server import allowlist
+from claimcheck.mcp_server.allowlist import ALLOWED_TOOLS, WRITE_TOOLS
+from claimcheck.mcp_server.server import build_server, connect, tool_sessions
 from tests.db.conftest import as_role
 from tests.fakes import HashingEmbedder
 from tests.mcp_server.factories import add_reviewed_claim

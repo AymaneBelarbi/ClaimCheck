@@ -3,9 +3,9 @@ from decimal import Decimal
 
 import pytest
 
-from core.types import ClaimType, DocType, Verdict
-from pipeline.validate.base import ClaimContext, DocFields
-from pipeline.validate.invoice_within_limit import InvoiceWithinLimit
+from claimcheck.core.types import ClaimType, DocType, Verdict
+from claimcheck.pipeline.validate.base import ClaimContext, DocFields
+from claimcheck.pipeline.validate.invoice_within_limit import InvoiceWithinLimit
 from tests.pipeline.validate.factories import doc, passing_documents, without
 
 Make = Callable[..., ClaimContext]

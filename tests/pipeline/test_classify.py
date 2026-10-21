@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
 
-from core.types import DocType
-from gateway.base import GatewayError, SchemaError
-from pipeline.classify import ClassificationResult, DocTypeChoice, classify
-from pipeline.prototypes import PROTOTYPES
-from pipeline.types import OcrPage, OcrResult
+from claimcheck.core.types import DocType
+from claimcheck.gateway.base import GatewayError, SchemaError
+from claimcheck.pipeline.classify import ClassificationResult, DocTypeChoice, classify
+from claimcheck.pipeline.prototypes import PROTOTYPES
+from claimcheck.pipeline.types import OcrPage, OcrResult
 from tests.fakes import FakeGateway, HashingEmbedder
 
 _TYPES: list[DocType] = [t for t in DocType if t is not DocType.OTHER]
@@ -157,7 +157,7 @@ def test_hashing_embedder_is_deterministic_and_normalised() -> None:
 
 @pytest.mark.slow
 def test_fastembed_prototypes_classify_a_plain_invoice() -> None:
-    from rag.embedder import FastEmbedEmbedder
+    from claimcheck.rag.embedder import FastEmbedEmbedder
 
     text = (
         "Riverside Auto Body\nTax invoice 4471\nCustomer: J. Smith\nFront bumper replace 420.00\n"

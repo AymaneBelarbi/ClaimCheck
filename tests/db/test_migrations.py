@@ -9,8 +9,8 @@ from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.engine import URL, Connection
 from sqlalchemy.exc import IntegrityError, ProgrammingError
 
-from core.types import Role
-from db.session import session_scope
+from claimcheck.core.types import Role
+from claimcheck.db.session import session_scope
 from tests.db.conftest import as_role
 
 pytestmark = pytest.mark.db
@@ -156,7 +156,7 @@ def test_models_match_migration(migrated_url: URL) -> None:
     from alembic.autogenerate import compare_metadata
     from alembic.migration import MigrationContext
 
-    from db.models import Base
+    from claimcheck.db.models import Base
 
     engine = create_engine(migrated_url)
     try:

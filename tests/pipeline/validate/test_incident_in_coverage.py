@@ -1,9 +1,9 @@
 from collections.abc import Callable
 from datetime import date
 
-from core.types import Verdict
-from pipeline.validate.base import ClaimContext, PolicyVersionInfo
-from pipeline.validate.incident_in_coverage import IncidentInCoverage
+from claimcheck.core.types import Verdict
+from claimcheck.pipeline.validate.base import ClaimContext, PolicyVersionInfo
+from claimcheck.pipeline.validate.incident_in_coverage import IncidentInCoverage
 
 Make = Callable[..., ClaimContext]
 

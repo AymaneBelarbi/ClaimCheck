@@ -12,8 +12,8 @@ from types import ModuleType
 
 import pytest
 
+from claimcheck.gateway.replay import cassette_filename
 from evals.dataset.types import GroundTruth
-from gateway.replay import cassette_filename
 
 ROOT = Path(__file__).parents[2]
 CASSETTES = ROOT / "evals" / "cassettes"

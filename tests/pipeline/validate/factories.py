@@ -5,9 +5,9 @@ from datetime import date
 from decimal import Decimal
 from typing import Any
 
-from core.types import ClaimType, DocType, Evidence, Verdict
-from pipeline.extract import FieldResult
-from pipeline.validate.base import ClaimContext, DocFields, PolicyVersionInfo
+from claimcheck.core.types import ClaimType, DocType, Evidence, Verdict
+from claimcheck.pipeline.extract import FieldResult
+from claimcheck.pipeline.validate.base import ClaimContext, DocFields, PolicyVersionInfo
 
 INCIDENT = date(2026, 3, 10)
 

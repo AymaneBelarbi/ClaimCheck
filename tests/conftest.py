@@ -7,7 +7,7 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import SimpleSpanProcessor
 from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanExporter
 
-from core.settings import Settings, get_settings
+from claimcheck.core.settings import Settings, get_settings
 
 
 @pytest.fixture(autouse=True)
@@ -15,7 +15,7 @@ def _isolated_settings(monkeypatch: pytest.MonkeyPatch) -> None:
     """Start every test from a known environment.
 
     Variables from the developer's shell must not leak into tests. JWT_SECRET is optional in
-    Settings, but api.auth refuses to run without it, so tests that sign or verify tokens
+    Settings, but claimcheck.api.auth refuses to run without it, so tests that sign or verify tokens
     need one.
     """
     for name in Settings.model_fields:

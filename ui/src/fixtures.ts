@@ -1,6 +1,6 @@
 import type { ReviewFile } from "./types";
 
-// A claim with one passing and two blocking rules, shaped like core.review.ReviewFile.
+// A claim with one passing and two blocking rules, shaped like claimcheck.core.review.ReviewFile.
 export const reviewFixture: ReviewFile = {
   claim: {
     id: "11111111-1111-1111-1111-111111111111",

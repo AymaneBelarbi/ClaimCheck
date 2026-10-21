@@ -10,7 +10,7 @@ The failure I care about most is a wrong value delivered with confidence. A fiel
 
 ## Decision
 
-**One schema-constrained call per document.** Each doc type has a Pydantic schema (`pipeline/schemas.py`) and the model returns, for every field, `value`, `confidence` and `source_text`, a quote from the document. The prompt tells the model to copy values as printed, to answer `null` when the document does not show the field, and not to fix OCR errors in the quote. `other` documents never reach this stage.
+**One schema-constrained call per document.** Each doc type has a Pydantic schema (`src/claimcheck/pipeline/schemas.py`) and the model returns, for every field, `value`, `confidence` and `source_text`, a quote from the document. The prompt tells the model to copy values as printed, to answer `null` when the document does not show the field, and not to fix OCR errors in the quote. `other` documents never reach this stage.
 
 **The code checks what the model says.**
 - The quote is located in the OCR text for its page and character span: exact match, then a case- and whitespace-tolerant match, then a fuzzy match (rapidfuzz `partial_ratio_alignment`, at least 85). Fuzzy matching only finds where the quote is. The value has to appear exactly inside the located span (dates and amounts after normalisation), so an OCR slip in the quote can move the span but cannot change the value.

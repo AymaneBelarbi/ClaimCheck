@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from core.settings import Settings, get_settings
+from claimcheck.core.settings import Settings, get_settings
 from evals import run
 from evals.context import EvalContext, StageRunner
 from evals.report import StageResult

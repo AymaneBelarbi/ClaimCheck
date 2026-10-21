@@ -1,4 +1,4 @@
-// Field names mirror core/review.py, api/schemas.py and the /ask response exactly.
+// Field names mirror src/claimcheck/core/review.py, src/claimcheck/api/schemas.py and the /ask response exactly.
 
 export type Verdict = "found" | "missing" | "conflicting" | "low_confidence";
 export type ClaimType = "collision" | "glass" | "theft";

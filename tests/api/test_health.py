@@ -2,8 +2,8 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 
-from api.deps import get_engine
-from api.main import app
+from claimcheck.api.deps import get_engine
+from claimcheck.api.main import app
 
 pytestmark = pytest.mark.db
 

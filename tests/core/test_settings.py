@@ -2,7 +2,7 @@ import pytest
 from pydantic import ValidationError
 from sqlalchemy.engine import make_url
 
-from core.settings import Settings, get_settings
+from claimcheck.core.settings import Settings, get_settings
 
 
 def test_settings_reads_backend(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -52,7 +52,8 @@ def test_worker_database_url_from_env(monkeypatch: pytest.MonkeyPatch) -> None:
 
 
 def test_jwt_secret_is_optional_for_settings(monkeypatch: pytest.MonkeyPatch) -> None:
-    # Only the API and the token helper need it; they refuse to run without it (api.auth).
+    # Only the API and the token helper need it; they refuse to run without it
+    # (claimcheck.api.auth).
     monkeypatch.delenv("JWT_SECRET")
     assert Settings(_env_file=None).jwt_secret is None
 

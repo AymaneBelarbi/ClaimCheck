@@ -2,7 +2,7 @@ import logging
 
 import pytest
 
-from gateway.pricing import cost
+from claimcheck.gateway.pricing import cost
 
 
 def test_known_model_cost_is_per_million_tokens() -> None:
@@ -16,7 +16,7 @@ def test_long_prompt_rate_card_applies_over_threshold() -> None:
 
 
 def test_unknown_model_costs_zero_and_warns(caplog: pytest.LogCaptureFixture) -> None:
-    with caplog.at_level(logging.WARNING, logger="gateway.pricing"):
+    with caplog.at_level(logging.WARNING, logger="claimcheck.gateway.pricing"):
         assert cost("mystery-model-9", 1000, 1000) == 0.0
     assert "mystery-model-9" in caplog.text
 

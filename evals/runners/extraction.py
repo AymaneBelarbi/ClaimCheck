@@ -17,14 +17,14 @@ from collections import Counter, defaultdict
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
-from core.types import DocType, Verdict
+from claimcheck.core.types import DocType, Verdict
+from claimcheck.gateway.redaction import scope_gateway
+from claimcheck.pipeline.extract import FieldResult, extract
+from claimcheck.pipeline.ocr import run_ocr
 from evals.context import EvalContext
 from evals.dataset.types import GroundTruth, GTDocument
 from evals.report import StageResult
 from evals.runners.classification import gold_unreadable
-from gateway.redaction import scope_gateway
-from pipeline.extract import FieldResult, extract
-from pipeline.ocr import run_ocr
 
 WORST_MISSES = 20
 

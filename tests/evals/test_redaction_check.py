@@ -1,6 +1,6 @@
 from datetime import date
 
-from core.types import ClaimType, DocType, Verdict
+from claimcheck.core.types import ClaimType, DocType, Verdict
 from evals.dataset.types import GroundTruth, GTDocument, Scenario
 from evals.redaction_check import name_tokens, occurrences, people, redactor
 

@@ -13,8 +13,9 @@ answers from the same extraction cassettes as the extraction stage. A claim that
 past processing is used as it is.
 
 Each question is answered by `answer_question` over an in-process MCP connection to the real
-tool server (cache keys `agent:{question_id}:turn{n}`), then judged by `agent.judge.judge`
-against the text of the clauses the answer cites (cache key `judge:{question_id}`).
+tool server (cache keys `agent:{question_id}:turn{n}`), then judged by
+`claimcheck.agent.judge.judge` against the text of the clauses the answer cites (cache key
+`judge:{question_id}`).
 
 Questions come in two kinds, scored separately:
 
@@ -22,7 +23,7 @@ Questions come in two kinds, scored separately:
   final message was the JSON asked for, it cites at least one clause, and every clause it
   cites was returned by a search during the run, which also means the agent searched) and the
   judge finds it faithful to the cited clauses. The judge checks every statement of these
-  answers against quoted clause text (see `agent.judge`).
+  answers against quoted clause text (see `claimcheck.agent.judge`).
 - Claim-data questions have no expected clause: the claim's own documents, fields and rules,
   or a claim with no policy version in force. One passes when the final message was the JSON
   asked for (not plain text, not the budget message), it cites no clause that no search
@@ -53,21 +54,21 @@ import anyio
 from mcp.server.mcpserver import MCPServer
 from sqlalchemy import func, select
 
-from agent.judge import JudgeVerdict, judge
-from agent.loop import SEARCH_TOOL, AgentAnswer, answer_question
-from core.types import ClaimStatus
-from db.models import Claim, ClaimDocument, Policy
-from db.session import SessionFactory, engine_for
+from claimcheck.agent.judge import JudgeVerdict, judge
+from claimcheck.agent.loop import SEARCH_TOOL, AgentAnswer, answer_question
+from claimcheck.core.types import ClaimStatus
+from claimcheck.db.models import Claim, ClaimDocument, Policy
+from claimcheck.db.session import SessionFactory, engine_for
+from claimcheck.gateway.base import LLMGateway, SchemaError
+from claimcheck.gateway.redaction import scope_gateway
+from claimcheck.mcp_server.server import build_server, claim_ocr_texts, connect, tool_sessions
+from claimcheck.worker.audit import record
+from claimcheck.worker.main import worker_sessions
+from claimcheck.worker.pipeline_runner import PipelineDeps, process_claim
+from claimcheck.worker.storage import Storage
 from evals.context import EvalContext, StageUnavailable
 from evals.dataset.types import AgentQuestion, GroundTruth
 from evals.report import StageResult
-from gateway.base import LLMGateway, SchemaError
-from gateway.redaction import scope_gateway
-from mcp_server.server import build_server, claim_ocr_texts, connect, tool_sessions
-from worker.audit import record
-from worker.main import worker_sessions
-from worker.pipeline_runner import PipelineDeps, process_claim
-from worker.storage import Storage
 
 ACTOR = "eval"
 _PROCESSED = {

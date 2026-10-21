@@ -8,10 +8,15 @@ import jwt
 import pytest
 from fastapi.testclient import TestClient
 
-from api import tokens
-from api.auth import COMPOSE_DEV_SECRET, PLACEHOLDER_SECRETS, MissingSecretError, signing_secret
-from api.main import app
-from core.settings import get_settings
+from claimcheck.api import tokens
+from claimcheck.api.auth import (
+    COMPOSE_DEV_SECRET,
+    PLACEHOLDER_SECRETS,
+    MissingSecretError,
+    signing_secret,
+)
+from claimcheck.api.main import app
+from claimcheck.core.settings import get_settings
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -41,14 +46,14 @@ def test_the_api_warns_when_the_secret_is_a_published_placeholder(
     monkeypatch.setenv("JWT_SECRET", placeholder)
     get_settings.cache_clear()
 
-    with caplog.at_level(logging.WARNING, logger="api.main"), TestClient(app):
+    with caplog.at_level(logging.WARNING, logger="claimcheck.api.main"), TestClient(app):
         pass
 
     assert "JWT_SECRET" in caplog.text and "placeholder" in caplog.text
 
 
 def test_no_warning_for_a_secret_of_its_own(caplog: pytest.LogCaptureFixture) -> None:
-    with caplog.at_level(logging.WARNING, logger="api.main"), TestClient(app):
+    with caplog.at_level(logging.WARNING, logger="claimcheck.api.main"), TestClient(app):
         pass
 
     assert "JWT_SECRET" not in caplog.text

@@ -3,15 +3,15 @@ from pathlib import Path
 
 import pytest
 
-from core.settings import get_settings
-from core.types import DocType, Verdict
+from claimcheck.core.settings import get_settings
+from claimcheck.core.types import DocType, Verdict
+from claimcheck.gateway.base import LLMGateway
+from claimcheck.pipeline.classify import ClassificationResult, DocTypeChoice, classify, llm_fallback
+from claimcheck.pipeline.types import OcrPage, OcrResult
+from claimcheck.rag.embedder import Embedder
 from evals.context import EvalContext
 from evals.dataset.types import GroundTruth, GTDocument, Scenario
 from evals.runners import classification
-from gateway.base import LLMGateway
-from pipeline.classify import ClassificationResult, DocTypeChoice, classify, llm_fallback
-from pipeline.types import OcrPage, OcrResult
-from rag.embedder import Embedder
 from tests.fakes import FakeGateway, HashingEmbedder
 
 

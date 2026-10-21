@@ -2,13 +2,13 @@ import json
 from datetime import date
 from pathlib import Path
 
-from core.settings import get_settings
-from core.types import ClaimType, DocType, Evidence, Verdict
+from claimcheck.core.settings import get_settings
+from claimcheck.core.types import ClaimType, DocType, Evidence, Verdict
+from claimcheck.pipeline.extract import FieldResult
 from evals.context import EvalContext
 from evals.dataset.types import RULE_IDS, GroundTruth, GTDocument, Scenario
 from evals.report import StageResult
 from evals.runners import validation
-from pipeline.extract import FieldResult
 
 POLICY_MD = """# Policy AUT-000001, version 1
 

@@ -5,9 +5,9 @@ import pytest
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from db.models import Policy, PolicyClause, PolicyVersion
-from rag.ingest import ingest_policy_version
-from rag.retrieve import RetrievedClause, retrieve_clauses
+from claimcheck.db.models import Policy, PolicyClause, PolicyVersion
+from claimcheck.rag.ingest import ingest_policy_version
+from claimcheck.rag.retrieve import RetrievedClause, retrieve_clauses
 from tests.fakes import HashingEmbedder
 
 pytestmark = pytest.mark.db

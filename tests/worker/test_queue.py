@@ -5,11 +5,10 @@ import pytest
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from core.types import ClaimStatus
-from db.models import AuditLog, Claim, Job
-from db.session import SessionFactory
-from tests.worker.factories import add_claim, add_policy
-from worker.queue import (
+from claimcheck.core.types import ClaimStatus
+from claimcheck.db.models import AuditLog, Claim, Job
+from claimcheck.db.session import SessionFactory
+from claimcheck.worker.queue import (
     LEASE_TIMEOUT,
     MAX_ATTEMPTS,
     backoff,
@@ -18,8 +17,9 @@ from worker.queue import (
     fail,
     lease_next,
 )
-from worker.reprocess import ReprocessError, requeue
-from worker.state_machine import transition
+from claimcheck.worker.reprocess import ReprocessError, requeue
+from claimcheck.worker.state_machine import transition
+from tests.worker.factories import add_claim, add_policy
 
 pytestmark = pytest.mark.db
 

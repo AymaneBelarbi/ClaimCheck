@@ -2,9 +2,9 @@ from typing import Literal
 
 import pytest
 
-from agent.judge import JudgeVerdict, StatementCheck, StatementChecks, judge
-from agent.loop import AgentAnswer
-from rag.retrieve import RetrievedClause
+from claimcheck.agent.judge import JudgeVerdict, StatementCheck, StatementChecks, judge
+from claimcheck.agent.loop import AgentAnswer
+from claimcheck.rag.retrieve import RetrievedClause
 from tests.fakes import FakeGateway
 
 CLAUSE = RetrievedClause(

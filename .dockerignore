@@ -7,8 +7,8 @@ var/
 # hashes; they must never end up in an image layer.
 backup/
 *.dump
-evals/data/
-evals/reports/
+# The services never import evals; compose mounts evals/cassettes for the replay backend.
+evals/
 docs/
 tests/
 ui/node_modules/

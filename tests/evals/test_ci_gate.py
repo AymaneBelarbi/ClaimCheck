@@ -4,12 +4,12 @@ from pathlib import Path
 
 import pytest
 
+from claimcheck.gateway.base import CassetteMissError
 from evals import run
 from evals.context import EvalContext, StageRunner
 from evals.gates import load_gates
 from evals.report import StageResult
 from evals.run import main
-from gateway.base import CassetteMissError
 
 ROOT = Path(__file__).parents[2]
 STAGES = "classification,extraction,retrieval,validation,agent"

@@ -44,7 +44,7 @@ to make them stick. ADR-006 explains what each backend receives.
 
 The worker takes one job at a time with `SELECT ... FOR UPDATE SKIP LOCKED`, marks it `running`
 and records the attempt. There is no heartbeat. A job left `running` for 15 minutes
-(`worker.queue.LEASE_TIMEOUT`) is taken to belong to a worker that died, and the next lease picks
+(`claimcheck.worker.queue.LEASE_TIMEOUT`) is taken to belong to a worker that died, and the next lease picks
 it up again: as `done` if its claim already reached `needs_review`, as `dead` if that was the
 third attempt, otherwise as the next attempt.
 
@@ -116,7 +116,7 @@ were done on a throwaway stack, after which the API listed the restored claims.
 The `policy_clauses.embedding` column is derived from the policy markdown. After changing the
 embedding model or the text that is embedded, or if the vectors are suspect after a restore:
 
-    uv run python -m db.seed --data evals/data --reembed
+    uv run python -m evals.seed --data evals/data --reembed
 
 It runs as the database owner (`DATABASE_URL`) in one transaction, so a failure leaves the old
 vectors in place. Without `--reembed`, the seed only rewrites versions whose clauses differ from
@@ -140,7 +140,7 @@ in case one predates that rule):
 `job.failed` or `job.dead` row per attempt. Fix the cause first: a model backend that was down,
 a missing API key, a cassette that was never recorded under `replay`. Then requeue it:
 
-    docker compose exec worker python -m worker.reprocess <claim_id>
+    docker compose exec worker python -m claimcheck.worker.reprocess <claim_id>
 
 The job starts again from attempt 0 and a `job.requeued` audit row records who did it
 (`--actor <name>`, default `operator`) and the previous error. It refuses a claim that is not

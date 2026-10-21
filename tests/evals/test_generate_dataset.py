@@ -14,7 +14,7 @@ from pathlib import Path
 import pytest
 from rapidfuzz import fuzz
 
-from core.types import ClaimType, DocType, Verdict
+from claimcheck.core.types import ClaimType, DocType, Verdict
 from evals.dataset.render import DATE_STYLES, format_date
 from evals.dataset.types import (
     FIELD_NAMES,

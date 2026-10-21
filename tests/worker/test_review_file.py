@@ -5,14 +5,14 @@ from decimal import Decimal
 import pytest
 from sqlalchemy.orm import Session
 
-from core.review import ReviewFile
-from core.types import ClaimStatus, DocType, Evidence, Verdict
-from db.models import Claim, ClaimDocument, ExtractedField, ValidationResult
-from db.session import SessionFactory
-from pipeline.validate import ALL_RULES
+from claimcheck.core.review import ReviewFile
+from claimcheck.core.types import ClaimStatus, DocType, Evidence, Verdict
+from claimcheck.db.models import Claim, ClaimDocument, ExtractedField, ValidationResult
+from claimcheck.db.session import SessionFactory
+from claimcheck.pipeline.validate import ALL_RULES
+from claimcheck.worker.pipeline_runner import ClaimNotFound
+from claimcheck.worker.review_file import build_review_file
 from tests.worker.factories import add_claim, add_policy
-from worker.pipeline_runner import ClaimNotFound
-from worker.review_file import build_review_file
 
 pytestmark = pytest.mark.db
 

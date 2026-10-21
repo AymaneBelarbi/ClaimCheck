@@ -10,13 +10,13 @@ import json
 from collections import Counter, defaultdict
 from typing import Any
 
-from core.types import DocType, Verdict
+from claimcheck.core.types import DocType, Verdict
+from claimcheck.gateway.redaction import scope_gateway
+from claimcheck.pipeline.classify import classify, llm_fallback
+from claimcheck.pipeline.ocr import run_ocr
 from evals.context import EvalContext
 from evals.dataset.types import GroundTruth, GTDocument
 from evals.report import StageResult
-from gateway.redaction import scope_gateway
-from pipeline.classify import classify, llm_fallback
-from pipeline.ocr import run_ocr
 
 
 def run(split: str, ctx: EvalContext) -> StageResult:

@@ -9,10 +9,12 @@ import pytest
 from opentelemetry.sdk.trace import ReadableSpan
 from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanExporter
 
-from db.session import SessionFactory
+from claimcheck.db.session import SessionFactory
+from claimcheck.gateway.base import LLMResult
+from claimcheck.gateway.tracing import TracingGateway
+from claimcheck.worker.pipeline_runner import PipelineDeps, process_claim
+from claimcheck.worker.storage import Storage
 from evals.generate_dataset import generate
-from gateway.base import LLMResult
-from gateway.tracing import TracingGateway
 from tests.fakes import FakeGateway, HashingEmbedder
 from tests.worker.factories import (
     add_dataset_policy,
@@ -21,8 +23,6 @@ from tests.worker.factories import (
     gold_gateway,
     ground_truth,
 )
-from worker.pipeline_runner import PipelineDeps, process_claim
-from worker.storage import Storage
 
 pytestmark = [pytest.mark.db, pytest.mark.ocr]
 

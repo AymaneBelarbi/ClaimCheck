@@ -7,8 +7,8 @@ import jwt
 import pytest
 from fastapi.testclient import TestClient
 
-from api import tokens
-from api.auth import signing_secret
+from claimcheck.api import tokens
+from claimcheck.api.auth import signing_secret
 
 pytestmark = pytest.mark.db
 

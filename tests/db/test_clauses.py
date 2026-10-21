@@ -7,8 +7,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine import URL
 from sqlalchemy.orm import Session
 
-from db.clauses import coverage_limit
-from db.models import Policy, PolicyClause, PolicyVersion
+from claimcheck.db.clauses import coverage_limit
+from claimcheck.db.models import Policy, PolicyClause, PolicyVersion
 
 pytestmark = pytest.mark.db
 

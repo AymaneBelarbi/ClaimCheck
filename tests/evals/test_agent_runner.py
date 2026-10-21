@@ -7,19 +7,20 @@ from pydantic import SecretStr
 from sqlalchemy import Engine, func, select
 from sqlalchemy.engine import URL
 
-from agent.judge import JudgeVerdict, StatementCheck, StatementChecks
-from agent.loop import BUDGET_MESSAGE, AgentAnswer, StopReason
-from core.settings import Settings
-from db.models import Claim, ClaimDocument
-from db.session import SessionFactory
+from claimcheck.agent.judge import JudgeVerdict, StatementCheck, StatementChecks
+from claimcheck.agent.loop import BUDGET_MESSAGE, AgentAnswer, StopReason
+from claimcheck.core.settings import Settings
+from claimcheck.db.models import Claim, ClaimDocument
+from claimcheck.db.session import SessionFactory
+from claimcheck.gateway.base import ChatTurn, ToolCall, Usage
+from claimcheck.gateway.redaction import RedactingGateway
+from claimcheck.mcp_server.server import tool_sessions
+from claimcheck.rag.chunking import chunk_clauses
+from claimcheck.worker.storage import Storage
 from evals.context import EvalContext
 from evals.dataset.types import AgentQuestion, GroundTruth, PolicyIndex
 from evals.runners import agent as agent_runner
 from evals.runners.agent import load_questions, score, summarize
-from gateway.base import ChatTurn, ToolCall, Usage
-from gateway.redaction import RedactingGateway
-from mcp_server.server import tool_sessions
-from rag.chunking import chunk_clauses
 from tests.db.conftest import as_role
 from tests.fakes import FakeGateway, HashingEmbedder
 from tests.mcp_server.factories import CLAIMANT, add_reviewed_claim
@@ -30,7 +31,6 @@ from tests.worker.conftest import (  # noqa: F401
     worker_db_url,
 )
 from tests.worker.factories import add_dataset_policy, ground_truth
-from worker.storage import Storage
 
 DATA = Path(__file__).parents[2] / "evals" / "data"
 QUESTIONS_FILE = DATA.parent / "agent_questions.jsonl"

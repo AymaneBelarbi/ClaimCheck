@@ -10,9 +10,9 @@ The risks are the usual ones for a tool-using model: it answers from general kno
 
 ## Decision
 
-**One agent, one loop.** `agent.loop.answer_question` sends the question and the tool list to the gateway, runs the tool calls the model asks for, and stops at the first turn without tool calls or after 6 turns. The final message must be a JSON object `{answer, citations}`.
+**One agent, one loop.** `claimcheck.agent.loop.answer_question` sends the question and the tool list to the gateway, runs the tool calls the model asks for, and stops at the first turn without tool calls or after 6 turns. The final message must be a JSON object `{answer, citations}`.
 
-**Tools are an MCP server with an explicit allowlist.** `mcp_server.allowlist.ALLOWED_TOOLS` names seven tools: `get_claim_summary`, `list_claim_documents`, `get_extracted_fields`, `get_validation_results`, `search_policy_clauses`, `get_policy_version` and `flag_for_review`. `build_server` registers exactly those and fails at start-up if one has no implementation. The agent only reaches them through an MCP client session: in-process over the SDK's in-memory transport for the API and the evals, or `python -m mcp_server` on stdio for any other MCP client. Tool results are compact JSON with filenames and clause refs, never database ids.
+**Tools are an MCP server with an explicit allowlist.** `claimcheck.mcp_server.allowlist.ALLOWED_TOOLS` names seven tools: `get_claim_summary`, `list_claim_documents`, `get_extracted_fields`, `get_validation_results`, `search_policy_clauses`, `get_policy_version` and `flag_for_review`. `build_server` registers exactly those and fails at start-up if one has no implementation. The agent only reaches them through an MCP client session: in-process over the SDK's in-memory transport for the API and the evals, or `python -m claimcheck.mcp_server` on stdio for any other MCP client. Tool results are compact JSON with filenames and clause refs, never database ids.
 
 **Read-only by default.** Six tools only read. The one write tool, `flag_for_review`, returns `confirmation_required` and changes nothing unless `human_confirmed` is true; when it is, it writes a `claim.flagged` audit row and still does not touch the claim's status, which only `transition()` changes.
 

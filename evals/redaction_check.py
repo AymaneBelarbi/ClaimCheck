@@ -43,11 +43,11 @@ from typing import Any
 
 import pytesseract
 
-from core.types import DocType
+from claimcheck.core.types import DocType
+from claimcheck.gateway.redaction import Redactor
+from claimcheck.pipeline.ocr import run_ocr
 from evals.dataset.types import GroundTruth
 from evals.report import StageResult, write_report
-from gateway.redaction import Redactor
-from pipeline.ocr import run_ocr
 
 FIRST_LABELS = ("name", "full name", "insured", "claimant", "driver", "officer")
 PARTICLES = frozenset(

@@ -40,4 +40,4 @@ recording passes each call through the replay layer to Ollama.
 | `2026-10-21-holdout-5.json` | holdout gate run, stricter quote check, same cassettes | ADR-005, failure-analysis |
 | `2026-10-21-holdout-6.json` | holdout gate run with rule R7 and the end-to-end validation score (macOS, Tesseract 5.5.3) | README, ADR-006 |
 | `2026-10-21-holdout-7.json` | the same gate command inside the project image (Debian, Tesseract 5.5.0) | ADR-006 |
-| `2026-10-21-redaction.json` | `python -m evals.redaction_check --split all`, all 50 packets | README, ADR-006, `gateway/redaction.py` |
+| `2026-10-21-redaction.json` | `python -m evals.redaction_check --split all`, all 50 packets | README, ADR-006, `src/claimcheck/gateway/redaction.py` |

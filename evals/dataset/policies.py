@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from datetime import date
 from decimal import Decimal
 
-from core.types import ClaimType
+from claimcheck.core.types import ClaimType
 
 INSURER = "Northgate Mutual"
 

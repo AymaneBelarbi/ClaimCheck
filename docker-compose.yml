@@ -57,7 +57,7 @@ services:
 
   api:
     <<: *app
-    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    command: ["uvicorn", "claimcheck.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
     environment:
       <<: *app-env
       APP_DATABASE_URL: postgresql+psycopg://claimcheck_app:${APP_DB_PASSWORD:-claimcheck_app}@db:5432/${POSTGRES_DB:-claimcheck}
@@ -77,7 +77,7 @@ services:
 
   worker:
     <<: *app
-    command: ["python", "-m", "worker.main"]
+    command: ["python", "-m", "claimcheck.worker.main"]
     environment:
       <<: *app-env
       WORKER_DATABASE_URL: postgresql+psycopg://claimcheck_worker:${WORKER_DB_PASSWORD:-claimcheck_worker}@db:5432/${POSTGRES_DB:-claimcheck}

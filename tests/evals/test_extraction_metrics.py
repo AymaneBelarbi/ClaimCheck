@@ -4,16 +4,16 @@ from typing import Any
 
 import pytest
 
-from core.settings import get_settings
-from core.types import DocType, Evidence, Verdict
+from claimcheck.core.settings import get_settings
+from claimcheck.core.types import DocType, Evidence, Verdict
+from claimcheck.gateway.base import LLMGateway
+from claimcheck.pipeline.extract import FieldResult
+from claimcheck.pipeline.types import OcrPage, OcrResult
 from evals import run as eval_run
 from evals.context import EvalContext
 from evals.dataset.types import GroundTruth, GTDocument, Scenario
 from evals.runners import extraction
 from evals.runners.extraction import prf1, values_match
-from gateway.base import LLMGateway
-from pipeline.extract import FieldResult
-from pipeline.types import OcrPage, OcrResult
 from tests.fakes import FakeGateway, HashingEmbedder
 
 

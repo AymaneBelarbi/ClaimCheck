@@ -8,14 +8,14 @@ import pytest
 import respx
 from pydantic import BaseModel
 
-from core.settings import Settings
-from gateway.anthropic import AnthropicGateway
-from gateway.base import ChatTurn, LLMGateway, Message, ToolCall, ToolSpec, Usage
-from gateway.factory import get_gateway
-from gateway.ollama import OllamaGateway
-from gateway.redaction import RedactingGateway, Redactor, scope_gateway
-from gateway.replay import ReplayGateway
-from gateway.tracing import TracingGateway
+from claimcheck.core.settings import Settings
+from claimcheck.gateway.anthropic import AnthropicGateway
+from claimcheck.gateway.base import ChatTurn, LLMGateway, Message, ToolCall, ToolSpec, Usage
+from claimcheck.gateway.factory import get_gateway
+from claimcheck.gateway.ollama import OllamaGateway
+from claimcheck.gateway.redaction import RedactingGateway, Redactor, scope_gateway
+from claimcheck.gateway.replay import ReplayGateway
+from claimcheck.gateway.tracing import TracingGateway
 from tests.fakes import FakeGateway
 
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"

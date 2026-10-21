@@ -1,4 +1,4 @@
-from core.types import ClaimStatus, ClaimType, DocType, Evidence, Role, Verdict
+from claimcheck.core.types import ClaimStatus, ClaimType, DocType, Evidence, Role, Verdict
 
 
 def test_verdict_values() -> None:

@@ -15,7 +15,7 @@ from pydantic import SecretStr
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL, make_url
 
-from core.settings import Settings
+from claimcheck.core.settings import Settings
 
 # The migration gives each login role the password in these settings, so reading them the
 # same way here keeps the tests and the server in step.

@@ -1,8 +1,8 @@
 from collections.abc import Callable
 
-from core.types import ClaimType, DocType, Verdict
-from pipeline.validate import ALL_RULES, run_rules
-from pipeline.validate.base import ClaimContext
+from claimcheck.core.types import ClaimType, DocType, Verdict
+from claimcheck.pipeline.validate import ALL_RULES, run_rules
+from claimcheck.pipeline.validate.base import ClaimContext
 from tests.pipeline.validate.factories import passing_documents, without
 
 Make = Callable[..., ClaimContext]

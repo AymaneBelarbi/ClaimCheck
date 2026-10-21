@@ -7,8 +7,8 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL
 from sqlalchemy.orm import Session
 
-from db.models import Policy, PolicyVersion
-from db.policy_in_force import OverlappingVersionsError, policy_in_force
+from claimcheck.db.models import Policy, PolicyVersion
+from claimcheck.db.policy_in_force import OverlappingVersionsError, policy_in_force
 
 pytestmark = pytest.mark.db
 

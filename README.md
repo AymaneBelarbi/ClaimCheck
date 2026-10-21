@@ -11,7 +11,7 @@ ClaimCheck checks an auto insurance claim packet (claim form, ID, invoice, incid
 
 ![Architecture: upload, FastAPI, a Postgres job queue, the deterministic worker pipeline (OCR, classify, extract, validate), Postgres with pgvector, the LLM gateway, the adjuster agent behind POST /ask with its MCP tool server, the decision-ready file and the review UI](docs/architecture.png)
 
-<!-- demo.gif: upload a packet, watch verdicts, ask a clause question -->
+![Demo: a claim packet is filed, the worker processes it, the review shows the invoice over the policy limit with its evidence, and the adjuster asks the agent what the policy pays for broken glass](docs/images/demo.gif)
 
 ## Quick start
 
@@ -78,7 +78,7 @@ Generated with `python -m evals.cost_table evals/reports/2026-10-21-holdout.json
 | --- | --- | ---: | ---: | ---: | ---: |
 | replay | qwen2.5:7b-instruct | $0.0000 | 271.8 s | 278.3 s | 3.3 |
 
-The backend reads `replay` because recording passes each call through the replay layer to Ollama. Cost is zero because the model is local. LLM latency is the recorded model time per call, summed over the packet; wall time covers OCR and the extraction calls (classification fallbacks count in LLM latency only). Replayed from the cassettes, as CI does, the same packets take a p95 of 2.4 s each (`holdout-6`). No cloud backend has run with a real key yet, so there is no cloud cost row; the gateway prices every call (`gateway/pricing.py`).
+The backend reads `replay` because recording passes each call through the replay layer to Ollama. Cost is zero because the model is local. LLM latency is the recorded model time per call, summed over the packet; wall time covers OCR and the extraction calls (classification fallbacks count in LLM latency only). Replayed from the cassettes, as CI does, the same packets take a p95 of 2.4 s each (`holdout-6`). No cloud backend has run with a real key yet, so there is no cloud cost row; the gateway prices every call (`src/claimcheck/gateway/pricing.py`).
 
 ## Nothing is ever silently guessed
 
@@ -91,7 +91,7 @@ Every extracted field and every rule ends in exactly one verdict:
 
 Each verdict carries its evidence: the document, the page, the character span in the OCR text and the source text. A field's confidence is the lower of the model's confidence and the OCR confidence under the value. If the code cannot find the value in the OCR text, the field is `low_confidence` whatever the model said.
 
-Seven rules run, one file each in `pipeline/validate/`: the name on the ID matches the claimant (R1), a policy version was in force on the incident date (R2), the invoice total is within that version's limit (R3), the invoice is not dated before the incident (R4), the ID was valid on the incident date (R5), every document the claim type requires is there (R6), and the claim form, and the incident report if there is one, give the incident date the claim was filed with (R7). A rule only runs on inputs that were found; a missing or low-confidence input becomes the rule's verdict. Documents classified `other` are sent to a person and skip extraction. If no policy version was in force on the incident date, that is the verdict; the system does not fall back to the nearest version. Any rule that does not end `found` blocks the decision and is named in the review file's summary.
+Seven rules run, one file each in `src/claimcheck/pipeline/validate/`: the name on the ID matches the claimant (R1), a policy version was in force on the incident date (R2), the invoice total is within that version's limit (R3), the invoice is not dated before the incident (R4), the ID was valid on the incident date (R5), every document the claim type requires is there (R6), and the claim form, and the incident report if there is one, give the incident date the claim was filed with (R7). A rule only runs on inputs that were found; a missing or low-confidence input becomes the rule's verdict. Documents classified `other` are sent to a person and skip extraction. If no policy version was in force on the incident date, that is the verdict; the system does not fall back to the nearest version. Any rule that does not end `found` blocks the decision and is named in the review file's summary.
 
 ## Why each mechanism
 
@@ -126,20 +126,21 @@ Paste the token into the header field; it is kept in `sessionStorage` for the ta
 
 ## Repository layout
 
-    api/            FastAPI routes, JWT auth, upload limits
-    worker/         job queue consumer, pipeline orchestration, state machine, audit log
-    pipeline/       ocr.py, classify.py, extract.py, schemas.py, validate/ (one file per rule)
-    rag/            clause chunking, local embeddings, version-filtered retrieval
-    agent/          the adjuster agent loop and the eval judge
-    mcp_server/     MCP tool definitions and the allowlist
-    gateway/        LLM backends (anthropic, openai, ollama), redaction, replay, tracing
-    db/             migrations (schema, row-level security), policy_in_force.py, seed
-    core/           settings and shared types, imported by every package
-    evals/          dataset generator, one runner per stage, gates, redaction check, reports/, cassettes/
-    ui/             the adjuster review page (React, Vite)
-    scripts/        demo.py
-    tests/          unit and database tests, mirroring the packages
-    docs/           adr/, runbook.md, failure-analysis.md, architecture diagram
+    src/claimcheck/     the application, one installable package
+      api/              FastAPI routes, JWT auth, upload limits
+      worker/           job queue consumer, pipeline orchestration, state machine, audit log
+      pipeline/         ocr.py, classify.py, extract.py, schemas.py, validate/ (one file per rule)
+      rag/              clause chunking, local embeddings, version-filtered retrieval
+      agent/            the adjuster agent loop and the eval judge
+      mcp_server/       MCP tool definitions and the allowlist
+      gateway/          LLM backends (anthropic, openai, ollama), redaction, replay, tracing
+      db/               migrations (schema, row-level security), policy_in_force.py
+      core/             settings and shared types, imported by every package
+    evals/              dataset generator and seed, one runner per stage, gates, redaction check, reports/, cassettes/
+    ui/                 the adjuster review page (React, Vite)
+    scripts/            demo.py
+    tests/              unit and database tests, mirroring the packages
+    docs/               adr/, runbook.md, failure-analysis.md, architecture diagram
     RELEASE_CRITERIA.md
     docker-compose.yml
 

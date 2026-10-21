@@ -31,13 +31,13 @@ from typing import Any
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from db.models import Policy, PolicyClause, PolicyVersion
-from db.session import engine_for
+from claimcheck.db.models import Policy, PolicyClause, PolicyVersion
+from claimcheck.db.session import engine_for
+from claimcheck.rag.embedder import Embedder
+from claimcheck.rag.retrieve import RetrievedClause, retrieve_clauses
 from evals.context import EvalContext, StageUnavailable
 from evals.dataset.types import ClauseQuestion
 from evals.report import StageResult
-from rag.embedder import Embedder
-from rag.retrieve import RetrievedClause, retrieve_clauses
 
 K = 5
 DEV_BUCKETS = 7

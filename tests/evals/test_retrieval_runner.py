@@ -8,15 +8,15 @@ from pydantic import SecretStr
 from sqlalchemy.engine import URL
 from sqlalchemy.orm import Session
 
-from core.settings import Settings
-from db.seed import seed_database
-from db.session import engine_for
+from claimcheck.core.settings import Settings
+from claimcheck.db.session import engine_for
+from claimcheck.rag.retrieve import RetrievedClause
 from evals import run
 from evals.context import EvalContext, StageUnavailable
 from evals.report import StageResult
 from evals.runners import retrieval
 from evals.runners.retrieval import split_of
-from rag.retrieve import RetrievedClause
+from evals.seed import seed_database
 from tests.db.conftest import alembic_config
 from tests.fakes import HashingEmbedder
 

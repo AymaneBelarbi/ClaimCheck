@@ -17,12 +17,12 @@ import argparse
 import sys
 from pathlib import Path
 
-from core.settings import get_settings
-from core.tracing import setup_tracing
+from claimcheck.core.settings import get_settings
+from claimcheck.core.tracing import setup_tracing
+from claimcheck.gateway.base import CassetteMissError
 from evals.context import EvalContext, StageRunner, StageUnavailable
 from evals.gates import check_gates, load_gates
 from evals.report import StageResult, write_report
-from gateway.base import CassetteMissError
 
 KNOWN_STAGES = ("classification", "extraction", "retrieval", "validation", "agent")
 

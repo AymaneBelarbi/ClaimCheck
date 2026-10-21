@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from worker.storage import Storage
+from claimcheck.worker.storage import Storage
 
 
 def test_put_keys_by_claim_and_content(tmp_path: Path) -> None:

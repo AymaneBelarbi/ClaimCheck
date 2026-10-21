@@ -11,9 +11,9 @@ from reportlab.pdfgen.canvas import Canvas
 from sqlalchemy import func, select, update
 from sqlalchemy.orm import Session
 
-import pipeline.ocr
-from core.types import ClaimStatus, DocType, Verdict
-from db.models import (
+import claimcheck.pipeline.ocr
+from claimcheck.core.types import ClaimStatus, DocType, Verdict
+from claimcheck.db.models import (
     AuditLog,
     Claim,
     ClaimDocument,
@@ -22,14 +22,19 @@ from db.models import (
     Policy,
     ValidationResult,
 )
-from db.session import SessionFactory
+from claimcheck.db.session import SessionFactory
+from claimcheck.gateway.base import LLMGateway
+from claimcheck.gateway.redaction import RedactingGateway
+from claimcheck.pipeline.classify import ClassificationResult
+from claimcheck.pipeline.types import OcrResult
+from claimcheck.rag.embedder import Embedder
+from claimcheck.worker.main import run_once, serve
+from claimcheck.worker.pipeline_runner import PipelineDeps, process_claim
+from claimcheck.worker.queue import enqueue
+from claimcheck.worker.review_file import build_review_file
+from claimcheck.worker.storage import Storage
 from evals.dataset.types import FIELD_NAMES, RULE_IDS
 from evals.generate_dataset import generate
-from gateway.base import LLMGateway
-from gateway.redaction import RedactingGateway
-from pipeline.classify import ClassificationResult
-from pipeline.types import OcrResult
-from rag.embedder import Embedder
 from tests.fakes import HashingEmbedder
 from tests.worker.factories import (
     add_claim,
@@ -40,11 +45,6 @@ from tests.worker.factories import (
     gold_gateway,
     ground_truth,
 )
-from worker.main import run_once, serve
-from worker.pipeline_runner import PipelineDeps, process_claim
-from worker.queue import enqueue
-from worker.review_file import build_review_file
-from worker.storage import Storage
 
 pytestmark = [pytest.mark.db, pytest.mark.ocr]
 
@@ -339,7 +339,7 @@ def test_a_cloud_backend_never_sees_the_packets_names_or_id_numbers(
     own request."""
     packet = "PKT-031"
     inner = gold_gateway(data_dir, is_cloud=True)
-    # What gateway.factory does with any backend whose is_cloud is true.
+    # What claimcheck.gateway.factory does with any backend whose is_cloud is true.
     deps.llm = RedactingGateway(inner)
     claim_id = _packet(sessions, data_dir, deps, packet=packet)
 
@@ -369,7 +369,7 @@ def test_a_document_over_the_page_limit_goes_to_a_person(
     data_dir: Path,
     deps: PipelineDeps,
 ) -> None:
-    monkeypatch.setattr(pipeline.ocr, "MAX_PAGES", 1)
+    monkeypatch.setattr(claimcheck.pipeline.ocr, "MAX_PAGES", 1)
     claim_id = _packet(sessions, data_dir, deps, skip=frozenset({"doc_2.png", "doc_3.pdf"}))
     buffer = io.BytesIO()
     canvas = Canvas(buffer)

@@ -29,4 +29,4 @@ RUN useradd --system --uid 10001 --home-dir /app --no-create-home claimcheck \
 USER claimcheck
 
 EXPOSE 8000
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "claimcheck.api.main:app", "--host", "0.0.0.0", "--port", "8000"]

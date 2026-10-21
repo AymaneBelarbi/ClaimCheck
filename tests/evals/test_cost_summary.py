@@ -5,18 +5,18 @@ from typing import Any
 import pytest
 from pydantic import BaseModel
 
-from core.settings import get_settings
-from core.types import DocType, Verdict
+from claimcheck.core.settings import get_settings
+from claimcheck.core.types import DocType, Verdict
+from claimcheck.gateway.base import LLMGateway, Usage
+from claimcheck.gateway.tracing import PacketUsage, TracingGateway, UsageLedger
+from claimcheck.pipeline.extract import FieldResult
+from claimcheck.pipeline.types import OcrPage, OcrResult
 from evals import cost_table, run
 from evals.context import EvalContext
 from evals.cost import p95
 from evals.cost import summarize_cost as maybe_summarize
 from evals.report import StageResult, write_report
 from evals.runners import extraction
-from gateway.base import LLMGateway, Usage
-from gateway.tracing import PacketUsage, TracingGateway, UsageLedger
-from pipeline.extract import FieldResult
-from pipeline.types import OcrPage, OcrResult
 from tests.evals.test_extraction_metrics import _gt, _write_packet
 from tests.fakes import FakeGateway, HashingEmbedder
 

@@ -23,14 +23,14 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
-from core.types import DocType, Evidence, Verdict
+from claimcheck.core.types import DocType, Evidence, Verdict
+from claimcheck.pipeline.extract import FieldResult
+from claimcheck.pipeline.validate import RuleResult, run_rules
+from claimcheck.pipeline.validate.base import ClaimContext, DocFields, PolicyVersionInfo
+from claimcheck.rag.chunking import chunk_clauses
 from evals.context import EvalContext
 from evals.dataset.types import GroundTruth, PolicyIndex, PolicyVersionEntry
 from evals.report import StageResult
-from pipeline.extract import FieldResult
-from pipeline.validate import RuleResult, run_rules
-from pipeline.validate.base import ClaimContext, DocFields, PolicyVersionInfo
-from rag.chunking import chunk_clauses
 
 
 def run(split: str, ctx: EvalContext) -> StageResult:

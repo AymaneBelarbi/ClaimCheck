@@ -4,19 +4,19 @@ from opentelemetry.sdk.trace import ReadableSpan, TracerProvider
 from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanExporter
 from pydantic import BaseModel
 
-from core import tracing
-from core.tracing import (
+from claimcheck.core import tracing
+from claimcheck.core.tracing import (
     build_provider,
     otlp_traces_url,
     setup_tracing,
     span_cache_key,
     tracer,
 )
-from core.tracing import span as start_span
-from gateway.base import ChatTurn, GatewayError, Message, SchemaError, Usage
-from gateway.redaction import RedactingGateway, scope_gateway
-from gateway.replay import ReplayGateway
-from gateway.tracing import TracingGateway, UsageLedger
+from claimcheck.core.tracing import span as start_span
+from claimcheck.gateway.base import ChatTurn, GatewayError, Message, SchemaError, Usage
+from claimcheck.gateway.redaction import RedactingGateway, scope_gateway
+from claimcheck.gateway.replay import ReplayGateway
+from claimcheck.gateway.tracing import TracingGateway, UsageLedger
 from tests.fakes import FakeGateway
 
 SECRET_PROMPT = "Claimant: Jane Doe, licence A12345678, rear bumper"

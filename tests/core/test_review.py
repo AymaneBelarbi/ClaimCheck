@@ -1,7 +1,7 @@
 import pytest
 
-from core.review import ReviewRule, summarize
-from core.types import ClaimStatus, Verdict
+from claimcheck.core.review import ReviewRule, summarize
+from claimcheck.core.types import ClaimStatus, Verdict
 
 
 def _rule(rule_id: str, verdict: Verdict) -> ReviewRule:

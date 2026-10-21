@@ -4,16 +4,16 @@ import pytest
 from sqlalchemy import select, text
 from sqlalchemy.engine import URL
 
-from core.settings import get_settings
-from core.types import ClaimStatus
-from db.models import Job
-from db.session import SessionFactory
+from claimcheck.core.settings import get_settings
+from claimcheck.core.types import ClaimStatus
+from claimcheck.db.models import Job
+from claimcheck.db.session import SessionFactory
+from claimcheck.worker import reprocess
+from claimcheck.worker.main import worker_engine, worker_sessions
+from claimcheck.worker.queue import MAX_ATTEMPTS, enqueue
+from claimcheck.worker.state_machine import transition
 from tests.db.conftest import as_role
 from tests.worker.factories import add_claim, add_policy
-from worker import reprocess
-from worker.main import worker_engine, worker_sessions
-from worker.queue import MAX_ATTEMPTS, enqueue
-from worker.state_machine import transition
 
 PROBE = text(
     "SELECT current_user, current_setting('app.role', true), current_setting('app.user_id', true)"

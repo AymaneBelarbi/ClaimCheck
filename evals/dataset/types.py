@@ -9,7 +9,7 @@ from enum import StrEnum
 
 from pydantic import BaseModel, ConfigDict
 
-from core.types import ClaimType, DocType, Verdict
+from claimcheck.core.types import ClaimType, DocType, Verdict
 
 # Driver licence numbers: "D" followed by eight digits. Redaction relies on this exact shape.
 ID_NUMBER_PATTERN = r"\bD\d{8}\b"

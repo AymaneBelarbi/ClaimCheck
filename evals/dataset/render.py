@@ -22,7 +22,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfgen.canvas import Canvas
 
-from core.types import ClaimType, DocType
+from claimcheck.core.types import ClaimType, DocType
 from evals.dataset.policies import INSURER
 
 _MONTHS = (
