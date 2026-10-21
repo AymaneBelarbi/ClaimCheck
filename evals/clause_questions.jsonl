@@ -1,0 +1,49 @@
+{"id":"CQ-001","policy_number":"AUT-104233","incident_date":"2024-10-22","question":"Is a cracked windscreen covered?","expected_clause_ref":"6.3","expected_version_no":1}
+{"id":"CQ-002","policy_number":"AUT-104233","incident_date":"2024-08-13","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"6.4","expected_version_no":1}
+{"id":"CQ-003","policy_number":"AUT-104233","incident_date":"2024-12-08","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":1}
+{"id":"CQ-004","policy_number":"AUT-104233","incident_date":"2024-12-26","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":1}
+{"id":"CQ-005","policy_number":"AUT-104233","incident_date":"2024-10-19","question":"Am I covered if my car is stolen from my driveway?","expected_clause_ref":"4.3","expected_version_no":1}
+{"id":"CQ-006","policy_number":"AUT-104233","incident_date":"2024-10-26","question":"How many days do I have to report an incident?","expected_clause_ref":"7.1","expected_version_no":1}
+{"id":"CQ-007","policy_number":"AUT-104233","incident_date":"2024-02-13","question":"Which documents must I send with a collision claim?","expected_clause_ref":"7.2","expected_version_no":1}
+{"id":"CQ-008","policy_number":"AUT-104233","incident_date":"2025-01-01","question":"Is a cracked windscreen covered?","expected_clause_ref":"4.2","expected_version_no":2}
+{"id":"CQ-009","policy_number":"AUT-104233","incident_date":"2025-01-09","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"6.4","expected_version_no":2}
+{"id":"CQ-010","policy_number":"AUT-104233","incident_date":"2025-12-11","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":2}
+{"id":"CQ-011","policy_number":"AUT-104233","incident_date":"2025-07-28","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":2}
+{"id":"CQ-012","policy_number":"AUT-104233","incident_date":"2025-06-11","question":"Is a tyre puncture covered?","expected_clause_ref":"6.2","expected_version_no":2}
+{"id":"CQ-013","policy_number":"AUT-104233","incident_date":"2025-08-26","question":"What happens if I miss a premium payment?","expected_clause_ref":"2.2","expected_version_no":2}
+{"id":"CQ-014","policy_number":"AUT-104233","incident_date":"2025-06-26","question":"Am I covered if I drive the car into Canada?","expected_clause_ref":"3.1","expected_version_no":2}
+{"id":"CQ-015","policy_number":"AUT-104233","incident_date":"2026-01-01","question":"Is a cracked windscreen covered?","expected_clause_ref":"4.2","expected_version_no":3}
+{"id":"CQ-016","policy_number":"AUT-104233","incident_date":"2026-06-06","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"4.4","expected_version_no":3}
+{"id":"CQ-017","policy_number":"AUT-104233","incident_date":"2026-04-16","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":3}
+{"id":"CQ-018","policy_number":"AUT-104233","incident_date":"2026-02-15","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":3}
+{"id":"CQ-019","policy_number":"AUT-104233","incident_date":"2026-04-06","question":"Is the car covered if my partner drives it with my permission?","expected_clause_ref":"1.2","expected_version_no":3}
+{"id":"CQ-020","policy_number":"AUT-104233","incident_date":"2026-07-19","question":"What happens if an invoice I send turns out to have been altered?","expected_clause_ref":"7.3","expected_version_no":3}
+{"id":"CQ-021","policy_number":"AUT-104233","incident_date":"2026-01-16","question":"Is damage covered if the driver had been drinking?","expected_clause_ref":"6.1","expected_version_no":3}
+{"id":"CQ-022","policy_number":"AUT-208817","incident_date":"2024-11-24","question":"Is a cracked windscreen covered?","expected_clause_ref":"6.3","expected_version_no":1}
+{"id":"CQ-023","policy_number":"AUT-208817","incident_date":"2024-08-02","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"6.4","expected_version_no":1}
+{"id":"CQ-024","policy_number":"AUT-208817","incident_date":"2024-08-30","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":1}
+{"id":"CQ-025","policy_number":"AUT-208817","incident_date":"2024-04-02","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":1}
+{"id":"CQ-026","policy_number":"AUT-208817","incident_date":"2024-10-03","question":"Am I covered if my car is stolen from my driveway?","expected_clause_ref":"4.3","expected_version_no":1}
+{"id":"CQ-027","policy_number":"AUT-208817","incident_date":"2024-12-18","question":"How many days do I have to report an incident?","expected_clause_ref":"7.1","expected_version_no":1}
+{"id":"CQ-028","policy_number":"AUT-208817","incident_date":"2024-12-19","question":"Which documents must I send with a collision claim?","expected_clause_ref":"7.2","expected_version_no":1}
+{"id":"CQ-029","policy_number":"AUT-208817","incident_date":"2025-03-15","question":"Is a cracked windscreen covered?","expected_clause_ref":"4.2","expected_version_no":2}
+{"id":"CQ-030","policy_number":"AUT-208817","incident_date":"2025-04-16","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"4.4","expected_version_no":2}
+{"id":"CQ-031","policy_number":"AUT-208817","incident_date":"2026-08-22","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":2}
+{"id":"CQ-032","policy_number":"AUT-208817","incident_date":"2025-04-14","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":2}
+{"id":"CQ-033","policy_number":"AUT-208817","incident_date":"2025-12-17","question":"Is a tyre puncture covered?","expected_clause_ref":"6.2","expected_version_no":2}
+{"id":"CQ-034","policy_number":"AUT-208817","incident_date":"2026-05-11","question":"What happens if I miss a premium payment?","expected_clause_ref":"2.2","expected_version_no":2}
+{"id":"CQ-035","policy_number":"AUT-208817","incident_date":"2026-05-17","question":"Am I covered if I drive the car into Canada?","expected_clause_ref":"3.1","expected_version_no":2}
+{"id":"CQ-036","policy_number":"AUT-311590","incident_date":"2025-05-01","question":"Is a cracked windscreen covered?","expected_clause_ref":"6.3","expected_version_no":1}
+{"id":"CQ-037","policy_number":"AUT-311590","incident_date":"2024-06-03","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"6.4","expected_version_no":1}
+{"id":"CQ-038","policy_number":"AUT-311590","incident_date":"2025-02-22","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":1}
+{"id":"CQ-039","policy_number":"AUT-311590","incident_date":"2024-11-04","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":1}
+{"id":"CQ-040","policy_number":"AUT-311590","incident_date":"2025-01-22","question":"Is the car covered if my partner drives it with my permission?","expected_clause_ref":"1.2","expected_version_no":1}
+{"id":"CQ-041","policy_number":"AUT-311590","incident_date":"2025-02-07","question":"What happens if an invoice I send turns out to have been altered?","expected_clause_ref":"7.3","expected_version_no":1}
+{"id":"CQ-042","policy_number":"AUT-311590","incident_date":"2025-01-27","question":"Is damage covered if the driver had been drinking?","expected_clause_ref":"6.1","expected_version_no":1}
+{"id":"CQ-043","policy_number":"AUT-311590","incident_date":"2025-06-01","question":"Is a cracked windscreen covered?","expected_clause_ref":"4.2","expected_version_no":2}
+{"id":"CQ-044","policy_number":"AUT-311590","incident_date":"2025-10-30","question":"Will the insurer pay for a hire car while my car is being repaired?","expected_clause_ref":"6.4","expected_version_no":2}
+{"id":"CQ-045","policy_number":"AUT-311590","incident_date":"2025-06-30","question":"What is the most the policy pays for collision damage?","expected_clause_ref":"4.1","expected_version_no":2}
+{"id":"CQ-046","policy_number":"AUT-311590","incident_date":"2025-06-12","question":"How much excess do I pay on a theft claim?","expected_clause_ref":"5.1","expected_version_no":2}
+{"id":"CQ-047","policy_number":"AUT-311590","incident_date":"2026-01-12","question":"Am I covered if my car is stolen from my driveway?","expected_clause_ref":"4.3","expected_version_no":2}
+{"id":"CQ-048","policy_number":"AUT-311590","incident_date":"2025-09-18","question":"How many days do I have to report an incident?","expected_clause_ref":"7.1","expected_version_no":2}
+{"id":"CQ-049","policy_number":"AUT-311590","incident_date":"2025-12-23","question":"Which documents must I send with a collision claim?","expected_clause_ref":"7.2","expected_version_no":2}
