@@ -56,7 +56,7 @@ jobs:
         run: LLM_BACKEND=replay uv run python -m evals.run --split holdout --stages classification,extraction,retrieval,validation,agent --gate --require-all-gates --out-dir eval-report
       - name: Upload the eval report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: holdout-eval-report
           path: eval-report/
