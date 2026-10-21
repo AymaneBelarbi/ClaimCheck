@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-040:turn2",
+  "request_sha256": "006208fba716b0d4dd0ef33aaa72150a460d2e5b4cc064f197b283ec186d622e",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_fuxk9p9l",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "driver licence suspension"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1573,
+    "output_tokens": 24,
+    "cost_usd": 0.0,
+    "latency_ms": 13423.852165993594
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

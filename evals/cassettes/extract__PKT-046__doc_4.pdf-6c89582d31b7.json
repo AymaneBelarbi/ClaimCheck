@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-046:doc_4.pdf",
+  "request_sha256": "77598ad5a06bb7fae52db85ec0735cfaca48503247fff173e3cb9a58d54c445e",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-595176",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-595176"
+    },
+    "incident_date": {
+      "value": "2024-07-17",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 2024-07-17"
+    },
+    "location": {
+      "value": "397 Steven Pass, West Jeffery",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 397 Steven Pass, West Jeffery"
+    },
+    "description": {
+      "value": "Vehicle EAR-3240 struck a deer on Steven Pass at approximately 19:00. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle EAR-3240 struck a deer on Steven Pass at approximately 19:00. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 551,
+    "output_tokens": 271,
+    "cost_usd": 0.0,
+    "latency_ms": 53795.94108299716
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-020:doc_1.png",
+  "request_sha256": "5424dcd6bc800437b1618ca40d84f6141fd1454472fcd8801aa6c635a714d384",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Francesca Morpurgo",
+      "confidence": 1.0,
+      "source_text": "Francesca Morpurgo"
+    },
+    "id_number": {
+      "value": "D11868465",
+      "confidence": 1.0,
+      "source_text": "Licence no. D11868465"
+    },
+    "date_of_birth": {
+      "value": "June as 1958",
+      "confidence": 1.0,
+      "source_text": "Born June as 1958"
+    },
+    "expiry_date": {
+      "value": "May 14, 2030",
+      "confidence": 1.0,
+      "source_text": "Valid until May 14, 2030"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 493,
+    "output_tokens": 172,
+    "cost_usd": 0.0,
+    "latency_ms": 46454.313833000924
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

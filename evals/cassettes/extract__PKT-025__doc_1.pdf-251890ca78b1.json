@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-025:doc_1.pdf",
+  "request_sha256": "91740a1cdc084e9086a1a9055f0a40103042687119e1bc30b1beb876f75907e0",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "HICKS AUTO BODY",
+      "confidence": 1.0,
+      "source_text": "HICKS AUTO BODY"
+    },
+    "invoice_date": {
+      "value": "August 24, 2025",
+      "confidence": 1.0,
+      "source_text": "Issued: August 24, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Wing panel, replace",
+          "amount": "$1,870.29"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "$1,187.53"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$652.62"
+        },
+        {
+          "description": "Labour (9.0 hours)",
+          "amount": "$705.38"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Wing panel, replace"
+    },
+    "total": {
+      "value": "$4,415.82",
+      "confidence": 1.0,
+      "source_text": "Line total\n$4,415.82"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 592,
+    "output_tokens": 292,
+    "cost_usd": 0.0,
+    "latency_ms": 49774.52179200009
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

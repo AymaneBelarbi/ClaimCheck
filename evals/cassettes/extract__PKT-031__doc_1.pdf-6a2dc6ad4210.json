@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-031:doc_1.pdf",
+  "request_sha256": "87c29b25826498f017bf88a15269cb8f33954940355e8855b8b32c22c53a53a2",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Christopher Schmidt",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nChristopher Schmidt"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO. INCIDENT TYPE\nAUT-311590 COLLISION"
+    },
+    "incident_date": {
+      "value": "1 June 2025",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n1 June 2025"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "POLICY NO. INCIDENT TYPE\nAUT-311590 COLLISION"
+    },
+    "vehicle_plate": {
+      "value": "JWP-3360",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nJWP-3360 2023 Kia Sportage"
+    },
+    "description": {
+      "value": "While reversing out of a parking space on Andrew Way | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Christopher Schmidt, 10 June 2025.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nWhile reversing out of a parking space on Andrew Way | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Christopher Schmidt, 10 June 2025."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 593,
+    "output_tokens": 382,
+    "cost_usd": 0.0,
+    "latency_ms": 60066.02454200038
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

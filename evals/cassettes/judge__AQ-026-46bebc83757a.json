@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-026",
+  "request_sha256": "e3f72bc249030853d3ccf8887d3098abec08e330c5ced1e9a337f7c33d5cb04f",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy will pay up to $14,000 for collision damage.",
+        "about": "policy",
+        "quote": "We pay the cost of repair or, if the vehicle is a total loss, its market value, up to a limit of $14,000 per claim,",
+        "supported": true
+      },
+      {
+        "statement": "The policy deducts a collision excess of $300 from the payment.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: collision claims $300;",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 485,
+    "output_tokens": 150,
+    "cost_usd": 0.0,
+    "latency_ms": 20059.649332994013
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-009:turn2",
+  "request_sha256": "c8506cbd3f53d3a41b875f638e51a1ea2dc5cac5639a2532da7eb3f4717be20a",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The theft must be reported to the police within 48 hours of discovery.\", \"citations\": [\"4.3\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1552,
+    "output_tokens": 30,
+    "cost_usd": 0.0,
+    "latency_ms": 13232.530749999569
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

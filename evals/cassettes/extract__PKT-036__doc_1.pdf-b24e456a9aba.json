@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-036:doc_1.pdf",
+  "request_sha256": "e831e5a722bf475ef6b1c39c6476e0b07325c6d206659d7f641679c7a92a9b8a",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "lain Lewis",
+      "confidence": 1.0,
+      "source_text": "Claimant name lain Lewis"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "19 September 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 19 September 2026"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident Collision"
+    },
+    "vehicle_plate": {
+      "value": "NSF-3380",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration NSF-3380"
+    },
+    "description": {
+      "value": "Another driver pulled out of a side road onto Brittany Village and hit the front left of my car. Nobody was hurt.",
+      "confidence": 1.0,
+      "source_text": "What happened\nAnother driver pulled out of a side road onto Brittany Village and hit the front left of my car. Nobody was hurt."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 570,
+    "output_tokens": 285,
+    "cost_usd": 0.0,
+    "latency_ms": 42305.45316600001
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-012:doc_2.png",
+  "request_sha256": "404724548052396ddff2f1942f07d221277d9b778647e698c3485ff0a91efba9",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Grégoire Raynaud",
+      "confidence": 1.0,
+      "source_text": "Grégoire Raynaud"
+    },
+    "id_number": {
+      "value": "D70147339",
+      "confidence": 1.0,
+      "source_text": "Licence no.\nD70147339"
+    },
+    "date_of_birth": {
+      "value": "26 June 1989",
+      "confidence": 1.0,
+      "source_text": "Born\n26 June 1989"
+    },
+    "expiry_date": {
+      "value": "6 February 2031",
+      "confidence": 1.0,
+      "source_text": "Valid until\n6 February 2031"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 173,
+    "cost_usd": 0.0,
+    "latency_ms": 51210.848833000455
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

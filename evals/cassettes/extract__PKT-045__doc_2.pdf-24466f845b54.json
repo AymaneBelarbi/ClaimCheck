@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-045:doc_2.pdf",
+  "request_sha256": "571587631f70abd2f4042cf0e9241942f768a9994402fb3798c07b350cc6f3f1",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Georges Marty",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nGeorges Marty"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "March 1, 2026",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\nMarch 1, 2026"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "XBC-5276",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nXBC-5276"
+    },
+    "description": {
+      "value": "A deer ran across Griffith Fort after dark and | could not avoid it. The front of the car is damaged.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nA deer ran across Griffith Fort after dark and | could not avoid it. The front of the car is damaged."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 597,
+    "output_tokens": 319,
+    "cost_usd": 0.0,
+    "latency_ms": 51878.61774999874
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

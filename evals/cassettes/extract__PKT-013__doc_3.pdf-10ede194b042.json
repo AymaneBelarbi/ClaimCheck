@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-013:doc_3.pdf",
+  "request_sha256": "4698ede72c4a312133c06cdd8896f47f3b4c2133639714269761a684dba5a026",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Quique Blazquez",
+      "confidence": 1.0,
+      "source_text": "Claimant name Quique Blazquez"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-311590"
+    },
+    "incident_date": {
+      "value": "22 July 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 22 July 2025"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "JYJ-0710",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration JYJ-0710"
+    },
+    "description": {
+      "value": "Driving on Suarez Prairie a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "What happened\nDriving on Suarez Prairie a piece of gravel chipped the windscreen. The chip has now cracked and needs a\nnew screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 581,
+    "output_tokens": 309,
+    "cost_usd": 0.0,
+    "latency_ms": 33308.492832999946
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

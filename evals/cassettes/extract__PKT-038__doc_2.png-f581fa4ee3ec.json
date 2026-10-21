@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-038:doc_2.png",
+  "request_sha256": "e366ee0565f9f76a5fb0c1d39161350f261e6bb3b397af5764bc7abf19e86e36",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "MELANIE ROCHA",
+      "confidence": 1.0,
+      "source_text": "NAME\nMELANIE ROCHA"
+    },
+    "id_number": {
+      "value": "D72776928",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD72776928"
+    },
+    "date_of_birth": {
+      "value": "1 January 1960",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n1 January 1960"
+    },
+    "expiry_date": {
+      "value": "19 October 2027",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n19 October 2027"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 491,
+    "output_tokens": 199,
+    "cost_usd": 0.0,
+    "latency_ms": 34220.82095800033
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-033:doc_2.pdf",
+  "request_sha256": "f4205225d31e58566bc3fa113dde904091a04a7c566965d034452b8bb453a79a",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Melissa Trujillo",
+      "confidence": 1.0,
+      "source_text": "Claimant name Melissa Trujillo"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "24/02/2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 24/02/2026"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "LLN-2354",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration LLN-2354"
+    },
+    "description": {
+      "value": "Driving on Tiffany Causeway a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "Driving on Tiffany Causeway a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 582,
+    "output_tokens": 308,
+    "cost_usd": 0.0,
+    "latency_ms": 48924.06562500037
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

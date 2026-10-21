@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-032:doc_2.pdf",
+  "request_sha256": "2c4afd5b37de152328aaeff1330029e69658ef7aae2af9fe06d0b0f53e58a7d4",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Freia Kobelt",
+      "confidence": 1.0,
+      "source_text": "Claimant name Freia Kobelt"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-208817"
+    },
+    "incident_date": {
+      "value": "14/03/2024",
+      "confidence": 1.0,
+      "source_text": "Date of incident 14/03/2024"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident Collision"
+    },
+    "vehicle_plate": {
+      "value": "JRJ-6533",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration JRJ-6533"
+    },
+    "description": {
+      "value": "was stopped at the lights on Paul Groves when the car behind did not brake in time and hit my rear bumper.",
+      "confidence": 1.0,
+      "source_text": "What happened was stopped at the lights on Paul Groves when the car behind did not brake in time and hit my rear bumper."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 582,
+    "output_tokens": 305,
+    "cost_usd": 0.0,
+    "latency_ms": 45041.14241699972
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

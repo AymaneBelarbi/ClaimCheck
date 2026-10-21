@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-044:doc_2.pdf",
+  "request_sha256": "9cc3958aea1693c004bc5909b48221845df05b68fc106c46d4ccc67800e4d8bc",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-789712",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2026-789712"
+    },
+    "incident_date": {
+      "value": "20/08/2026",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 20/08/2026"
+    },
+    "location": {
+      "value": "001 Castro Mountain, New Dwayne",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 001 Castro Mountain, New Dwayne"
+    },
+    "description": {
+      "value": "Two-vehicle collision on Castro Mountain. Vehicle EBX-4778 was struck from behind while stationary at a\nred signal. No injuries reported. Both drivers exchanged details.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nTwo-vehicle collision on Castro Mountain. Vehicle EBX-4778 was struck from behind while stationary at a\nred signal. No injuries reported. Both drivers exchanged details."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 547,
+    "output_tokens": 273,
+    "cost_usd": 0.0,
+    "latency_ms": 52468.413541999325
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-002",
+  "request_sha256": "d53374c6ec9f44e445d4ecdf0c55b27874b324e73261d87edfb0467f5ca76c83",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy does not cover damage to the windscreen, windows or sunroof on its own.",
+        "about": "policy",
+        "quote": "[6.3 Windscreen and window damage] This version of the policy does not cover damage to the windscreen, windows or sunroof on its own.",
+        "supported": true
+      },
+      {
+        "statement": "Damage to these parts must be part of a collision claim.",
+        "about": "policy",
+        "quote": "[6.3 Windscreen and window damage] Glass broken in the same collision as other damage to the vehicle is paid as part of the collision claim under section 4.1.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 396,
+    "output_tokens": 163,
+    "cost_usd": 0.0,
+    "latency_ms": 21641.87050000328
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-035:turn3",
+  "request_sha256": "9e042e3a6b72cdc2d150bc001920ec470a4d281a973d6edf4e1d426b83d79fd9",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The policy excludes coverage for the vehicle being used for hire or reward, including ride-hailing.\", \"citations\": [\"6.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2102,
+    "output_tokens": 35,
+    "cost_usd": 0.0,
+    "latency_ms": 14451.48829199752
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-019:doc_1.png",
+  "request_sha256": "96943509c4041ddd68b12323487598bc452b238294721d0f5b78eb7540dfb29e",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Reinhardt Benthin",
+      "confidence": 1.0,
+      "source_text": "Reinhardt Benthin"
+    },
+    "id_number": {
+      "value": "D94177424",
+      "confidence": 1.0,
+      "source_text": "Licence no, D94177424"
+    },
+    "date_of_birth": {
+      "value": "19 August 1981",
+      "confidence": 1.0,
+      "source_text": "Born 19 August 1981"
+    },
+    "expiry_date": {
+      "value": "12 June 2033",
+      "confidence": 1.0,
+      "source_text": "Valid until 12 June 2033"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 491,
+    "output_tokens": 172,
+    "cost_usd": 0.0,
+    "latency_ms": 48687.70475000201
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

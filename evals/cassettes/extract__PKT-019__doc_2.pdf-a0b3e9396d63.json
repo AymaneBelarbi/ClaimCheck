@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-019:doc_2.pdf",
+  "request_sha256": "80fceaee27cb152f8e5ead4260a530ea36d8d26edbc5977376915f22a2eb4449",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Reinhardt Benthin",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nReinhardt Benthin"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "August 9, 2026",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\nAugust 9, 2026"
+    },
+    "incident_type": {
+      "value": "THEFT",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nTHEFT"
+    },
+    "vehicle_plate": {
+      "value": "AJP-8534",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nAJP-8534 2017 Mazda 3"
+    },
+    "description": {
+      "value": "The car was taken from outside my home on Robert Harbor overnight. | reported it to the police as soon as | noticed.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nThe car was taken from outside my home on Robert Harbor overnight. | reported it to the police as soon as | noticed."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 608,
+    "output_tokens": 338,
+    "cost_usd": 0.0,
+    "latency_ms": 82439.1790419977
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

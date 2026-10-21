@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-040:doc_2.pdf",
+  "request_sha256": "56a2caf25d1a598fbfb1e921c0931cd54528bc8208a994ed9f7c634309e9488a",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Stéphanie Fournier",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nStéphanie Fournier"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-208817"
+    },
+    "incident_date": {
+      "value": "29 July 2026",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n29 July 2026"
+    },
+    "incident_type": {
+      "value": "glass",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nGLASS"
+    },
+    "vehicle_plate": {
+      "value": "MGR-6558",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nMGR-6558 2021 Honda Civic"
+    },
+    "description": {
+      "value": "Driving on Warren Views a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nDriving on Warren Views a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 608,
+    "output_tokens": 336,
+    "cost_usd": 0.0,
+    "latency_ms": 52138.33191699996
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

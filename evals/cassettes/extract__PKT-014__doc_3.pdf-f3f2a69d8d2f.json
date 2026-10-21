@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-014:doc_3.pdf",
+  "request_sha256": "2c7c70a2432ea27ca34162d82d436a69d3bf5ccd2187f363938cb1b56855a07f",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-514463",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-514463"
+    },
+    "incident_date": {
+      "value": "15/12/2024",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 15/12/2024"
+    },
+    "location": {
+      "value": "164 Garner Avenue, Munozfurt",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 164 Garner Avenue, Munozfurt"
+    },
+    "description": {
+      "value": "Owner states vehicle YCP-3775 was left locked on Garner Avenue at 19:00 and found missing the following\nmorning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nOwner states vehicle YCP-3775 was left locked on Garner Avenue at 19:00 and found missing the following\nmorning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 559,
+    "output_tokens": 287,
+    "cost_usd": 0.0,
+    "latency_ms": 69141.05349999954
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

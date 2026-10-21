@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-007:turn1",
+  "request_sha256": "adf9f23a9fb78cccafe7fdfb4cd8f496b1ec1cb5b04f848c3ffb7b1ff11c8707",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_p6z5dude",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "driver licence"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1044,
+    "output_tokens": 23,
+    "cost_usd": 0.0,
+    "latency_ms": 3527.260999995633
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

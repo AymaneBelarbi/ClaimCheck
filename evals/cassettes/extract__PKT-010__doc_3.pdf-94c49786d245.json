@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-010:doc_3.pdf",
+  "request_sha256": "ae0c65f8d6c19f63a9bf6db055ba5d0171da14f6d0b408cde8d2d25e8f1c5cd9",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Amy Willis",
+      "confidence": 1.0,
+      "source_text": "Claimant name Amy Willis"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-208817"
+    },
+    "incident_date": {
+      "value": "May 29, 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident May 29, 2025"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "AKY-1363",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration AKY-1363"
+    },
+    "description": {
+      "value": "Driving on Raymond Plains a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "Driving on Raymond Plains a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 575,
+    "output_tokens": 300,
+    "cost_usd": 0.0,
+    "latency_ms": 73858.49979200066
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

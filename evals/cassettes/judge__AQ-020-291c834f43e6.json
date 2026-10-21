@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-020",
+  "request_sha256": "ddc8d0de909a33d1e50664a9bfd1393405f873a3b4a795c8577ae3c41bed3fa7",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The collision limit that applies is $25,000 per claim.",
+        "about": "policy",
+        "quote": "We pay the cost of repair or, if the vehicle is a total loss, its market value, up to a limit of $25,000 per claim,",
+        "supported": true
+      },
+      {
+        "statement": "The collision limit is reduced by $500 for each claim.",
+        "about": "policy",
+        "quote": "less the collision excess in section 5.1.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 478,
+    "output_tokens": 142,
+    "cost_usd": 0.0,
+    "latency_ms": 24099.348874995485
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

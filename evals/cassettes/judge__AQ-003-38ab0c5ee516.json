@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-003",
+  "request_sha256": "57060cab6c2d23b9bc4925d519fd9daca8c9f3d2236606808c702bb5d1bf5e8c",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "No rules are blocking the decision.",
+        "about": "claim",
+        "quote": "No rules are blocking the decision.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 333,
+    "output_tokens": 52,
+    "cost_usd": 0.0,
+    "latency_ms": 8373.604707994673
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-009",
+  "request_sha256": "663e81729f7f3109e76c70e9e370f2d7274eb4c30e0ecb4d10ec287055094818",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The theft must be reported to the police within 48 hours of discovery.",
+        "about": "claim",
+        "quote": "The theft must be reported to the police within 48 hours of discovery and the police incident report sent with the claim.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 409,
+    "output_tokens": 79,
+    "cost_usd": 0.0,
+    "latency_ms": 13537.945250005578
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

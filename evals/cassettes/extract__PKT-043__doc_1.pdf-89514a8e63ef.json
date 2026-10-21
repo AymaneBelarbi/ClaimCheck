@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-043:doc_1.pdf",
+  "request_sha256": "cf94346deac03573ef53a8b265727b1961214e29892aab808e4387650c5c7718",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "GUTIERREZ WINDSCREEN SERVICES",
+      "confidence": 1.0,
+      "source_text": "GUTIERREZ WINDSCREEN SERVICES\n14568 Norton Garden, New Thomas | (555) 555-8883"
+    },
+    "invoice_date": {
+      "value": "February 17, 2026",
+      "confidence": 1.0,
+      "source_text": "Issued: February 17, 2026"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Windscreen, OEM equivalent",
+          "amount": "552.45"
+        },
+        {
+          "description": "Urethane adhesive and primer",
+          "amount": "42.96"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "106.53"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Windscreen, OEM equivalent\nUrethane adhesive and primer\nLabour (2.0 hours)"
+    },
+    "total": {
+      "value": "701.94",
+      "confidence": 1.0,
+      "source_text": "$701.94"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 566,
+    "output_tokens": 270,
+    "cost_usd": 0.0,
+    "latency_ms": 38966.56091699879
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

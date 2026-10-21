@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-030:turn2",
+  "request_sha256": "20aafa2ed9f47108c9b218714e3bd1cf422a6059d46299eb4c958a5aba1b36d2",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_20a3p5np",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "hire car"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1575,
+    "output_tokens": 22,
+    "cost_usd": 0.0,
+    "latency_ms": 11760.05508399976
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-050:doc_1.pdf",
+  "request_sha256": "12e9c6f5ac03ecc43ddcead46a01efd2bd54e3683c288f76971f16bcffb75c24",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Geronimo Gozzano",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nGeronimo Gozzano"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "15 March 2026",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n15 March 2026"
+    },
+    "incident_type": {
+      "value": "glass",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nGLASS"
+    },
+    "vehicle_plate": {
+      "value": "FSR-0075",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nFSR-0075 2022 Hyundai Tucson"
+    },
+    "description": {
+      "value": "Driving on Mark Lane a piece of gravel chipped the windscreen. The chip has now cracked and needs anew screen.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nDriving on Mark Lane a piece of gravel chipped the windscreen. The chip has now cracked and needs anew screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 605,
+    "output_tokens": 334,
+    "cost_usd": 0.0,
+    "latency_ms": 67090.55154199996
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

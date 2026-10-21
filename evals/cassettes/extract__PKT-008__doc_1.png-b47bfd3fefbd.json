@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-008:doc_1.png",
+  "request_sha256": "24a295384d16182ec37e4f8628f0dbe62365c7bff83cd7836beb44829353a613",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Abdul Woods",
+      "confidence": 1.0,
+      "source_text": "Abdul Woods"
+    },
+    "id_number": {
+      "value": "D52149588",
+      "confidence": 1.0,
+      "source_text": "Licence no.\nD52149588"
+    },
+    "date_of_birth": {
+      "value": "16/02/1976",
+      "confidence": 1.0,
+      "source_text": "Born\n16/02/1976"
+    },
+    "expiry_date": {
+      "value": "1 April 2026",
+      "confidence": 1.0,
+      "source_text": "Valid until\n1 April 2026"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 490,
+    "output_tokens": 171,
+    "cost_usd": 0.0,
+    "latency_ms": 17072.975832999873
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

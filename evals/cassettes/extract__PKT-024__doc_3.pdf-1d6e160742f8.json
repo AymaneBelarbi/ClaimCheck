@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-024:doc_3.pdf",
+  "request_sha256": "fa92bce552dc25d8ded7e7f347ded2b8379b9b12e1a5e0e61effc1280c352f4d",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Port Sarah Collision Centre",
+      "confidence": 1.0,
+      "source_text": "Port Sarah Collision Centre"
+    },
+    "invoice_date": {
+      "value": "October 2, 2025",
+      "confidence": 1.0,
+      "source_text": "Date: October 2, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Wing panel, replace",
+          "amount": "$2,112.15"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$4,445.46"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$4,113.27"
+        },
+        {
+          "description": "Labour (9.0 hours)",
+          "amount": "$2,365.20"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Wing panel, replace\n$2,112.15\nFront bumper cover, replace\n$4,445.46\nRear bumper cover, replace\n$4,113.27\nLabour (9.0 hours)\n$2,365.20"
+    },
+    "total": {
+      "value": "$13,036.08",
+      "confidence": 1.0,
+      "source_text": "Total due $13,036.08"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 598,
+    "output_tokens": 355,
+    "cost_usd": 0.0,
+    "latency_ms": 50969.3995409998
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

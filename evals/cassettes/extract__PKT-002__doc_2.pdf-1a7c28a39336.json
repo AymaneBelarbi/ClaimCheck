@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-002:doc_2.pdf",
+  "request_sha256": "06dbbb685fc901a911d86bcbfc9f7e29fe666daf0efb79a4d4709d562aec7d6d",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Julia Cardoso",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nJulia Cardoso"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "16/10/2025",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n16/10/2025"
+    },
+    "incident_type": {
+      "value": "glass",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nGLASS"
+    },
+    "vehicle_plate": {
+      "value": "VPM-0050",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nVPM-0050 2016 Subaru Outback"
+    },
+    "description": {
+      "value": "The windscreen cracked overnight while the car was parked on Katrina Mountains during the cold snap.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nThe windscreen cracked overnight while the car was parked on Katrina Mountains during the cold snap."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 599,
+    "output_tokens": 321,
+    "cost_usd": 0.0,
+    "latency_ms": 30383.517917000063
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-011:doc_2.pdf",
+  "request_sha256": "782efb3b17a8e968d577416a8c43a0888adaec0ff8c7eae76885071698ab7998",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2023-014167",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2023-014167"
+    },
+    "incident_date": {
+      "value": "1 December 2023",
+      "confidence": 1.0,
+      "source_text": "Date of incident 1 December 2023"
+    },
+    "location": {
+      "value": "584 Small Knoll, Lake Christine",
+      "confidence": 1.0,
+      "source_text": "Location 584 Small Knoll, Lake Christine"
+    },
+    "description": {
+      "value": "Vehicle GZE-9089 reported stolen from outside the owner's residence on Small Knoll between 19:00 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle GZE-9089 reported stolen from outside the owner's residence on Small Knoll between 19:00 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 557,
+    "output_tokens": 284,
+    "cost_usd": 0.0,
+    "latency_ms": 78802.14004200025
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

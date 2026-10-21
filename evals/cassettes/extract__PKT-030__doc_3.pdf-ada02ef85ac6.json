@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-030:doc_3.pdf",
+  "request_sha256": "c4d210f8250077f70d8658e7228d7bbb8e005a962445556676823b2b4828a676",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-304888",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-304888"
+    },
+    "incident_date": {
+      "value": "February 17, 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident February 17, 2025"
+    },
+    "location": {
+      "value": "8255 Jones Keys, West Krystal",
+      "confidence": 1.0,
+      "source_text": "Location 8255 Jones Keys, West Krystal"
+    },
+    "description": {
+      "value": "Two-vehicle collision on Jones Keys. Vehicle UZK-6640 was struck from behind while stationary at a red signal. No injuries reported. Both drivers exchanged details.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nTwo-vehicle collision on Jones Keys. Vehicle UZK-6640 was struck from behind while stationary at a red\nsignal. No injuries reported. Both drivers exchanged details."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 550,
+    "output_tokens": 262,
+    "cost_usd": 0.0,
+    "latency_ms": 44027.127749999636
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

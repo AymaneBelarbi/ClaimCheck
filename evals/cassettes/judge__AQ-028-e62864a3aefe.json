@@ -1,0 +1,48 @@
+{
+  "key": "judge:AQ-028",
+  "request_sha256": "d780ee80ee497794e969b6693660177180307b24e08a71ceed3e3ec04b8ae0b3",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy excludes claims supported by a licence in another person's name.",
+        "about": "policy",
+        "quote": "If a claim is dishonest or supported by false documents, such as an altered invoice or a licence in another person's name, we will refuse the whole claim,",
+        "supported": true
+      },
+      {
+        "statement": "Such claims are considered dishonest.",
+        "about": "policy",
+        "quote": "If a claim is dishonest or supported by false documents, such as an altered invoice or a licence in another person's name, we will refuse the whole claim,",
+        "supported": true
+      },
+      {
+        "statement": "The policy will refuse the whole claim.",
+        "about": "policy",
+        "quote": "If a claim is dishonest or supported by false documents, such as an altered invoice or a licence in another person's name, we will refuse the whole claim,",
+        "supported": true
+      },
+      {
+        "statement": "The policy may cancel the policy from the date of the dishonest act.",
+        "about": "policy",
+        "quote": "may cancel the policy from the date of the dishonest act and may report the matter to the police.",
+        "supported": true
+      },
+      {
+        "statement": "The policy may report the matter to the police.",
+        "about": "policy",
+        "quote": "may cancel the policy from the date of the dishonest act and may report the matter to the police.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 402,
+    "output_tokens": 337,
+    "cost_usd": 0.0,
+    "latency_ms": 45931.007082996075
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

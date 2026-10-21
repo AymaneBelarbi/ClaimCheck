@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-022:doc_1.png",
+  "request_sha256": "8759a2d86d2bfd32911d6269a26c22747a28e1b1ccec9669f8c83643ff5cc41e",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "GABRIELLA SQUARCIONE",
+      "confidence": 1.0,
+      "source_text": "NAME\nGABRIELLA SQUARCIONE"
+    },
+    "id_number": {
+      "value": "D30424331",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD30424331"
+    },
+    "date_of_birth": {
+      "value": "8 April 1981",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n8 April 1981"
+    },
+    "expiry_date": {
+      "value": "6 February 2030",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n6 February 2030"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 205,
+    "cost_usd": 0.0,
+    "latency_ms": 55981.73254200083
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

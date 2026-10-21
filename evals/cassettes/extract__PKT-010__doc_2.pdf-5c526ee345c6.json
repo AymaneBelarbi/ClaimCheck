@@ -1,0 +1,45 @@
+{
+  "key": "extract:PKT-010:doc_2.pdf",
+  "request_sha256": "a5fc61e058e272cdf74c448dda8090904a9e9cc4a03f6d4fcc72c61e506eadba",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "ClearView Glass",
+      "confidence": 1.0,
+      "source_text": "ClearView Glass"
+    },
+    "invoice_date": {
+      "value": "9 June 2025",
+      "confidence": 1.0,
+      "source_text": "Date: 9 June 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Side window glass",
+          "amount": "$313.71"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$193.74"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Side window glass\nLabour (2.0 hours)"
+    },
+    "total": {
+      "value": "$507.45",
+      "confidence": 1.0,
+      "source_text": "Total due $507.45"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 552,
+    "output_tokens": 223,
+    "cost_usd": 0.0,
+    "latency_ms": 60015.2620000008
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

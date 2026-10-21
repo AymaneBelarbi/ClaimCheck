@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-025",
+  "request_sha256": "c5a65a92168863ac8a3b7b9299dc6c934e504dffb184e5a40ed9f404e782781c",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "No policy version was in force on the incident date.",
+        "about": "policy",
+        "quote": "no policy version was in force on the incident date, so no clause applies",
+        "supported": true
+      },
+      {
+        "statement": "Collision damage is not covered.",
+        "about": "claim",
+        "quote": "",
+        "supported": false
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 369,
+    "output_tokens": 98,
+    "cost_usd": 0.0,
+    "latency_ms": 15767.800042005547
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

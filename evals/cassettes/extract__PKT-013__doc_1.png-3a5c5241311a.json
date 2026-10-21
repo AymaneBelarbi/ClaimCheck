@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-013:doc_1.png",
+  "request_sha256": "151f3ac4d858e3393cdded11cf8f4faf8b1250a2b97eb965071b7d2fa6a8bb87",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "BLAZQUEZ QUIQUE",
+      "confidence": 1.0,
+      "source_text": "NAME\nBLAZQUEZ QUIQUE"
+    },
+    "id_number": {
+      "value": "D05307362",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD05307362"
+    },
+    "date_of_birth": {
+      "value": "20 March 1997",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n20 March 1997"
+    },
+    "expiry_date": {
+      "value": "3 January 2026",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n3 January 2026"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 494,
+    "output_tokens": 176,
+    "cost_usd": 0.0,
+    "latency_ms": 16720.77787499984
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

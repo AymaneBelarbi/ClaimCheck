@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-015:doc_1.png",
+  "request_sha256": "004e1d41e69b99b23f149b538006963d6218c556d3695df30fb020814d178e72",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Nanni Scarlatti",
+      "confidence": 1.0,
+      "source_text": "Nanni Scarlatti"
+    },
+    "id_number": {
+      "value": "D62885559",
+      "confidence": 1.0,
+      "source_text": "Licence no. D62885559"
+    },
+    "date_of_birth": {
+      "value": "15 February 1960",
+      "confidence": 1.0,
+      "source_text": "Born 15 February 1960"
+    },
+    "expiry_date": {
+      "value": "22 September 2028",
+      "confidence": 1.0,
+      "source_text": "Valid until 22 September 2028"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 193,
+    "cost_usd": 0.0,
+    "latency_ms": 61831.87700000053
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

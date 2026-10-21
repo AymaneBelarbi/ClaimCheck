@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-039:turn1",
+  "request_sha256": "ea0994742df648853be146157f171f8a9695412f88b4d50030148a4c5b9726b2",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1043,
+    "output_tokens": 17,
+    "cost_usd": 0.0,
+    "latency_ms": 2997.1501660038484
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

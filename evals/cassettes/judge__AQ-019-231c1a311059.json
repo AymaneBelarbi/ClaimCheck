@@ -1,0 +1,42 @@
+{
+  "key": "judge:AQ-019",
+  "request_sha256": "6beb9c1da8d7c18b42d3a473ba2ce0bef9438dbdecf3062c0c31f056acdc0faa",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy pays for a hire car of similar size.",
+        "about": "policy",
+        "quote": "we pay for a hire car of similar size",
+        "supported": true
+      },
+      {
+        "statement": "The daily cost of the hire car is up to $40.",
+        "about": "policy",
+        "quote": "at up to $40 a day",
+        "supported": true
+      },
+      {
+        "statement": "The policy covers this for no more than 14 days.",
+        "about": "policy",
+        "quote": "for no more than 14 days",
+        "supported": true
+      },
+      {
+        "statement": "The policy covers this while the vehicle is off the road for repairs after a covered collision.",
+        "about": "policy",
+        "quote": "While the vehicle is off the road for repairs after a covered collision",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 407,
+    "output_tokens": 217,
+    "cost_usd": 0.0,
+    "latency_ms": 34216.83970899903
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

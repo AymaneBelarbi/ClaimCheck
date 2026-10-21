@@ -1,0 +1,42 @@
+{
+  "key": "judge:AQ-016",
+  "request_sha256": "5b53c1a6f3902e0f6611b1b1388546f3f4555206a191455c6ca100a92e97b0e4",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "A collision claim needs a completed claim form.",
+        "about": "claim",
+        "quote": "Every claim must include a completed claim form and a copy of the claimant's driving licence.",
+        "supported": true
+      },
+      {
+        "statement": "A collision claim needs a copy of the claimant's driving licence.",
+        "about": "claim",
+        "quote": "Every claim must include a completed claim form and a copy of the claimant's driving licence.",
+        "supported": true
+      },
+      {
+        "statement": "A collision claim needs the repair invoice.",
+        "about": "claim",
+        "quote": "A collision claim also needs the repair invoice and a police or incident report.",
+        "supported": true
+      },
+      {
+        "statement": "A collision claim needs a police or incident report.",
+        "about": "claim",
+        "quote": "A collision claim also needs the repair invoice and a police or incident report.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 386,
+    "output_tokens": 228,
+    "cost_usd": 0.0,
+    "latency_ms": 52304.27662500006
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

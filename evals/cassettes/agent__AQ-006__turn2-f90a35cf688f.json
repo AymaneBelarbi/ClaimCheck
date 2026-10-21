@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-006:turn2",
+  "request_sha256": "04f0647c92e0d2cdf24d1dd47f2cc7f2b37fdc549d6251dd5db8a9a46a6790a2",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The claim is blocked by R1_NAME_MATCH: the name on the ID card 'Thibault Leclerc' does not match the claimant 'Roland Leclerc' (score 60 < 90).\", \"citations\": []}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1451,
+    "output_tokens": 59,
+    "cost_usd": 0.0,
+    "latency_ms": 14610.505875003582
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

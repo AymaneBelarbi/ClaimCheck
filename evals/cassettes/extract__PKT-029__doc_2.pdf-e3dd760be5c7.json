@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-029:doc_2.pdf",
+  "request_sha256": "5998497ed347ee45c48068badc4aed768ca65153354c30bcc86118a95d4234cf",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Luisa Lourengo",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nLuisa Lourengo"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "30/03/2025",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n30/03/2025"
+    },
+    "incident_type": {
+      "value": "glass",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nGLASS"
+    },
+    "vehicle_plate": {
+      "value": "HAY-4340",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nHAY-4340 2023 Kia Sportage"
+    },
+    "description": {
+      "value": "Driving on Weaver Crest a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nDriving on Weaver Crest a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 610,
+    "output_tokens": 339,
+    "cost_usd": 0.0,
+    "latency_ms": 64234.93899999994
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

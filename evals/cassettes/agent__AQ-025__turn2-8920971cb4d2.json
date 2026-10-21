@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-025:turn2",
+  "request_sha256": "172b48e49d44952782f7de0bbce05b105958ec89f8fadbf16a8fa8ab93122e62",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No policy version was in force on the incident date, so collision damage is not covered.\", \"citations\": []}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1121,
+    "output_tokens": 29,
+    "cost_usd": 0.0,
+    "latency_ms": 5811.343207999016
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

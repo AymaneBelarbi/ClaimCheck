@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-016:turn2",
+  "request_sha256": "84af2da5e19d16d6b23ba6cc37ec23d2d0c6062c4b2d6c1c97e67578f85b4d8d",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"A collision claim needs a completed claim form, a copy of the claimant's driving licence, the repair invoice, and a police or incident report.\", \"citations\": [\"7.2\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1499,
+    "output_tokens": 44,
+    "cost_usd": 0.0,
+    "latency_ms": 15995.65995800367
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

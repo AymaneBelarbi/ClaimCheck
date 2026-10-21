@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-027:doc_3.pdf",
+  "request_sha256": "b6427ab225ec67870fc4f2a4a98387127b8e21a8297f689e7aadb22aa692497f",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Katherine Herring",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nKatherine Herring"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "POLICY NO. INCIDENT TYPE\nAUT-208817 COLLISION"
+    },
+    "incident_date": {
+      "value": "6 October 2024",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n6 October 2024"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "POLICY NO. INCIDENT TYPE\nAUT-208817 COLLISION"
+    },
+    "vehicle_plate": {
+      "value": "GHS-4878",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nGHS-4878 2017 Mazda 3"
+    },
+    "description": {
+      "value": "While reversing out of a parking space on Katrina Estates | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Katherine Herring, 25 October 2024.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nWhile reversing out of a parking space on Katrina Estates | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Katherine Herring, 25 October 2024."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 596,
+    "output_tokens": 388,
+    "cost_usd": 0.0,
+    "latency_ms": 87689.98970800021
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

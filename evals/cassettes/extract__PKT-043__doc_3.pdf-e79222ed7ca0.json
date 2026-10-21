@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-043:doc_3.pdf",
+  "request_sha256": "79eb2be28101899939895220e076ff67482a5c49b994f5345e5e0fb824cbfd71",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Gutierrez Windscreen Services",
+      "confidence": 1.0,
+      "source_text": "Gutierrez Windscreen Services"
+    },
+    "invoice_date": {
+      "value": "17 February 2026",
+      "confidence": 1.0,
+      "source_text": "Date: 17 February 2026"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Windscreen, OEM equivalent",
+          "amount": "$42.96"
+        },
+        {
+          "description": "Urethane adhesive and primer",
+          "amount": "$106.53"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$207.40"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Windscreen, OEM equivalent\n$42.96"
+    },
+    "total": {
+      "value": "INVOICE\nInvoice no. INV-11813\nDate: 17 February 2026\nAmount\n$207.40",
+      "confidence": 1.0,
+      "source_text": "Amount\n$207.40"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 572,
+    "output_tokens": 291,
+    "cost_usd": 0.0,
+    "latency_ms": 41244.39391600026
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

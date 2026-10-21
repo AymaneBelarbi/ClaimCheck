@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-013:doc_2.pdf",
+  "request_sha256": "04a9a326007c756ecc3b550711878f10cfd7925818d40c1e88f96ed70d190e2e",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "ClearView Glass",
+      "confidence": 1.0,
+      "source_text": "ClearView Glass"
+    },
+    "invoice_date": {
+      "value": "27 June 2025",
+      "confidence": 1.0,
+      "source_text": "Date: 27 June 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Rain sensor gel pad",
+          "amount": "$112.66"
+        },
+        {
+          "description": "Windscreen moulding kit",
+          "amount": "$127.99"
+        },
+        {
+          "description": "Labour (1.0 hours)",
+          "amount": "$48.33"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Rain sensor gel pad\n$112.66"
+    },
+    "total": {
+      "value": "$288.98",
+      "confidence": 1.0,
+      "source_text": "Total due $288.98"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 570,
+    "output_tokens": 254,
+    "cost_usd": 0.0,
+    "latency_ms": 28057.92320799992
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

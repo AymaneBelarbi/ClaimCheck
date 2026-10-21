@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-037:doc_2.pdf",
+  "request_sha256": "e6ee5ad0d8087544266b9c4791c807c48bb9fbf3fa05cc7786a9f7169084aa0d",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-896513",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2026-896513"
+    },
+    "incident_date": {
+      "value": "June 24, 2026",
+      "confidence": 1.0,
+      "source_text": "Occurred on: June 24, 2026"
+    },
+    "location": {
+      "value": "28424 Sandra Vista, East April",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 28424 Sandra Vista, East April"
+    },
+    "description": {
+      "value": "Vehicle NAC-7678 reported stolen from outside the owner's residence on Sandra Vista between 19:15 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle NAC-7678 reported stolen from outside the owner's residence on Sandra Vista between 19:15 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 559,
+    "output_tokens": 294,
+    "cost_usd": 0.0,
+    "latency_ms": 43602.290666000044
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

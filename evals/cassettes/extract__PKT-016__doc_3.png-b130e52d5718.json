@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-016:doc_3.png",
+  "request_sha256": "3870a5996ecac0914d1d0a791d0f45cf6b434527e28fbc7b9f018d12edd9cbdd",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Clinton Coleman",
+      "confidence": 1.0,
+      "source_text": "NAME\nClinton Coleman"
+    },
+    "id_number": {
+      "value": "D66019619",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD66019619"
+    },
+    "date_of_birth": {
+      "value": "10 December 1967",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n10 December 1967"
+    },
+    "expiry_date": {
+      "value": "12 June 2031",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n12 June 2031"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 488,
+    "output_tokens": 193,
+    "cost_usd": 0.0,
+    "latency_ms": 22991.58579199957
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

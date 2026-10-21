@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-007",
+  "request_sha256": "c7975b26c9427f35ea90f203c340ace50216701fed4079e49926873ded5a1299",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy excludes coverage for incidents where the driver's licence has expired.",
+        "about": "policy",
+        "quote": "[1.2 Who may drive the vehicle] A driver whose licence has expired, been suspended or been revoked is not covered, and neither is anyone else driving with your permission.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 396,
+    "output_tokens": 87,
+    "cost_usd": 0.0,
+    "latency_ms": 13696.494666000945
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

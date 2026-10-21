@@ -1,0 +1,792 @@
+{
+  "split": "dev",
+  "stages": [
+    "agent"
+  ],
+  "generated_at": "2026-10-21T03:31:44.440934+00:00",
+  "llm_backend": "replay",
+  "llm_model": "qwen2.5:7b-instruct",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "replay_drift_count": 51,
+  "metrics": {
+    "agent.faithfulness": 0.76,
+    "agent.citation_hit": 0.8888888888888888
+  },
+  "details": {
+    "agent": {
+      "split": "dev",
+      "questions": 25,
+      "coverage_questions": 18,
+      "failures": {
+        "no_citation": 1,
+        "no_search": 1,
+        "unfaithful": 4
+      },
+      "answers": [
+        {
+          "id": "AQ-001",
+          "packet_id": "PKT-001",
+          "question": "What is the collision limit that applies to this claim?",
+          "expected_clause_ref": "4.1",
+          "answer": "The collision limit is up to $15,000 per claim, less the collision excess of $500.",
+          "citations": [
+            "4.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.1",
+            "5.1",
+            "3.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-002",
+          "packet_id": "PKT-001",
+          "question": "Is glass damage covered for this claim?",
+          "expected_clause_ref": "6.3",
+          "answer": "Glass damage is not covered on its own. It may be included in the collision claim if it occurred during a collision with other damage to the vehicle.",
+          "citations": [
+            "6.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage"
+              }
+            }
+          ],
+          "retrieved": [
+            "6.3",
+            "6.2",
+            "4.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": false,
+          "unsupported_statements": [
+            "Glass damage is not covered on its own.",
+            "Glass damage may be included in the collision claim if it occurred during a collision with other damage to the vehicle."
+          ],
+          "passed": false,
+          "citation_hit": true,
+          "failure": "unfaithful"
+        },
+        {
+          "id": "AQ-003",
+          "packet_id": "PKT-001",
+          "question": "Which rule is blocking this claim?",
+          "expected_clause_ref": null,
+          "answer": "No rules are blocking the decision.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_validation_results",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-004",
+          "packet_id": "PKT-002",
+          "question": "Is glass damage covered for this claim?",
+          "expected_clause_ref": "4.2",
+          "answer": "Glass damage is covered up to a limit of $1,000 per claim. The relevant clause is 4.2.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "6.2",
+            "5.1",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": false,
+          "unsupported_statements": [
+            "policy covers glass damage up to $1,000 per claim."
+          ],
+          "passed": false,
+          "citation_hit": false,
+          "failure": "no_citation"
+        },
+        {
+          "id": "AQ-005",
+          "packet_id": "PKT-002",
+          "question": "What is the most the policy pays for broken glass on this claim?",
+          "expected_clause_ref": "4.2",
+          "answer": "The policy pays up to $1,000 for the repair or replacement of broken glass, including recalibration of cameras and sensors.",
+          "citations": [
+            "4.2"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "5.1",
+            "6.2",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-006",
+          "packet_id": "PKT-004",
+          "question": "Which rule is blocking this claim?",
+          "expected_clause_ref": null,
+          "answer": "The rule blocking this claim is R1_NAME_MATCH: the name on the ID card 'Thibault Leclerc' does not match the claimant 'Roland Leclerc' with a score of 60, which is below the required 90.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_validation_results",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-007",
+          "packet_id": "PKT-004",
+          "question": "Is the claim covered if the driver's licence had expired?",
+          "expected_clause_ref": "1.2",
+          "answer": "The claim is not covered because the driver's licence had expired, as per clause 1.2 which states 'Cover applies while the vehicle is driven by you or by a named driver listed in the schedule, provided the driver holds a driving licence that is valid on the date of the incident. A driver whose licence has expired, been suspended or been revoked is not covered, and neither is anyone else driving with your permission.'",
+          "citations": [
+            "1.2"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "driver licence"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "driver licence"
+              }
+            }
+          ],
+          "retrieved": [
+            "7.2",
+            "1.2",
+            "6.1",
+            "7.1",
+            "7.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-008",
+          "packet_id": "PKT-009",
+          "question": "Is there an excess for theft?",
+          "expected_clause_ref": "5.1",
+          "answer": "There is a $600 excess for theft claims.",
+          "citations": [
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft excess"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "5.1",
+            "1.1",
+            "4.1",
+            "4.4"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-009",
+          "packet_id": "PKT-009",
+          "question": "How soon must a theft be reported to the police?",
+          "expected_clause_ref": "4.3",
+          "answer": "The theft must be reported to the police within 48 hours of discovery.",
+          "citations": [
+            "4.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft reporting period"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "2.1",
+            "7.3",
+            "7.1",
+            "7.2"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-010",
+          "packet_id": "PKT-012",
+          "question": "Is glass damage covered for this claim?",
+          "expected_clause_ref": "4.2",
+          "answer": "Glass damage is covered up to a limit of $1,500 per claim, and the excess for a glass claim is $100.",
+          "citations": [
+            "4.2"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "6.2",
+            "5.1",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": false,
+          "unsupported_statements": [
+            "There is an excess of $100 for glass claims."
+          ],
+          "passed": false,
+          "citation_hit": true,
+          "failure": "unfaithful"
+        },
+        {
+          "id": "AQ-011",
+          "packet_id": "PKT-012",
+          "question": "Why is this claim not ready for a decision?",
+          "expected_clause_ref": null,
+          "answer": "The claim is not ready for a decision because the invoice date (2025-12-10) is before the incident date (2026-01-05), which blocks the decision according to validation rule R4_INVOICE_AFTER_INCIDENT.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_validation_results",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-012",
+          "packet_id": "PKT-018",
+          "question": "What is the theft limit that applies?",
+          "expected_clause_ref": "4.3",
+          "answer": "The theft limit is up to $20,000 per claim.",
+          "citations": [
+            "4.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "5.1",
+            "6.1",
+            "4.2",
+            "4.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-013",
+          "packet_id": "PKT-018",
+          "question": "Will the policy pay for a hire car while the stolen vehicle is missing?",
+          "expected_clause_ref": "6.4",
+          "answer": "The policy does not cover hiring a car while the vehicle is missing.",
+          "citations": [
+            "6.4"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            }
+          ],
+          "retrieved": [
+            "6.4",
+            "1.2",
+            "6.1",
+            "1.1",
+            "3.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-014",
+          "packet_id": "PKT-024",
+          "question": "What is the collision limit that applies to this claim?",
+          "expected_clause_ref": "4.1",
+          "answer": "The collision limit is $12,000 per claim, less the collision excess of $400.",
+          "citations": [
+            "4.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.1",
+            "5.1",
+            "3.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": false,
+          "unsupported_statements": [
+            "The collision limit is reduced by the collision excess of $400."
+          ],
+          "passed": false,
+          "citation_hit": true,
+          "failure": "unfaithful"
+        },
+        {
+          "id": "AQ-015",
+          "packet_id": "PKT-024",
+          "question": "Which validation rules failed on this claim?",
+          "expected_clause_ref": null,
+          "answer": "The invoice total exceeds the coverage limit.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_validation_results",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-016",
+          "packet_id": "PKT-027",
+          "question": "Which documents does a collision claim need?",
+          "expected_clause_ref": "7.2",
+          "answer": "A collision claim needs three documents, as indicated by the policy.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_claim_summary",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": false,
+          "citation_hit": false,
+          "failure": "no_search"
+        },
+        {
+          "id": "AQ-017",
+          "packet_id": "PKT-027",
+          "question": "Which documents were uploaded with this claim?",
+          "expected_clause_ref": null,
+          "answer": "The claim includes an invoice, an incident report, and a claim form.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "unparsed",
+          "tool_calls": [
+            {
+              "name": "list_claim_documents",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-018",
+          "packet_id": "PKT-031",
+          "question": "Is there an excess for collision claims?",
+          "expected_clause_ref": "5.1",
+          "answer": "There is a collision excess of $300 per claim.",
+          "citations": [
+            "4.1",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.1",
+            "5.1",
+            "3.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-019",
+          "packet_id": "PKT-033",
+          "question": "Does the policy pay for a replacement car while the vehicle is being repaired?",
+          "expected_clause_ref": "4.4",
+          "answer": "The policy pays for a hire car of similar size at up to $40 a day for no more than 14 days while the vehicle is off the road for repairs after a covered collision or after it has been stolen.",
+          "citations": [
+            "4.4"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "replacement car while being repaired"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.4",
+            "4.2",
+            "4.1",
+            "7.1",
+            "4.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-020",
+          "packet_id": "PKT-039",
+          "question": "What is the collision limit that applies?",
+          "expected_clause_ref": "4.1",
+          "answer": "The collision limit is $25,000 per claim, less the collision excess of $500.",
+          "citations": [
+            "4.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.1",
+            "5.1",
+            "3.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-021",
+          "packet_id": "PKT-039",
+          "question": "Is damage to a tyre from a puncture covered?",
+          "expected_clause_ref": "6.2",
+          "answer": "Damage to tyres caused by punctures is not covered as it is excluded under 'Wear, tear and mechanical failure' (clause_ref: 6.2).",
+          "citations": [
+            "6.2"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "tyre puncture"
+              }
+            }
+          ],
+          "retrieved": [
+            "6.2",
+            "4.1",
+            "6.1",
+            "7.1",
+            "4.4"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-022",
+          "packet_id": "PKT-041",
+          "question": "What does the policy say about altered or false invoices?",
+          "expected_clause_ref": "7.3",
+          "answer": "The policy states that if a claim is dishonest or supported by false documents, such as an altered invoice, the whole claim will be refused, and the policy may be canceled from the date of the dishonest act. This is covered under clause 7.3: 'Fraud and false documents'.",
+          "citations": [
+            "7.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "altered or false invoices"
+              }
+            }
+          ],
+          "retrieved": [
+            "7.3",
+            "5.1",
+            "4.3",
+            "2.2",
+            "7.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-023",
+          "packet_id": "PKT-041",
+          "question": "What totals do the invoices on this claim show?",
+          "expected_clause_ref": null,
+          "answer": "The invoices show a total of $4,698.62 and $4,977.98, respectively.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "unparsed",
+          "tool_calls": [
+            {
+              "name": "get_extracted_fields",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-024",
+          "packet_id": "PKT-049",
+          "question": "Is the vehicle covered while it is driven in Mexico?",
+          "expected_clause_ref": "3.1",
+          "answer": "The vehicle is only covered for collision damage while driven in Mexico for up to 30 days, provided local liability insurance is purchased.",
+          "citations": [
+            "3.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "coverage foreign countries"
+              }
+            }
+          ],
+          "retrieved": [
+            "3.1",
+            "2.1",
+            "1.2",
+            "6.1",
+            "2.2"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-025",
+          "packet_id": "PKT-032",
+          "question": "Is collision damage covered for this claim?",
+          "expected_clause_ref": null,
+          "answer": "No collision damage is covered for this claim as there was no policy version in force on the incident date.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [],
+          "faithful": false,
+          "unsupported_statements": [
+            "No policy version was in force on the incident date."
+          ],
+          "passed": false,
+          "citation_hit": null,
+          "failure": "unfaithful"
+        }
+      ]
+    }
+  }
+}

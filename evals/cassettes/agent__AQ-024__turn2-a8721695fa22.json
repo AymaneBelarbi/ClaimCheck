@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-024:turn2",
+  "request_sha256": "6eceec35857abe235ba2eaf8c7c04e8af3186602b46a0fa622870365514d656f",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The vehicle is only covered for collision damage while driven in Mexico for up to 30 days, provided local liability insurance is purchased.\", \"citations\": [\"3.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1562,
+    "output_tokens": 41,
+    "cost_usd": 0.0,
+    "latency_ms": 16546.01833399647
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-041:doc_2.pdf",
+  "request_sha256": "9bc6f027f78f1805a49319a0f3ee8082e6c3ef146ea31bfd44383a5cb88e84f8",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-407069",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-407069"
+    },
+    "incident_date": {
+      "value": "13/04/2024",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 13/04/2024"
+    },
+    "location": {
+      "value": "27157 James Haven, Floresshire",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 27157 James Haven, Floresshire"
+    },
+    "description": {
+      "value": "Vehicle WKL-0523 was struck on the front nearside by a second vehicle emerging from a side road onto\nJames Haven. Minor damage to both vehicles, no injuries. Road was dry.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle WKL-0523 was struck on the front nearside by a second vehicle emerging from a side road onto\nJames Haven. Minor damage to both vehicles, no injuries. Road was dry."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 554,
+    "output_tokens": 279,
+    "cost_usd": 0.0,
+    "latency_ms": 44989.87458299962
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

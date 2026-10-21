@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-005:doc_3.pdf",
+  "request_sha256": "f77913a3f093c9ef1d4ae16ae0ff842e9d978f2847197707bb1455db7ef62f54",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Antonietta Niemeier",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nAntonietta Niemeier"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "2025-10-15",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2025-10-15"
+    },
+    "incident_type": {
+      "value": "glass",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nGLASS"
+    },
+    "vehicle_plate": {
+      "value": "XFC-4837",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nXFC-4837 2017 Mazda 3"
+    },
+    "description": {
+      "value": "Driving on Harris Unions a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nDriving on Harris Unions a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 613,
+    "output_tokens": 343,
+    "cost_usd": 0.0,
+    "latency_ms": 63035.5897920017
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

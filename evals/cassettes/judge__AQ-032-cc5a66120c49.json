@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-032",
+  "request_sha256": "eb8d5213940d17cf7932f4ac37af47871e404a6e7f9e69a1783c161a09fec4e1",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "No policy version was in force on the incident date, so no clause applies.",
+        "about": "policy",
+        "quote": "no policy version was in force on the incident date, so no clause applies",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 367,
+    "output_tokens": 70,
+    "cost_usd": 0.0,
+    "latency_ms": 12366.725332998612
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

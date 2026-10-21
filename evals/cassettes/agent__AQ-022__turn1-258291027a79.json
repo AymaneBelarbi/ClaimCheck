@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-022:turn1",
+  "request_sha256": "0d2ade5a2ba8b37e416ba4f788c212e4c56d1026d3b88d5784078c32b2ee01e1",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_1s1li74s",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "altered or false invoices"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1043,
+    "output_tokens": 26,
+    "cost_usd": 0.0,
+    "latency_ms": 4761.331957997754
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-024:doc_1.png",
+  "request_sha256": "63684ced9299b7091c12baeab64fd19e537f65f42f4d24034fc8e8e28f23f248",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Bruno Antunes",
+      "confidence": 1.0,
+      "source_text": "Bruno Antunes"
+    },
+    "id_number": {
+      "value": "DO03946553",
+      "confidence": 1.0,
+      "source_text": "DO03946553"
+    },
+    "date_of_birth": {
+      "value": "18/10/1999",
+      "confidence": 1.0,
+      "source_text": "Born\n18/10/1999"
+    },
+    "expiry_date": {
+      "value": "2 February 2029",
+      "confidence": 1.0,
+      "source_text": "Valid until\n2 February 2029"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 166,
+    "cost_usd": 0.0,
+    "latency_ms": 25664.317417000348
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-004:doc_1.pdf",
+  "request_sha256": "994aea3d267d0c4c76b781349d84f327f1260b0d13a94c6b12a526eeee5be5ad",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-592488",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-592488"
+    },
+    "incident_date": {
+      "value": "8 August 2024",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 8 August 2024"
+    },
+    "location": {
+      "value": "3235 Traci Trafficway, Davidbury",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 3235 Traci Trafficway, Davidbury"
+    },
+    "description": {
+      "value": "Vehicle GTR-4125 struck a deer on Traci Trafficway at approximately 21:30. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle GTR-4125 struck a deer on Traci Trafficway at approximately 21:30. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 550,
+    "output_tokens": 283,
+    "cost_usd": 0.0,
+    "latency_ms": 26560.079249999944
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

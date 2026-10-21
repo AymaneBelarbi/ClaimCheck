@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-029:doc_1.png",
+  "request_sha256": "6eeff496ccbd2855b8d8d9f3487a1348257f6b15e63337ac6d6ec2fb1086d7a6",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "LOURENCO LUISA",
+      "confidence": 1.0,
+      "source_text": "LOURENCO LUISA"
+    },
+    "id_number": {
+      "value": "D42631672",
+      "confidence": 1.0,
+      "source_text": "Licence no. D42631672"
+    },
+    "date_of_birth": {
+      "value": "December 2, 1955",
+      "confidence": 1.0,
+      "source_text": "Born December 2, 1955"
+    },
+    "expiry_date": {
+      "value": "July 3, 2028",
+      "confidence": 1.0,
+      "source_text": "Valid until July 3, 2028"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 199,
+    "cost_usd": 0.0,
+    "latency_ms": 37464.88991700062
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

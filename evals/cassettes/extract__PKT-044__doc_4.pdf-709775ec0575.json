@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-044:doc_4.pdf",
+  "request_sha256": "e590a35f0104e55f5493925b0a847ceaa5870995e1a756d55ed16ef6a3f5b6dc",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Rodney Warren",
+      "confidence": 1.0,
+      "source_text": "Claimant name Rodney Warren"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "20/08/2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 20/08/2026"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident Collision"
+    },
+    "vehicle_plate": {
+      "value": "EBX-4778",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration EBX-4778"
+    },
+    "description": {
+      "value": "was stopped at the lights on Castro Mountain when the car behind did not brake in time and hit my rear bumper.",
+      "confidence": 1.0,
+      "source_text": "What happened was stopped at the lights on Castro Mountain when the car behind did not brake in time and hit my rear bumper."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 575,
+    "output_tokens": 300,
+    "cost_usd": 0.0,
+    "latency_ms": 49575.694458000726
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

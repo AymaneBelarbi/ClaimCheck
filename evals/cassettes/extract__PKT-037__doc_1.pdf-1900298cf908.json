@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-037:doc_1.pdf",
+  "request_sha256": "9100324308c7b4e3873c9d28f98ab71a33d4c7dd68e86f392b7563bc50ac7515",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Sergius Tacchini",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT Sergius Tacchini"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO. AUT-311590"
+    },
+    "incident_date": {
+      "value": "2026-06-24",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS 2026-06-24"
+    },
+    "incident_type": {
+      "value": "THEFT",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE THEFT"
+    },
+    "vehicle_plate": {
+      "value": "NAC-7678",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) NAC-7678"
+    },
+    "description": {
+      "value": "The car was taken from outside my home on Sandra Vista overnight. | reported it to the police as soon as | noticed.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT The car was taken from outside my home on Sandra Vista overnight. | reported it to the police as soon as | noticed."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 609,
+    "output_tokens": 323,
+    "cost_usd": 0.0,
+    "latency_ms": 51043.34087499956
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

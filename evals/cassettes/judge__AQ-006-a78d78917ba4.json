@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-006",
+  "request_sha256": "22ae061214d0e47c1609c361ca7c804a307b6fc285db87ce85771d99f09072d2",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The claim is blocked by R1_NAME_MATCH.",
+        "about": "claim",
+        "quote": "The claim is blocked by R1_NAME_MATCH: the name on the ID card 'Thibault Leclerc' does not match the claimant 'Roland Leclerc' (score 60 < 90).",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 373,
+    "output_tokens": 96,
+    "cost_usd": 0.0,
+    "latency_ms": 15590.787083005125
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

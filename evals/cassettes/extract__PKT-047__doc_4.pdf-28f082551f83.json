@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-047:doc_4.pdf",
+  "request_sha256": "707a2fe43a15a8f237450ef651d0546aeb2f4418294a15850b30199209cf4273",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Martinmouth Collision Centre",
+      "confidence": 1.0,
+      "source_text": "Martinmouth Collision Centre"
+    },
+    "invoice_date": {
+      "value": "February 20, 2025",
+      "confidence": 1.0,
+      "source_text": "Date: February 20, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$1,418.45"
+        },
+        {
+          "description": "Radiator support",
+          "amount": "$1,715.29"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$1,895.45"
+        },
+        {
+          "description": "Wing panel, replace",
+          "amount": "$1,248.99"
+        },
+        {
+          "description": "Labour (7.5 hours)",
+          "amount": "$1,775.55"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Bonnet, repair and refinish\n$1,418.45"
+    },
+    "total": {
+      "value": "$8,053.73",
+      "confidence": 1.0,
+      "source_text": "Total due $8,053.73"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 609,
+    "output_tokens": 334,
+    "cost_usd": 0.0,
+    "latency_ms": 55777.81829199921
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

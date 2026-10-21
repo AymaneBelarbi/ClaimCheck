@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-007:doc_1.png",
+  "request_sha256": "eb7ba7a5ffcf260600748dcfa4486e3cb2b92c2c6a311bcb4535a1702b5ddab2",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Concetta Hofmann",
+      "confidence": 1.0,
+      "source_text": "Concetta Hofmann"
+    },
+    "id_number": {
+      "value": "D08139192",
+      "confidence": 1.0,
+      "source_text": "Licence no. D08139192"
+    },
+    "date_of_birth": {
+      "value": "28 December 1987",
+      "confidence": 1.0,
+      "source_text": "Born 28 December 1987"
+    },
+    "expiry_date": {
+      "value": "16 June 2029",
+      "confidence": 1.0,
+      "source_text": "Valid until 16 June 2029"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 489,
+    "output_tokens": 193,
+    "cost_usd": 0.0,
+    "latency_ms": 36984.47979100092
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

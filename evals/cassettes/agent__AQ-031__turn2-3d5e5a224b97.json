@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-031:turn2",
+  "request_sha256": "da3661d75b5fb6267720d3438ccbea797fd11f72988e89642355ebbec777f628",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policy pays up to $1,200 for replacing the windscreen, less the glass excess of $75.\", \"citations\": [\"4.2\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1594,
+    "output_tokens": 45,
+    "cost_usd": 0.0,
+    "latency_ms": 16550.910124999064
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

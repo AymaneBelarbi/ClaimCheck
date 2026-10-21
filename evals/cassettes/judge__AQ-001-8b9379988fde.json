@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-001",
+  "request_sha256": "3a1e6c300475bcab6f66bb63cd9c133d97b5f81a8d361198c03a347384360105",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The collision limit is $15,000 per claim.",
+        "about": "policy",
+        "quote": "We pay the cost of repair or, if the vehicle is a total loss, its market value, up to a limit of $15,000 per claim,",
+        "supported": true
+      },
+      {
+        "statement": "The collision excess is $500.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: collision claims $500;",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 472,
+    "output_tokens": 140,
+    "cost_usd": 0.0,
+    "latency_ms": 19987.002875001053
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

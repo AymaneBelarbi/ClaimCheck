@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-046:doc_2.pdf",
+  "request_sha256": "10eb6df82010f741386588e483ea99bd30d10b18034eecb3517d9a1c6eee6bb5",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "KELLEY AUTO BODY",
+      "confidence": 1.0,
+      "source_text": "KELLEY AUTO BODY"
+    },
+    "invoice_date": {
+      "value": "30 June 2024",
+      "confidence": 1.0,
+      "source_text": "Issued: 30 June 2024"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "1,638.19"
+        },
+        {
+          "description": "Parking sensor, replace",
+          "amount": "1,538.73"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "1,208.08"
+        },
+        {
+          "description": "Labour (9.0 hours)",
+          "amount": "2,681.12"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Rear bumper cover, replace\n1,638.19"
+    },
+    "total": {
+      "value": "7,066.12",
+      "confidence": 1.0,
+      "source_text": "Amount due\n7,066.12"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 589,
+    "output_tokens": 301,
+    "cost_usd": 0.0,
+    "latency_ms": 65920.0712080019
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

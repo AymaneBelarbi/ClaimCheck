@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-048:doc_3.png",
+  "request_sha256": "f28b76cca235fcdb4ed7ab16574af0ce97f89d74e9161b5d1e91d4dc9366962e",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Roger Deleon",
+      "confidence": 1.0,
+      "source_text": "NAME\nRoger Deleon"
+    },
+    "id_number": {
+      "value": "D26668923",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD26668923"
+    },
+    "date_of_birth": {
+      "value": "25/12/1956",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n25/12/1956"
+    },
+    "expiry_date": {
+      "value": "29/06/2032",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n29/06/2032"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 497,
+    "output_tokens": 180,
+    "cost_usd": 0.0,
+    "latency_ms": 32379.15533299929
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

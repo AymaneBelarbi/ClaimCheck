@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-022:doc_4.pdf",
+  "request_sha256": "668554385a0d3cf39d99ebc4a7e9466cc821e64148b84ec0fc426e33b693bb7a",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Gabriella Squarcione",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nGabriella Squarcione"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO. INCIDENT TYPE\nAUT-311590 COLLISION"
+    },
+    "incident_date": {
+      "value": "2025-07-28",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2025-07-28"
+    },
+    "incident_type": {
+      "value": "collision",
+      "confidence": 1.0,
+      "source_text": "COLLISION"
+    },
+    "vehicle_plate": {
+      "value": "BNN-1686",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nBNN-1686 2020 Volkswagen Golf"
+    },
+    "description": {
+      "value": "A deer ran across Michelle Station after dark and | could not avoid it. The front of the car is damaged.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nA deer ran across Michelle Station after dark and | could not avoid it. The front of the car is damaged."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 604,
+    "output_tokens": 301,
+    "cost_usd": 0.0,
+    "latency_ms": 59752.16787500176
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

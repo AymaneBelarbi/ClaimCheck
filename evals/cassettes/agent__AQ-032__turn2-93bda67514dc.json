@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-032:turn2",
+  "request_sha256": "8661ed36cb1fe22a2f984ecafce817e36200548fde1923badc37b909b176d8fa",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No policy version was in force on the incident date, so no clause applies.\", \"citations\": []}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1134,
+    "output_tokens": 27,
+    "cost_usd": 0.0,
+    "latency_ms": 5483.268999996653
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

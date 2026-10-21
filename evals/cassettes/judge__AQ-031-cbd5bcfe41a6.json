@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-031",
+  "request_sha256": "9a69128af88e49e06cde3817f5ed326f968e8d814fcef6ef8ed5b6aaf8aeb5cc",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy pays up to $1,200 for replacing the windscreen.",
+        "about": "policy",
+        "quote": "We cover repair or replacement of the windscreen, side windows, rear window and sunroof of the vehicle, including recalibration of cameras and sensors mounted on the windscreen, up to a limit of $1,200 per claim.",
+        "supported": true
+      },
+      {
+        "statement": "The policy has a glass excess of $75.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: collision claims $400; glass claims $75; theft claims $600. We deduct the excess from the amount we pay.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 485,
+    "output_tokens": 181,
+    "cost_usd": 0.0,
+    "latency_ms": 29508.050707998336
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

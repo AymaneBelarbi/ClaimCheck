@@ -1,0 +1,36 @@
+{
+  "key": "judge:AQ-022",
+  "request_sha256": "f7408481e1c41e61b1d69315897ea551a3e6923506007c06209d799fac9bc7f6",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy will refuse the whole claim if it is dishonest or supported by false documents.",
+        "about": "policy",
+        "quote": "If a claim is dishonest or supported by false documents, such as an altered invoice or a licence in another person's name, we will refuse the whole claim,",
+        "supported": true
+      },
+      {
+        "statement": "The policy may cancel the policy from the date of the dishonest act.",
+        "about": "policy",
+        "quote": "may cancel the policy from the date of the dishonest act",
+        "supported": true
+      },
+      {
+        "statement": "The matter may be reported to the police.",
+        "about": "policy",
+        "quote": "and may report the matter to the police.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 412,
+    "output_tokens": 186,
+    "cost_usd": 0.0,
+    "latency_ms": 30870.28633400041
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

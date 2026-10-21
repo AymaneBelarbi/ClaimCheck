@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-032:doc_1.png",
+  "request_sha256": "0e0b02c1318f9e15a250b1ae54c045f9efd297c92623932798e8fb6ce8578856",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Freia Kobelt",
+      "confidence": 1.0,
+      "source_text": "Freia Kobelt"
+    },
+    "id_number": {
+      "value": "D51518521",
+      "confidence": 1.0,
+      "source_text": "Licence no. D51518521"
+    },
+    "date_of_birth": {
+      "value": "12 February 1988",
+      "confidence": 1.0,
+      "source_text": "Born February 12, 1988"
+    },
+    "expiry_date": {
+      "value": "June 3, 2025",
+      "confidence": 1.0,
+      "source_text": "Valid until June 3, 2025"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 494,
+    "output_tokens": 193,
+    "cost_usd": 0.0,
+    "latency_ms": 27730.677249999644
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

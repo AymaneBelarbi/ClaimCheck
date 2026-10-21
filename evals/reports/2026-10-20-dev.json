@@ -1,0 +1,62 @@
+{
+  "split": "dev",
+  "stages": [
+    "classification"
+  ],
+  "generated_at": "2026-10-20T18:58:40.316859+00:00",
+  "llm_backend": "replay",
+  "llm_model": "qwen2.5:7b-instruct",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "replay_drift_count": 0,
+  "metrics": {
+    "classification.accuracy": 1.0,
+    "classification.llm_fallback_rate": 0.03305785123966942,
+    "classification.unreadable_flagged_rate": 1.0
+  },
+  "details": {
+    "classification": {
+      "split": "dev",
+      "documents": {
+        "readable": 118,
+        "unreadable": 3
+      },
+      "per_doc_type": {
+        "claim_form": {
+          "correct": 34,
+          "total": 34,
+          "accuracy": 1.0
+        },
+        "id_card": {
+          "correct": 33,
+          "total": 33,
+          "accuracy": 1.0
+        },
+        "invoice": {
+          "correct": 28,
+          "total": 28,
+          "accuracy": 1.0
+        },
+        "incident_report": {
+          "correct": 23,
+          "total": 23,
+          "accuracy": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "claim_form": {
+          "claim_form": 34
+        },
+        "id_card": {
+          "id_card": 33
+        },
+        "invoice": {
+          "invoice": 28
+        },
+        "incident_report": {
+          "incident_report": 23
+        }
+      },
+      "misclassified": []
+    }
+  }
+}

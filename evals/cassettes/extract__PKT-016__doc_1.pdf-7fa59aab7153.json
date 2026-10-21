@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-016:doc_1.pdf",
+  "request_sha256": "4bf92f58e40a6ae1ba60912fa0005edc82fa496f06c490de95a6688271cfaf34",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-602562",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-602562"
+    },
+    "incident_date": {
+      "value": "October 4, 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident October 4, 2025"
+    },
+    "location": {
+      "value": "455 Shannon Trace, Millsland",
+      "confidence": 1.0,
+      "source_text": "Location 455 Shannon Trace, Millsland"
+    },
+    "description": {
+      "value": "Vehicle MNJ-3776 taken from a pay-and-display car park off Shannon Trace during the working day. Owner holds both keys. CCTV request made to the car park operator.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle MNJ-3776 taken from a pay-and-display car park off Shannon Trace during the working day. Owner holds both keys. CCTV request made to the car park operator."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 544,
+    "output_tokens": 257,
+    "cost_usd": 0.0,
+    "latency_ms": 28550.05379100021
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

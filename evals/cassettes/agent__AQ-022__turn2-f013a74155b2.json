@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-022:turn2",
+  "request_sha256": "61533bbd925bd2f109f02ef5253e91139a851f5135594bd0d3e3da8b71f8d6ff",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policy states that if a claim is dishonest or supported by false documents, such as an altered invoice, the whole claim will be refused, the policy may be canceled, and the matter may be reported to the police.\", \"citations\": [\"7.3\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1550,
+    "output_tokens": 58,
+    "cost_usd": 0.0,
+    "latency_ms": 19064.74100000196
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

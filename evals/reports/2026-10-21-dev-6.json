@@ -1,0 +1,164 @@
+{
+  "split": "dev",
+  "stages": [
+    "retrieval"
+  ],
+  "generated_at": "2026-10-21T02:52:56.202385+00:00",
+  "llm_backend": "ollama",
+  "llm_model": null,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "metrics": {
+    "retrieval.recall_at_5": 1.0,
+    "retrieval.mrr": 1.0,
+    "retrieval.wrong_version_hits": 0.0
+  },
+  "details": {
+    "retrieval": {
+      "split": "dev",
+      "questions": 35,
+      "per_question": [
+        {
+          "id": "CQ-003",
+          "rank": 1
+        },
+        {
+          "id": "CQ-004",
+          "rank": 1
+        },
+        {
+          "id": "CQ-005",
+          "rank": 1
+        },
+        {
+          "id": "CQ-006",
+          "rank": 1
+        },
+        {
+          "id": "CQ-007",
+          "rank": 1
+        },
+        {
+          "id": "CQ-008",
+          "rank": 1
+        },
+        {
+          "id": "CQ-011",
+          "rank": 1
+        },
+        {
+          "id": "CQ-012",
+          "rank": 1
+        },
+        {
+          "id": "CQ-013",
+          "rank": 1
+        },
+        {
+          "id": "CQ-014",
+          "rank": 1
+        },
+        {
+          "id": "CQ-017",
+          "rank": 1
+        },
+        {
+          "id": "CQ-019",
+          "rank": 1
+        },
+        {
+          "id": "CQ-021",
+          "rank": 1
+        },
+        {
+          "id": "CQ-023",
+          "rank": 1
+        },
+        {
+          "id": "CQ-025",
+          "rank": 1
+        },
+        {
+          "id": "CQ-027",
+          "rank": 1
+        },
+        {
+          "id": "CQ-028",
+          "rank": 1
+        },
+        {
+          "id": "CQ-029",
+          "rank": 1
+        },
+        {
+          "id": "CQ-030",
+          "rank": 1
+        },
+        {
+          "id": "CQ-031",
+          "rank": 1
+        },
+        {
+          "id": "CQ-032",
+          "rank": 1
+        },
+        {
+          "id": "CQ-033",
+          "rank": 1
+        },
+        {
+          "id": "CQ-034",
+          "rank": 1
+        },
+        {
+          "id": "CQ-036",
+          "rank": 1
+        },
+        {
+          "id": "CQ-037",
+          "rank": 1
+        },
+        {
+          "id": "CQ-038",
+          "rank": 1
+        },
+        {
+          "id": "CQ-040",
+          "rank": 1
+        },
+        {
+          "id": "CQ-041",
+          "rank": 1
+        },
+        {
+          "id": "CQ-042",
+          "rank": 1
+        },
+        {
+          "id": "CQ-043",
+          "rank": 1
+        },
+        {
+          "id": "CQ-045",
+          "rank": 1
+        },
+        {
+          "id": "CQ-046",
+          "rank": 1
+        },
+        {
+          "id": "CQ-047",
+          "rank": 1
+        },
+        {
+          "id": "CQ-048",
+          "rank": 1
+        },
+        {
+          "id": "CQ-049",
+          "rank": 1
+        }
+      ],
+      "misses": []
+    }
+  }
+}

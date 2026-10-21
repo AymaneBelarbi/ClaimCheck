@@ -1,0 +1,18 @@
+{
+  "key": "classify:PKT-014:doc_2.png",
+  "request_sha256": "7f384ec59122e5d60be1f19559811fe4419d343c7911ac199542e817bc927975",
+  "kind": "structured",
+  "response": {
+    "doc_type": "id_card",
+    "confidence": 1.0
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 200,
+    "output_tokens": 19,
+    "cost_usd": 0.0,
+    "latency_ms": 3657.3432500008494
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

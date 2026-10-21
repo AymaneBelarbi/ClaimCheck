@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-021:turn2",
+  "request_sha256": "a9743cd8ab9854ad14d411f484a3ec4f31042fa218d89cb7e6e484afa33ad23e",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_uv41pdip",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "tyre puncture"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1557,
+    "output_tokens": 24,
+    "cost_usd": 0.0,
+    "latency_ms": 12843.032249998942
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-018:turn2",
+  "request_sha256": "2d0782e37baccff82e9d5a0de217336cc8ad30f04774024ba48536ca0c42265b",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"Yes. The collision excess is $300, as stated in clause 5.1.\", \"citations\": [\"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1628,
+    "output_tokens": 34,
+    "cost_usd": 0.0,
+    "latency_ms": 16375.707375002094
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-032:doc_3.pdf",
+  "request_sha256": "4f05ef697d66edcba2c26a089bf2a4c717f1a09d235f5133dd00d488556a8297",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-045841",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2024-045841"
+    },
+    "incident_date": {
+      "value": "March 14, 2024",
+      "confidence": 1.0,
+      "source_text": "Date of incident March 14, 2024"
+    },
+    "location": {
+      "value": "29496 Paul Groves, Samanthaland",
+      "confidence": 1.0,
+      "source_text": "Location 29496 Paul Groves, Samanthaland"
+    },
+    "description": {
+      "value": "Two-vehicle collision on Paul Groves. Vehicle JRJ-6533 was struck from behind while stationary at a red signal. No injuries reported. Both drivers exchanged details.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nTwo-vehicle collision on Paul Groves. Vehicle JRJ-6533 was struck from behind while stationary at a red\nsignal. No injuries reported. Both drivers exchanged details."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 550,
+    "output_tokens": 266,
+    "cost_usd": 0.0,
+    "latency_ms": 40465.56570800021
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

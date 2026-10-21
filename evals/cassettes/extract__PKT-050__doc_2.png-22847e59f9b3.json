@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-050:doc_2.png",
+  "request_sha256": "81c27500f42791690495806d3662fb40cf2f03e72379ad6d13920dadc7dcde21",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "GERONIMO GOZZANO",
+      "confidence": 1.0,
+      "source_text": "GERONIMO GOZZANO"
+    },
+    "id_number": {
+      "value": "D60440904",
+      "confidence": 1.0,
+      "source_text": "Licence no. D60440904"
+    },
+    "date_of_birth": {
+      "value": "9 February 1971",
+      "confidence": 1.0,
+      "source_text": "Born 9 February 1971"
+    },
+    "expiry_date": {
+      "value": "19/02/2027",
+      "confidence": 1.0,
+      "source_text": "Valid until 19/02/2027"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 496,
+    "output_tokens": 197,
+    "cost_usd": 0.0,
+    "latency_ms": 32738.579166998534
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

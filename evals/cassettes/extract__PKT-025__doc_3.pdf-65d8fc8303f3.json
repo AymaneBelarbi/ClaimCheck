@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-025:doc_3.pdf",
+  "request_sha256": "473f1a9881897c8b56400613f13ca081fc57b053f3c77e71bfd9e4797b6373c5",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-011824",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-011824"
+    },
+    "incident_date": {
+      "value": "2025-07-31",
+      "confidence": 1.0,
+      "source_text": "Date of incident 2025-07-31"
+    },
+    "location": {
+      "value": "5630 Rogers Coves, North Rachael",
+      "confidence": 1.0,
+      "source_text": "Location 5630 Rogers Coves, North Rachael"
+    },
+    "description": {
+      "value": "Vehicle PTP-0868 struck a deer on Rogers Coves at approximately 22:30. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle PTP-0868 struck a deer on Rogers Coves at approximately 22:30. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 559,
+    "output_tokens": 274,
+    "cost_usd": 0.0,
+    "latency_ms": 58980.02662500039
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

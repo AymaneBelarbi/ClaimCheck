@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-002:doc_3.pdf",
+  "request_sha256": "90ec885e5080af2290b195a41b5801d7ad9beee635491ed3e6f5377df3ba0644",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Bell Windscreen Services",
+      "confidence": 1.0,
+      "source_text": "Bell Windscreen Services"
+    },
+    "invoice_date": {
+      "value": "8 November 2025",
+      "confidence": 1.0,
+      "source_text": "Date: 8 November 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Rain sensor gel pad",
+          "amount": "$353.25"
+        },
+        {
+          "description": "ADAS camera recalibration",
+          "amount": "$350.07"
+        },
+        {
+          "description": "Labour (1.5 hours)",
+          "amount": "$296.68"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Rain sensor gel pad\n$353.25"
+    },
+    "total": {
+      "value": "$1,000.00",
+      "confidence": 1.0,
+      "source_text": "Total due $1,000.00"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 572,
+    "output_tokens": 259,
+    "cost_usd": 0.0,
+    "latency_ms": 24854.125249999925
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

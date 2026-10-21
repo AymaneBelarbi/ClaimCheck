@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-034:doc_2.pdf",
+  "request_sha256": "8d4b94baaca71ce9b129920f588d1abab11841ef1729a95bb06dc48e0e81f135",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "CLEARVIEW GLASS",
+      "confidence": 1.0,
+      "source_text": "CLEARVIEW GLASS"
+    },
+    "invoice_date": {
+      "value": "21 September 2025",
+      "confidence": 1.0,
+      "source_text": "Issued: 21 September 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Windscreen moulding kit",
+          "amount": "$126.92"
+        },
+        {
+          "description": "Side window glass",
+          "amount": "$79.99"
+        },
+        {
+          "description": "ADAS camera recalibration",
+          "amount": "$166.30"
+        },
+        {
+          "description": "Labour (1.0 hours)",
+          "amount": "$83.31"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Windscreen moulding kit\n2 Side window glass\n3 ADAS camera recalibration\n4 Labour (1.0 hours)"
+    },
+    "total": {
+      "value": "$456.52",
+      "confidence": 1.0,
+      "source_text": "$456.52"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 575,
+    "output_tokens": 256,
+    "cost_usd": 0.0,
+    "latency_ms": 41426.84329200165
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

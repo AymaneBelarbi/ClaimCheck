@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-001:doc_3.pdf",
+  "request_sha256": "3f430e5a0f16b5c6d3f423545f5f63d6de38b468e33889ec7180280ce3b81554",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "GARRETT & SONS PANELWORKS",
+      "confidence": 1.0,
+      "source_text": "GARRETT & SONS PANELWORKS\n456 Steven Roads, New Johnhaven | (555) 332-5851"
+    },
+    "invoice_date": {
+      "value": "22 February 2024",
+      "confidence": 1.0,
+      "source_text": "Issued: 22 February 2024"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Wheel alignment",
+          "amount": "$1,693.45"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$2,110.70"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "$2,317.75"
+        },
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$1,305.82"
+        },
+        {
+          "description": "Labour (12.0 hours)",
+          "amount": "$1,136.65"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Wheel alignment\nRear bumper cover, replace\nHeadlamp assembly\nBonnet, repair and refinish\nLabour (12.0 hours)"
+    },
+    "total": {
+      "value": "$8,564.37",
+      "confidence": 1.0,
+      "source_text": "Line total\n$8,564.37"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 612,
+    "output_tokens": 338,
+    "cost_usd": 0.0,
+    "latency_ms": 29523.69579199967
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

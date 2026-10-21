@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-026:doc_1.pdf",
+  "request_sha256": "55d4b04b548720981a70f90e242684045bd36dd51d45314f5e4b4058d0717239",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Fabio Neto",
+      "confidence": 1.0,
+      "source_text": "Claimant name\nFabio Neto"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "Policy number\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "2025-09-26",
+      "confidence": 1.0,
+      "source_text": "Date of incident\n2025-09-26"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident\nCollision"
+    },
+    "vehicle_plate": {
+      "value": "YWA-5901",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration\nYWA-5901"
+    },
+    "description": {
+      "value": "A deer ran across Daniel Knoll after dark and | could not avoid it. The front of the car is damaged.",
+      "confidence": 1.0,
+      "source_text": "What happened\nA deer ran across Daniel Knoll after dark and | could not avoid it. The front of the car is damaged."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 586,
+    "output_tokens": 298,
+    "cost_usd": 0.0,
+    "latency_ms": 62611.95729099927
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

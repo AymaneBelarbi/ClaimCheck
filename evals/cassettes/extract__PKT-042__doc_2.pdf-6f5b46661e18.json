@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-042:doc_2.pdf",
+  "request_sha256": "f2b3dcdb51b8747d9966aec24379fe35170736d5e5c776ba5c4b9dfb9d166509",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Alondra Martinez",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nAlondra Martinez"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "7 December 2024",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n7 December 2024"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "RJX-6967",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nRJX-6967"
+    },
+    "description": {
+      "value": "Another driver pulled out of a side road onto Burton Neck and hit the front left of my car. Nobody was hurt.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nAnother driver pulled out of a side road onto Burton Neck and hit the front left of my car. Nobody was hurt."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 601,
+    "output_tokens": 321,
+    "cost_usd": 0.0,
+    "latency_ms": 47049.14408299919
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

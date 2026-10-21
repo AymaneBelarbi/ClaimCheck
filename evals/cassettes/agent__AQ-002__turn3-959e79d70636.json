@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-002:turn3",
+  "request_sha256": "a1332637f7203f5694dfcd19322c37f4e769bfc87c57eb9f9118311fe6b3f745",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The policy does not cover damage to the windscreen, windows or sunroof on its own. Damage to these parts must be part of a collision claim.\", \"citations\": [\"6.3\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1682,
+    "output_tokens": 47,
+    "cost_usd": 0.0,
+    "latency_ms": 7011.7281659986475
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

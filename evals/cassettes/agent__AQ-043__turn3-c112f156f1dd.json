@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-043:turn3",
+  "request_sha256": "c14b6f5dc2ca4f42f83a076083448f49c7a8a0b7ea679e722ab6b12c07e55163",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The theft is not covered as it was reported more than 48 hours after discovery, which exceeds the policy limit.\", \"citations\": [\"4.3\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1656,
+    "output_tokens": 40,
+    "cost_usd": 0.0,
+    "latency_ms": 6713.803708997148
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

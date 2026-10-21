@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-045:doc_4.pdf",
+  "request_sha256": "30c7942b99bf48631d82058f18144dc42c98acfd220d46fd1bdb291980b6ffa9",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-936083",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2026-936083"
+    },
+    "incident_date": {
+      "value": "2026-03-01",
+      "confidence": 1.0,
+      "source_text": "Date of incident 2026-03-01"
+    },
+    "location": {
+      "value": "0598 Griffith Fort, West Madison",
+      "confidence": 1.0,
+      "source_text": "Location 0598 Griffith Fort, West Madison"
+    },
+    "description": {
+      "value": "Vehicle XBC-5276 struck a deer on Griffith Fort at approximately 22:00. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle XBC-5276 struck a deer on Griffith Fort at approximately 22:00. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 554,
+    "output_tokens": 276,
+    "cost_usd": 0.0,
+    "latency_ms": 44567.75050000033
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

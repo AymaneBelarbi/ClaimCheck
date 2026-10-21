@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-037:doc_3.png",
+  "request_sha256": "557f4da0d52d300bf0f130074e3d04e99bc5599494f2a7dc2f6209fe75443871",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "TACCHINI SERGIUS",
+      "confidence": 1.0,
+      "source_text": "TACCHINI SERGIUS"
+    },
+    "id_number": {
+      "value": "D76306107",
+      "confidence": 1.0,
+      "source_text": "Licence no. D76306107"
+    },
+    "date_of_birth": {
+      "value": "1965-03-14",
+      "confidence": 1.0,
+      "source_text": "Born 1965-03-14"
+    },
+    "expiry_date": {
+      "value": "2032-12-07",
+      "confidence": 1.0,
+      "source_text": "Valid until 2032-12-07"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 499,
+    "output_tokens": 182,
+    "cost_usd": 0.0,
+    "latency_ms": 26240.7548329993
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

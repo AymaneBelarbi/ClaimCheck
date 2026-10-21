@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-018",
+  "request_sha256": "e2630a3d20ff0e38c362877f4c2a44c39ace99b6f247fe095865a417b450f939",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "There is an excess for collision claims.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: collision claims $300; glass claims $50; theft claims $450.",
+        "supported": true
+      },
+      {
+        "statement": "The collision excess is $300.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: collision claims $300; glass claims $50; theft claims $450.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 388,
+    "output_tokens": 140,
+    "cost_usd": 0.0,
+    "latency_ms": 22806.412375000946
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

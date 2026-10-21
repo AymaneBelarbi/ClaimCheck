@@ -1,0 +1,45 @@
+{
+  "key": "extract:PKT-021:doc_1.pdf",
+  "request_sha256": "845f4a12b62b0e30bdbc4507fc5f836b15cc2bdb39c829604b4f2a3cf21e5603",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "ClearView Glass",
+      "confidence": 1.0,
+      "source_text": "ClearView Glass INVOICE"
+    },
+    "invoice_date": {
+      "value": "3 July 2025",
+      "confidence": 1.0,
+      "source_text": "Date: 3 July 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Windscreen, OEM equivalent",
+          "amount": "$378.89"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$385.73"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Windscreen, OEM equivalent $378.89"
+    },
+    "total": {
+      "value": "$764.62",
+      "confidence": 1.0,
+      "source_text": "Total due $764.62"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 548,
+    "output_tokens": 229,
+    "cost_usd": 0.0,
+    "latency_ms": 26819.898458999887
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-035:doc_1.pdf",
+  "request_sha256": "ee785d148f5e579ff729e7b7b5f1cc0eb745694ca2ed354afa168e755bb65d38",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "ClearView Glass",
+      "confidence": 1.0,
+      "source_text": "ClearView Glass"
+    },
+    "invoice_date": {
+      "value": "2026-07-10",
+      "confidence": 1.0,
+      "source_text": "Date: 2026-07-10"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "ADAS camera recalibration",
+          "amount": "$122.72"
+        },
+        {
+          "description": "Rain sensor gel pad",
+          "amount": "$105.39"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$111.20"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Description\nADAS camera recalibration\nRain sensor gel pad\nLabour (2.0 hours)"
+    },
+    "total": {
+      "value": "$339.31",
+      "confidence": 1.0,
+      "source_text": "Total due $339.31"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 569,
+    "output_tokens": 266,
+    "cost_usd": 0.0,
+    "latency_ms": 48985.90716599938
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

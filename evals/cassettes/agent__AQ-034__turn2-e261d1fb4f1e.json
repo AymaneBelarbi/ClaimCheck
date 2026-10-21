@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-034:turn2",
+  "request_sha256": "b82079698ae0d8bf7dfa7442772f08708adfca34fd8362c36d129e1fc1b46c47",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"A glass claim needs the invoice or estimate for the repair or replacement of the windscreen, side windows, rear window, or sunroof, up to a limit of $1,500 per claim, less the $100 glass excess.\", \"citations\": [\"4.2\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1584,
+    "output_tokens": 70,
+    "cost_usd": 0.0,
+    "latency_ms": 19621.560167004645
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-042:doc_1.pdf",
+  "request_sha256": "0101084ead77ee7eaa30d88c37f2038308c954953cfca38b6212132c10bf3937",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "REED & SONS PANELWORKS",
+      "confidence": 1.0,
+      "source_text": "REED & SONS PANELWORKS"
+    },
+    "invoice_date": {
+      "value": "December 29, 2024",
+      "confidence": 1.0,
+      "source_text": "Issued: December 29, 2024"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$1,370.96"
+        },
+        {
+          "description": "Parking sensor, replace",
+          "amount": "$2,460.58"
+        },
+        {
+          "description": "Wing panel, replace",
+          "amount": "$2,088.15"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$1,133.22"
+        },
+        {
+          "description": "Labour (6.0 hours)",
+          "amount": "$1,463.91"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Bonnet, repair and refinish\nParking sensor, replace\nWing panel, replace\nRear bumper cover, replace\nLabour (6.0 hours)"
+    },
+    "total": {
+      "value": "$8,516.82",
+      "confidence": 1.0,
+      "source_text": "Line total\n$8,516.82"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 614,
+    "output_tokens": 361,
+    "cost_usd": 0.0,
+    "latency_ms": 54797.500332999334
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

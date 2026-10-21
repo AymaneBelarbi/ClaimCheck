@@ -1,0 +1,1229 @@
+{
+  "split": "redaction",
+  "stages": [
+    "redaction"
+  ],
+  "generated_at": "2026-10-21T10:22:32.864176+00:00",
+  "packet_split": "all",
+  "tesseract": "5.5.3",
+  "metrics": {
+    "redaction.production.id_numbers_leak_rate": 0.0,
+    "redaction.production.name_pairs_leak_rate": 0.11188811188811189,
+    "redaction.production.name_token_occurrences_leak_rate": 0.08333333333333333,
+    "redaction.no_packet_scope.id_numbers_leak_rate": 0.0,
+    "redaction.no_packet_scope.name_pairs_leak_rate": 0.3076923076923077,
+    "redaction.no_packet_scope.name_token_occurrences_leak_rate": 0.2553763440860215,
+    "redaction.first_six_labels.id_numbers_leak_rate": 0.0,
+    "redaction.first_six_labels.name_pairs_leak_rate": 0.36363636363636365,
+    "redaction.first_six_labels.name_token_occurrences_leak_rate": 0.3467741935483871
+  },
+  "details": {
+    "redaction": {
+      "packets": 50,
+      "documents": 170,
+      "configurations": {
+        "production": {
+          "id_numbers": {
+            "present": 43,
+            "leaked": 0
+          },
+          "name_pairs": {
+            "present": 143,
+            "leaked": 16
+          },
+          "name_token_occurrences": {
+            "present": 372,
+            "leaked": 31
+          },
+          "name_pairs_by_doc_type": {
+            "claim_form": {
+              "present": 53,
+              "leaked": 5
+            },
+            "id_card": {
+              "present": 50,
+              "leaked": 9
+            },
+            "invoice": {
+              "present": 40,
+              "leaked": 2
+            }
+          },
+          "id_numbers_by_doc_type": {
+            "id_card": {
+              "present": 43,
+              "leaked": 0
+            }
+          },
+          "leaks": [
+            {
+              "packet_id": "PKT-004",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Thibault Leclerc",
+              "left": [
+                "Thibault"
+              ]
+            },
+            {
+              "packet_id": "PKT-008",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Abdul Woods",
+              "left": [
+                "Abdul",
+                "Woods"
+              ]
+            },
+            {
+              "packet_id": "PKT-008",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "Abdul Woods",
+              "left": [
+                "Abdul",
+                "Woods"
+              ]
+            },
+            {
+              "packet_id": "PKT-009",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Ema Ferreira",
+              "left": [
+                "Ema",
+                "Ferreira"
+              ]
+            },
+            {
+              "packet_id": "PKT-009",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Ema Ferreira",
+              "left": [
+                "EMA",
+                "FERREIRA"
+              ]
+            },
+            {
+              "packet_id": "PKT-015",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Nanni Scarlatti",
+              "left": [
+                "Nanni",
+                "Scarlatti"
+              ]
+            },
+            {
+              "packet_id": "PKT-015",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Nanni Scarlatti",
+              "left": [
+                "Nanni",
+                "Scarlatti"
+              ]
+            },
+            {
+              "packet_id": "PKT-021",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Cristiano S\u00e1",
+              "left": [
+                "SA"
+              ]
+            },
+            {
+              "packet_id": "PKT-029",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "LOUREN\u00c7O LU\u00cdSA",
+              "left": [
+                "LOURENCO"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "EM\u00cdLIA TORRES",
+              "left": [
+                "EMILIA"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Kimberley",
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Lewis"
+              ]
+            }
+          ]
+        },
+        "no_packet_scope": {
+          "id_numbers": {
+            "present": 43,
+            "leaked": 0
+          },
+          "name_pairs": {
+            "present": 143,
+            "leaked": 44
+          },
+          "name_token_occurrences": {
+            "present": 372,
+            "leaked": 95
+          },
+          "name_pairs_by_doc_type": {
+            "claim_form": {
+              "present": 53,
+              "leaked": 8
+            },
+            "id_card": {
+              "present": 50,
+              "leaked": 34
+            },
+            "invoice": {
+              "present": 40,
+              "leaked": 2
+            }
+          },
+          "id_numbers_by_doc_type": {
+            "id_card": {
+              "present": 43,
+              "leaked": 0
+            }
+          },
+          "leaks": [
+            {
+              "packet_id": "PKT-003",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Angela Mann",
+              "left": [
+                "Angela",
+                "Mann"
+              ]
+            },
+            {
+              "packet_id": "PKT-004",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Thibault Leclerc",
+              "left": [
+                "Leclerc",
+                "Thibault"
+              ]
+            },
+            {
+              "packet_id": "PKT-004",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Roland Leclerc",
+              "left": [
+                "Leclerc"
+              ]
+            },
+            {
+              "packet_id": "PKT-005",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "NIEMEIER ANTONIETTA",
+              "left": [
+                "ANTONIETTA",
+                "NIEMEIER"
+              ]
+            },
+            {
+              "packet_id": "PKT-007",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Concetta Hofmann",
+              "left": [
+                "Concetta",
+                "Hofmann"
+              ]
+            },
+            {
+              "packet_id": "PKT-008",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Abdul Woods",
+              "left": [
+                "Abdul",
+                "Woods"
+              ]
+            },
+            {
+              "packet_id": "PKT-008",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "Abdul Woods",
+              "left": [
+                "Abdul",
+                "Woods"
+              ]
+            },
+            {
+              "packet_id": "PKT-009",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Ema Ferreira",
+              "left": [
+                "Ema",
+                "Ferreira"
+              ]
+            },
+            {
+              "packet_id": "PKT-009",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Ema Ferreira",
+              "left": [
+                "EMA",
+                "FERREIRA"
+              ]
+            },
+            {
+              "packet_id": "PKT-011",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Connor Edwards",
+              "left": [
+                "Connor",
+                "Edwards"
+              ]
+            },
+            {
+              "packet_id": "PKT-012",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Gr\u00e9goire Raynaud",
+              "left": [
+                "Gregoire",
+                "Raynaud"
+              ]
+            },
+            {
+              "packet_id": "PKT-014",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Donna Comisso",
+              "left": [
+                "COMISSO",
+                "DONNA"
+              ]
+            },
+            {
+              "packet_id": "PKT-015",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Nanni Scarlatti",
+              "left": [
+                "Nanni",
+                "Scarlatti"
+              ]
+            },
+            {
+              "packet_id": "PKT-015",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Nanni Scarlatti",
+              "left": [
+                "Nanni",
+                "Scarlatti"
+              ]
+            },
+            {
+              "packet_id": "PKT-017",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "CHAPMAN KATHERINE",
+              "left": [
+                "CHAPMAN",
+                "KATHERINE"
+              ]
+            },
+            {
+              "packet_id": "PKT-019",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Reinhardt Benthin",
+              "left": [
+                "Benthin",
+                "Reinhardt"
+              ]
+            },
+            {
+              "packet_id": "PKT-020",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Francesca Morpurgo",
+              "left": [
+                "Francesca",
+                "Morpurgo"
+              ]
+            },
+            {
+              "packet_id": "PKT-021",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Cristiano S\u00e1",
+              "left": [
+                "CRISTIANO",
+                "SA"
+              ]
+            },
+            {
+              "packet_id": "PKT-024",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Bruno Antunes",
+              "left": [
+                "Antunes",
+                "Bruno"
+              ]
+            },
+            {
+              "packet_id": "PKT-026",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "F\u00e1bio Neto",
+              "left": [
+                "Fabio",
+                "Neto"
+              ]
+            },
+            {
+              "packet_id": "PKT-026",
+              "filename": "doc_4.png",
+              "doc_type": "id_card",
+              "person": "F\u00e1bio Neto",
+              "left": [
+                "FABIO",
+                "NETO"
+              ]
+            },
+            {
+              "packet_id": "PKT-029",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "LOUREN\u00c7O LU\u00cdSA",
+              "left": [
+                "LOURENCO",
+                "LUISA"
+              ]
+            },
+            {
+              "packet_id": "PKT-030",
+              "filename": "doc_4.png",
+              "doc_type": "id_card",
+              "person": "Viviana Cerezo",
+              "left": [
+                "CEREZO",
+                "VIVIANA"
+              ]
+            },
+            {
+              "packet_id": "PKT-031",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Christopher Schmidt",
+              "left": [
+                "Christopher",
+                "Schmidt"
+              ]
+            },
+            {
+              "packet_id": "PKT-032",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Freia Kobelt",
+              "left": [
+                "Freia",
+                "Kobelt"
+              ]
+            },
+            {
+              "packet_id": "PKT-033",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Melissa Trujillo",
+              "left": [
+                "MELISSA",
+                "TRUJILLO"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "EM\u00cdLIA TORRES",
+              "left": [
+                "EMILIA",
+                "TORRES"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Jos\u00e9 Torres",
+              "left": [
+                "TORRES"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Kimberley",
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-037",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Sergius Tacchini",
+              "left": [
+                "SERGIUS",
+                "TACCHINI"
+              ]
+            },
+            {
+              "packet_id": "PKT-039",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Kate Schofield",
+              "left": [
+                "Kate",
+                "Schofield"
+              ]
+            },
+            {
+              "packet_id": "PKT-040",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "St\u00e9phanie Fournier",
+              "left": [
+                "Fournier",
+                "Stephanie"
+              ]
+            },
+            {
+              "packet_id": "PKT-043",
+              "filename": "doc_4.pdf",
+              "doc_type": "claim_form",
+              "person": "Paige West",
+              "left": [
+                "Paige",
+                "West"
+              ]
+            },
+            {
+              "packet_id": "PKT-044",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Rodney Warren",
+              "left": [
+                "Rodney",
+                "Warren"
+              ]
+            },
+            {
+              "packet_id": "PKT-045",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Georges Marty",
+              "left": [
+                "GEORGES",
+                "MARTY"
+              ]
+            },
+            {
+              "packet_id": "PKT-046",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "CHARLES MURPHY",
+              "left": [
+                "CHARLES",
+                "MURPHY"
+              ]
+            },
+            {
+              "packet_id": "PKT-046",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "CHARLES MURPHY",
+              "left": [
+                "Charles",
+                "Murphy"
+              ]
+            },
+            {
+              "packet_id": "PKT-049",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "GEHRINGER MARIJAN",
+              "left": [
+                "GEHRINGER",
+                "MARIJAN"
+              ]
+            },
+            {
+              "packet_id": "PKT-050",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Geronimo Gozzano",
+              "left": [
+                "GERONIMO",
+                "GOZZANO"
+              ]
+            }
+          ]
+        },
+        "first_six_labels": {
+          "id_numbers": {
+            "present": 43,
+            "leaked": 0
+          },
+          "name_pairs": {
+            "present": 143,
+            "leaked": 52
+          },
+          "name_token_occurrences": {
+            "present": 372,
+            "leaked": 129
+          },
+          "name_pairs_by_doc_type": {
+            "claim_form": {
+              "present": 53,
+              "leaked": 20
+            },
+            "id_card": {
+              "present": 50,
+              "leaked": 19
+            },
+            "invoice": {
+              "present": 40,
+              "leaked": 13
+            }
+          },
+          "id_numbers_by_doc_type": {
+            "id_card": {
+              "present": 43,
+              "leaked": 0
+            }
+          },
+          "leaks": [
+            {
+              "packet_id": "PKT-004",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Thibault Leclerc",
+              "left": [
+                "Thibault"
+              ]
+            },
+            {
+              "packet_id": "PKT-006",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Sebastiano Antonetti",
+              "left": [
+                "Sebastiano"
+              ]
+            },
+            {
+              "packet_id": "PKT-007",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Concetta Hofmann",
+              "left": [
+                "Concetta",
+                "Hofmann"
+              ]
+            },
+            {
+              "packet_id": "PKT-007",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Concetta Hofmann",
+              "left": [
+                "Concetta",
+                "Hofmann"
+              ]
+            },
+            {
+              "packet_id": "PKT-008",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Abdul Woods",
+              "left": [
+                "Abdul",
+                "Woods"
+              ]
+            },
+            {
+              "packet_id": "PKT-008",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "Abdul Woods",
+              "left": [
+                "Abdul",
+                "Woods"
+              ]
+            },
+            {
+              "packet_id": "PKT-009",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Ema Ferreira",
+              "left": [
+                "Ema",
+                "Ferreira"
+              ]
+            },
+            {
+              "packet_id": "PKT-009",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Ema Ferreira",
+              "left": [
+                "EMA",
+                "FERREIRA"
+              ]
+            },
+            {
+              "packet_id": "PKT-012",
+              "filename": "doc_1.pdf",
+              "doc_type": "invoice",
+              "person": "Gr\u00e9goire Raynaud",
+              "left": [
+                "Gregoire",
+                "Raynaud"
+              ]
+            },
+            {
+              "packet_id": "PKT-012",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Gr\u00e9goire Raynaud",
+              "left": [
+                "Gregoire",
+                "Raynaud"
+              ]
+            },
+            {
+              "packet_id": "PKT-012",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "Gr\u00e9goire Raynaud",
+              "left": [
+                "Gregoire",
+                "Raynaud"
+              ]
+            },
+            {
+              "packet_id": "PKT-015",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Nanni Scarlatti",
+              "left": [
+                "Nanni",
+                "Scarlatti"
+              ]
+            },
+            {
+              "packet_id": "PKT-015",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Nanni Scarlatti",
+              "left": [
+                "Nanni",
+                "Scarlatti"
+              ]
+            },
+            {
+              "packet_id": "PKT-021",
+              "filename": "doc_1.pdf",
+              "doc_type": "invoice",
+              "person": "Cristiano S\u00e1",
+              "left": [
+                "Cristiano",
+                "Sa"
+              ]
+            },
+            {
+              "packet_id": "PKT-021",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Cristiano S\u00e1",
+              "left": [
+                "Cristiano",
+                "Sa"
+              ]
+            },
+            {
+              "packet_id": "PKT-021",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Cristiano S\u00e1",
+              "left": [
+                "CRISTIANO",
+                "SA"
+              ]
+            },
+            {
+              "packet_id": "PKT-024",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Bruno Antunes",
+              "left": [
+                "Antunes",
+                "Bruno"
+              ]
+            },
+            {
+              "packet_id": "PKT-024",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Bruno Antunes",
+              "left": [
+                "Antunes",
+                "Bruno"
+              ]
+            },
+            {
+              "packet_id": "PKT-024",
+              "filename": "doc_3.pdf",
+              "doc_type": "invoice",
+              "person": "Bruno Antunes",
+              "left": [
+                "Antunes",
+                "Bruno"
+              ]
+            },
+            {
+              "packet_id": "PKT-026",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "F\u00e1bio Neto",
+              "left": [
+                "Fabio",
+                "Neto"
+              ]
+            },
+            {
+              "packet_id": "PKT-026",
+              "filename": "doc_3.pdf",
+              "doc_type": "invoice",
+              "person": "F\u00e1bio Neto",
+              "left": [
+                "Fabio",
+                "Neto"
+              ]
+            },
+            {
+              "packet_id": "PKT-026",
+              "filename": "doc_4.png",
+              "doc_type": "id_card",
+              "person": "F\u00e1bio Neto",
+              "left": [
+                "FABIO",
+                "NETO"
+              ]
+            },
+            {
+              "packet_id": "PKT-028",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Paco Borr\u00e1s",
+              "left": [
+                "Borras",
+                "Paco"
+              ]
+            },
+            {
+              "packet_id": "PKT-029",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "LOUREN\u00c7O LU\u00cdSA",
+              "left": [
+                "LOURENCO"
+              ]
+            },
+            {
+              "packet_id": "PKT-030",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Viviana Cerezo",
+              "left": [
+                "Cerezo",
+                "Viviana"
+              ]
+            },
+            {
+              "packet_id": "PKT-030",
+              "filename": "doc_4.png",
+              "doc_type": "id_card",
+              "person": "Viviana Cerezo",
+              "left": [
+                "CEREZO",
+                "VIVIANA"
+              ]
+            },
+            {
+              "packet_id": "PKT-032",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Freia Kobelt",
+              "left": [
+                "Freia",
+                "Kobelt"
+              ]
+            },
+            {
+              "packet_id": "PKT-032",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Freia Kobelt",
+              "left": [
+                "Freia",
+                "Kobelt"
+              ]
+            },
+            {
+              "packet_id": "PKT-032",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Freia Kobelt",
+              "left": [
+                "Freia",
+                "Kobelt"
+              ]
+            },
+            {
+              "packet_id": "PKT-033",
+              "filename": "doc_1.pdf",
+              "doc_type": "invoice",
+              "person": "Melissa Trujillo",
+              "left": [
+                "Melissa",
+                "Trujillo"
+              ]
+            },
+            {
+              "packet_id": "PKT-033",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Melissa Trujillo",
+              "left": [
+                "Melissa",
+                "Trujillo"
+              ]
+            },
+            {
+              "packet_id": "PKT-033",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Melissa Trujillo",
+              "left": [
+                "MELISSA",
+                "TRUJILLO"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "EM\u00cdLIA TORRES",
+              "left": [
+                "EMILIA",
+                "TORRES"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "Jos\u00e9 Torres",
+              "left": [
+                "TORRES"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_2.pdf",
+              "doc_type": "invoice",
+              "person": "EM\u00cdLIA TORRES",
+              "left": [
+                "Torres"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_2.pdf",
+              "doc_type": "invoice",
+              "person": "Jos\u00e9 Torres",
+              "left": [
+                "Jose",
+                "Torres"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "EM\u00cdLIA TORRES",
+              "left": [
+                "Torres"
+              ]
+            },
+            {
+              "packet_id": "PKT-034",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "Jos\u00e9 Torres",
+              "left": [
+                "Jose",
+                "Torres"
+              ]
+            },
+            {
+              "packet_id": "PKT-035",
+              "filename": "doc_1.pdf",
+              "doc_type": "invoice",
+              "person": "Deborah Vaughan",
+              "left": [
+                "Deborah",
+                "Vaughan"
+              ]
+            },
+            {
+              "packet_id": "PKT-035",
+              "filename": "doc_2.pdf",
+              "doc_type": "claim_form",
+              "person": "Deborah Vaughan",
+              "left": [
+                "Deborah",
+                "Vaughan"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_1.pdf",
+              "doc_type": "claim_form",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_2.png",
+              "doc_type": "id_card",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Kimberley",
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Iain Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-036",
+              "filename": "doc_4.pdf",
+              "doc_type": "invoice",
+              "person": "Kimberley Lewis",
+              "left": [
+                "Lewis"
+              ]
+            },
+            {
+              "packet_id": "PKT-044",
+              "filename": "doc_1.pdf",
+              "doc_type": "invoice",
+              "person": "Rodney Warren",
+              "left": [
+                "Rodney",
+                "Warren"
+              ]
+            },
+            {
+              "packet_id": "PKT-044",
+              "filename": "doc_3.png",
+              "doc_type": "id_card",
+              "person": "Rodney Warren",
+              "left": [
+                "Rodney",
+                "Warren"
+              ]
+            },
+            {
+              "packet_id": "PKT-044",
+              "filename": "doc_4.pdf",
+              "doc_type": "claim_form",
+              "person": "Rodney Warren",
+              "left": [
+                "Rodney",
+                "Warren"
+              ]
+            },
+            {
+              "packet_id": "PKT-046",
+              "filename": "doc_1.png",
+              "doc_type": "id_card",
+              "person": "CHARLES MURPHY",
+              "left": [
+                "CHARLES",
+                "MURPHY"
+              ]
+            },
+            {
+              "packet_id": "PKT-046",
+              "filename": "doc_2.pdf",
+              "doc_type": "invoice",
+              "person": "CHARLES MURPHY",
+              "left": [
+                "Charles",
+                "Murphy"
+              ]
+            },
+            {
+              "packet_id": "PKT-046",
+              "filename": "doc_3.pdf",
+              "doc_type": "claim_form",
+              "person": "CHARLES MURPHY",
+              "left": [
+                "Charles",
+                "Murphy"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

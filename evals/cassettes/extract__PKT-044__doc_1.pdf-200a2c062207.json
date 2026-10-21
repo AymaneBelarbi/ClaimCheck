@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-044:doc_1.pdf",
+  "request_sha256": "bbc67e0bbf381899e1ee802af96a12d67abae4999fb7a73488c00c221200cfe6",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "NEW DWAYNE COLLISION CENTRE",
+      "confidence": 1.0,
+      "source_text": "NEW DWAYNE COLLISION CENTRE"
+    },
+    "invoice_date": {
+      "value": "August 19, 2026",
+      "confidence": 1.0,
+      "source_text": "Issued: August 19, 2026"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Wheel alignment",
+          "amount": "2,148.76"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "2,061.87"
+        },
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "1,645.55"
+        },
+        {
+          "description": "Labour (7.5 hours)",
+          "amount": "2,546.54"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Wheel alignment\n2,148.76\nHeadlamp assembly\n2,061.87\nBonnet, repair and refinish\n1,645.55\nLabour (7.5 hours)\n2,546.54"
+    },
+    "total": {
+      "value": "8,402.72",
+      "confidence": 1.0,
+      "source_text": "Amount due\nLine total\n8,402.72"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 594,
+    "output_tokens": 355,
+    "cost_usd": 0.0,
+    "latency_ms": 57656.99758400115
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

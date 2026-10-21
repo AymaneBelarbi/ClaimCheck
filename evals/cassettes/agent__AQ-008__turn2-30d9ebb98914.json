@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-008:turn2",
+  "request_sha256": "2799ef2657cc6e834c5bb64edc4d92ab03b1c470d4d213151473e061fcfae1a3",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"Yes, there is a $600 excess for theft claims.\", \"citations\": [\"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1578,
+    "output_tokens": 28,
+    "cost_usd": 0.0,
+    "latency_ms": 13067.2047919943
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

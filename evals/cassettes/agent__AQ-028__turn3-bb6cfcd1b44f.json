@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-028:turn3",
+  "request_sha256": "ad173ce593e01a9d20b525c261e3edbe25a18dbeb4c42d4ffc7daf7ee0995534",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policy excludes claims supported by a licence in another person's name, as it considers such claims dishonest and will refuse the whole claim.\", \"citations\": [\"7.3\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2108,
+    "output_tokens": 41,
+    "cost_usd": 0.0,
+    "latency_ms": 13272.87712499674
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

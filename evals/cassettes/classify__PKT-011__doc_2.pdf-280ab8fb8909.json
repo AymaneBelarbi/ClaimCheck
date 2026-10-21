@@ -1,0 +1,18 @@
+{
+  "key": "classify:PKT-011:doc_2.pdf",
+  "request_sha256": "d6703c880a94f0f29d41de5e6c2c74b14de5debea3375f390db7a43462aa0602",
+  "kind": "structured",
+  "response": {
+    "doc_type": "incident_report",
+    "confidence": 1.0
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 254,
+    "output_tokens": 19,
+    "cost_usd": 0.0,
+    "latency_ms": 3936.9821250002133
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

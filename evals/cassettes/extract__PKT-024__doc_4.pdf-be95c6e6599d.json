@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-024:doc_4.pdf",
+  "request_sha256": "48201e05ad528419e0af6ec7d63c2864136d83d49c0a2151df5b33fc0bf91386",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-955072",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2025-955072"
+    },
+    "incident_date": {
+      "value": "19 September 2025",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 19 September 2025"
+    },
+    "location": {
+      "value": "5572 Mercedes Knolls, Port Sarah",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 5572 Mercedes Knolls, Port Sarah"
+    },
+    "description": {
+      "value": "Vehicle SZG-5915 was struck on the front nearside by a second vehicle emerging from a side road onto Mercedes Knolls. Minor damage to both vehicles, no injuries. Road was dry.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle SZG-5915 was struck on the front nearside by a second vehicle emerging from a side road onto\nMercedes Knolls. Minor damage to both vehicles, no injuries. Road was dry."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 550,
+    "output_tokens": 283,
+    "cost_usd": 0.0,
+    "latency_ms": 40905.608291000135
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

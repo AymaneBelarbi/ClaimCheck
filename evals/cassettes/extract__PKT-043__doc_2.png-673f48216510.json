@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-043:doc_2.png",
+  "request_sha256": "0434078bef7da900a93b579c49a2a588896be275e66aba34848666e7268f930b",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Paige West",
+      "confidence": 1.0,
+      "source_text": "NAME\nPaige West"
+    },
+    "id_number": {
+      "value": "D70013086",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD70013086"
+    },
+    "date_of_birth": {
+      "value": "28/06/1996",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n28/06/1996"
+    },
+    "expiry_date": {
+      "value": "29/08/2031",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n29/08/2031"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 497,
+    "output_tokens": 180,
+    "cost_usd": 0.0,
+    "latency_ms": 26673.842332998902
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

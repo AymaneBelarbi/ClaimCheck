@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-041:doc_3.pdf",
+  "request_sha256": "34fe9b56c1664a0fca1dc75a12adf066cf3e44845b1c73349022f66d0bdd0ae5",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Floresshire Collision Centre",
+      "confidence": 1.0,
+      "source_text": "Floresshire Collision Centre INVOICE"
+    },
+    "invoice_date": {
+      "value": "2024-04-24",
+      "confidence": 1.0,
+      "source_text": "Date: 2024-04-24"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Radiator support",
+          "amount": "$1,312.38"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "$945.97"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$1,024.22"
+        },
+        {
+          "description": "Tail lamp assembly",
+          "amount": "$486.70"
+        },
+        {
+          "description": "Labour (4.5 hours)",
+          "amount": "$1,208.71"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Description Amount\nRadiator support $1,312.38"
+    },
+    "total": {
+      "value": "$4,977.98",
+      "confidence": 1.0,
+      "source_text": "Total due $4,977.98"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 600,
+    "output_tokens": 328,
+    "cost_usd": 0.0,
+    "latency_ms": 59065.03729100041
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

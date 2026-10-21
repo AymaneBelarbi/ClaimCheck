@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-017:doc_2.png",
+  "request_sha256": "9b2ff330994e6caeac80bc5187b7ac406929a65f3311189a2651c3c26d13e17f",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "CHAPMAN KATHERINE",
+      "confidence": 1.0,
+      "source_text": "CHAPMAN KATHERINE"
+    },
+    "id_number": {
+      "value": "D91887098",
+      "confidence": 1.0,
+      "source_text": "Licence no. D91887098"
+    },
+    "date_of_birth": {
+      "value": "August 2, 1964",
+      "confidence": 1.0,
+      "source_text": "Born August 2, 1964"
+    },
+    "expiry_date": {
+      "value": "March 4, 2026",
+      "confidence": 1.0,
+      "source_text": "Valid until March 4, 2026"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 491,
+    "output_tokens": 174,
+    "cost_usd": 0.0,
+    "latency_ms": 18928.85941700024
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

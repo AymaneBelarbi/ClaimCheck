@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-027:doc_1.pdf",
+  "request_sha256": "a2a4e5d3d9ab1f7f0b21d0152160adfac11074336259f4d3932d7e5404f844aa",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "CHAPMAN & SONS PANELWORKS",
+      "confidence": 1.0,
+      "source_text": "CHAPMAN & SONS PANELWORKS"
+    },
+    "invoice_date": {
+      "value": "October 20, 2024",
+      "confidence": 1.0,
+      "source_text": "Issued: October 20, 2024"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$1,100.52"
+        },
+        {
+          "description": "Wing panel, replace",
+          "amount": "$1,748.96"
+        },
+        {
+          "description": "Labour (7.5 hours)",
+          "amount": "$851.93"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Rear bumper cover, replace\n$1,100.52"
+    },
+    "total": {
+      "value": "$3,701.41",
+      "confidence": 1.0,
+      "source_text": "Amount due\n$3,701.41"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 574,
+    "output_tokens": 286,
+    "cost_usd": 0.0,
+    "latency_ms": 60466.900665999674
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

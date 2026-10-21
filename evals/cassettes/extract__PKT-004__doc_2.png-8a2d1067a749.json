@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-004:doc_2.png",
+  "request_sha256": "563355a146fff2c6522daf451aca92d1e191ff8170aa42c9968c052e330935fd",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Thibault Leclerc",
+      "confidence": 1.0,
+      "source_text": "Thibault Leclerc"
+    },
+    "id_number": {
+      "value": "DO01425018",
+      "confidence": 1.0,
+      "source_text": "Licence no. DO01425018"
+    },
+    "date_of_birth": {
+      "value": "28 September 1959",
+      "confidence": 1.0,
+      "source_text": "Born 28 September 1959"
+    },
+    "expiry_date": {
+      "value": "26 June 2025",
+      "confidence": 1.0,
+      "source_text": "Valid until 26 June 2025"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 490,
+    "output_tokens": 195,
+    "cost_usd": 0.0,
+    "latency_ms": 18416.215792000003
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-006:doc_2.pdf",
+  "request_sha256": "289d74dcfaaad6b47cbd8e98548a6acc3d72d08af2413eec57e493e4428590a5",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Sebastiano Antonetti",
+      "confidence": 1.0,
+      "source_text": "Claimant name Sebastiano Antonetti"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "30 April 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 30 April 2025"
+    },
+    "incident_type": {
+      "value": "Theft",
+      "confidence": 1.0,
+      "source_text": "Type of incident Theft"
+    },
+    "vehicle_plate": {
+      "value": "VEA-4434",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration VEA-4434"
+    },
+    "description": {
+      "value": "The car was taken from outside my home on Gina Loaf overnight. | reported it to the police as soon as noticed.",
+      "confidence": 1.0,
+      "source_text": "What happened\nThe car was taken from outside my home on Gina Loaf overnight. | reported it to the police as soon as noticed."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 577,
+    "output_tokens": 306,
+    "cost_usd": 0.0,
+    "latency_ms": 55819.1478330009
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

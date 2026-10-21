@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-030:turn3",
+  "request_sha256": "8af45ec6b245699ad19d7e95509fe032a7178774fda8c34854a86e98b156381b",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policy covers a hire car for up to 14 days after the vehicle was stolen, at a daily rate of up to $40.\", \"citations\": [\"4.4\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2100,
+    "output_tokens": 44,
+    "cost_usd": 0.0,
+    "latency_ms": 15303.422917000717
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-049:doc_4.pdf",
+  "request_sha256": "f6c000d3371d2c80d032e11a82034971c576cc5d0fdad6bb463bdc0f2fecc378",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "JOHNSON AUTO BODY",
+      "confidence": 1.0,
+      "source_text": "JOHNSON AUTO BODY"
+    },
+    "invoice_date": {
+      "value": "2025-07-22",
+      "confidence": 1.0,
+      "source_text": "Issued: 2025-07-22"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Headlamp assembly",
+          "amount": "$519.37"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$1,983.58"
+        },
+        {
+          "description": "Parking sensor, replace",
+          "amount": "$1,948.07"
+        },
+        {
+          "description": "Radiator support",
+          "amount": "$1,270.01"
+        },
+        {
+          "description": "Labour (6.0 hours)",
+          "amount": "$1,115.72"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Headlamp assembly $519.37"
+    },
+    "total": {
+      "value": "$6,836.75",
+      "confidence": 1.0,
+      "source_text": "Amount due $6,836.75"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 600,
+    "output_tokens": 327,
+    "cost_usd": 0.0,
+    "latency_ms": 59320.37016600043
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

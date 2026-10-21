@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-003:doc_1.pdf",
+  "request_sha256": "e6ab327c266535a3bc8a5bffe929e4cf3d1f71b1ee9a88196fb0b7027596dcbc",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "MITCHELL AUTO BODY",
+      "confidence": 1.0,
+      "source_text": "MITCHELL AUTO BODY"
+    },
+    "invoice_date": {
+      "value": "July 18, 2025",
+      "confidence": 1.0,
+      "source_text": "Issued: July 18, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Wheel alignment",
+          "amount": "$2,873.11"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "$1,239.67"
+        },
+        {
+          "description": "Labour (6.0 hours)",
+          "amount": "$1,737.86"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Wheel alignment $2,873.11"
+    },
+    "total": {
+      "value": "$5,850.64",
+      "confidence": 1.0,
+      "source_text": "Amount due $5,850.64"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 562,
+    "output_tokens": 268,
+    "cost_usd": 0.0,
+    "latency_ms": 48573.461416999635
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

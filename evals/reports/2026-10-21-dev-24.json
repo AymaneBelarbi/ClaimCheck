@@ -1,0 +1,494 @@
+{
+  "split": "dev",
+  "stages": [
+    "extraction",
+    "validation"
+  ],
+  "generated_at": "2026-10-21T10:38:51.631797+00:00",
+  "llm_backend": "replay",
+  "llm_model": "qwen2.5:7b-instruct",
+  "embedding_model": null,
+  "replay_drift_count": 0,
+  "cost": {
+    "backend": "replay",
+    "model": "qwen2.5:7b-instruct",
+    "packets": 35,
+    "avg_cost_usd_per_packet": 0.0,
+    "p95_latency_ms_per_packet": 199777.0,
+    "p95_wall_ms_per_packet": 2174.8,
+    "avg_llm_calls_per_packet": 3.3714285714285714
+  },
+  "metrics": {
+    "extraction.precision": 0.9367816091954023,
+    "extraction.recall": 0.9055555555555556,
+    "extraction.f1": 0.9209039548022598,
+    "validation.accuracy": 1.0,
+    "validation.end_to_end_accuracy": 0.9858490566037735
+  },
+  "details": {
+    "extraction": {
+      "split": "dev",
+      "documents": {
+        "scored": 118,
+        "skipped_unreadable": 3
+      },
+      "counts": {
+        "tp": 489,
+        "fp": 33,
+        "fn": 51,
+        "precision": 0.9367816091954023,
+        "recall": 0.9055555555555556,
+        "f1": 0.9209039548022598
+      },
+      "verdicts": {
+        "found": 522,
+        "low_confidence": 18
+      },
+      "per_doc_type": {
+        "claim_form": {
+          "tp": 177,
+          "fp": 23,
+          "fn": 27,
+          "precision": 0.885,
+          "recall": 0.8676470588235294,
+          "f1": 0.8762376237623763
+        },
+        "id_card": {
+          "tp": 119,
+          "fp": 8,
+          "fn": 13,
+          "precision": 0.937007874015748,
+          "recall": 0.9015151515151515,
+          "f1": 0.9189189189189189
+        },
+        "invoice": {
+          "tp": 105,
+          "fp": 2,
+          "fn": 7,
+          "precision": 0.9813084112149533,
+          "recall": 0.9375,
+          "f1": 0.958904109589041
+        },
+        "incident_report": {
+          "tp": 88,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.9565217391304348,
+          "f1": 0.9777777777777777
+        }
+      },
+      "per_field": {
+        "claim_form.claimant_name": {
+          "tp": 26,
+          "fp": 7,
+          "fn": 8,
+          "precision": 0.7878787878787878,
+          "recall": 0.7647058823529411,
+          "f1": 0.7761194029850745
+        },
+        "claim_form.description": {
+          "tp": 17,
+          "fp": 16,
+          "fn": 17,
+          "precision": 0.5151515151515151,
+          "recall": 0.5,
+          "f1": 0.5074626865671642
+        },
+        "claim_form.incident_date": {
+          "tp": 34,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "claim_form.incident_type": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9705882352941176,
+          "f1": 0.9850746268656716
+        },
+        "claim_form.policy_number": {
+          "tp": 34,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "claim_form.vehicle_plate": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9705882352941176,
+          "f1": 0.9850746268656716
+        },
+        "id_card.date_of_birth": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "id_card.expiry_date": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "id_card.full_name": {
+          "tp": 25,
+          "fp": 7,
+          "fn": 8,
+          "precision": 0.78125,
+          "recall": 0.7575757575757576,
+          "f1": 0.7692307692307692
+        },
+        "id_card.id_number": {
+          "tp": 28,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.9655172413793104,
+          "recall": 0.8484848484848485,
+          "f1": 0.9032258064516129
+        },
+        "incident_report.description": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.incident_date": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.location": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.report_number": {
+          "tp": 19,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.8260869565217391,
+          "f1": 0.9047619047619047
+        },
+        "invoice.invoice_date": {
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "invoice.line_items": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9230769230769231,
+          "recall": 0.8571428571428571,
+          "f1": 0.888888888888889
+        },
+        "invoice.total": {
+          "tp": 25,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.8928571428571429,
+          "f1": 0.9433962264150945
+        },
+        "invoice.vendor": {
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "worst_misses": [
+        {
+          "packet_id": "PKT-032",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "I was stopped at the lights on Paul Groves when the car behind did not brake in time and hit my rear bumper.",
+          "predicted": "was stopped at the lights on Paul Groves when the car behind did not brake in time and hit my rear bumper.",
+          "verdict": "found",
+          "confidence": 0.9605,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-002",
+          "filename": "doc_1.png",
+          "field": "full_name",
+          "gold": "J\u00daLIA CARDOSO",
+          "predicted": "JULIA CARDOSO",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-018",
+          "filename": "doc_1.png",
+          "field": "full_name",
+          "gold": "\u00c9LISE HARDY",
+          "predicted": "ELISE HARDY",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-018",
+          "filename": "doc_2.pdf",
+          "field": "claimant_name",
+          "gold": "\u00c9lise Hardy",
+          "predicted": "Elise Hardy",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-021",
+          "filename": "doc_2.pdf",
+          "field": "claimant_name",
+          "gold": "Cristiano S\u00e1",
+          "predicted": "Cristiano Sa",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-021",
+          "filename": "doc_3.png",
+          "field": "full_name",
+          "gold": "S\u00c1 CRISTIANO",
+          "predicted": "SA CRISTIANO",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-036",
+          "filename": "doc_1.pdf",
+          "field": "claimant_name",
+          "gold": "Iain Lewis",
+          "predicted": "lain Lewis",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-038",
+          "filename": "doc_2.png",
+          "field": "full_name",
+          "gold": "M\u00c9LANIE ROCHA",
+          "predicted": "MELANIE ROCHA",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-018",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "I parked the car on Schwartz Inlet in the evening and it was gone the next morning. I still have both keys.",
+          "predicted": "parked the car on Schwartz Inlet in the evening and it was gone the next morning. | still have both\nkeys.",
+          "verdict": "found",
+          "confidence": 0.959,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-028",
+          "filename": "doc_1.pdf",
+          "field": "description",
+          "gold": "I parked the car on Lopez Dale in the evening and it was gone the next morning. I still have both keys.",
+          "predicted": "parked the car on Lopez Dale in the evening and it was gone the next morning. | still have both keys.",
+          "verdict": "found",
+          "confidence": 0.959,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-030",
+          "filename": "doc_1.pdf",
+          "field": "description",
+          "gold": "I was stopped at the lights on Jones Keys when the car behind did not brake in time and hit my rear bumper.",
+          "predicted": "| was stopped at the lights on Jones Keys when the car behind did not brake in time and hit my rear bumper.",
+          "verdict": "found",
+          "confidence": 0.9583,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-009",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "My car was stolen from a car park off Hale Course while I was at work. Both keys are with me.",
+          "predicted": "My car was stolen from a car park off Hale Course while | was at work. Both keys are with me.",
+          "verdict": "found",
+          "confidence": 0.9581,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-016",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "My car was stolen from a car park off Shannon Trace while I was at work. Both keys are with me.",
+          "predicted": "My car was stolen from a car park off Shannon Trace while | was at work. Both keys are with me.",
+          "verdict": "found",
+          "confidence": 0.9576,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-044",
+          "filename": "doc_4.pdf",
+          "field": "description",
+          "gold": "I was stopped at the lights on Castro Mountain when the car behind did not brake in time and hit my rear bumper.",
+          "predicted": "was stopped at the lights on Castro Mountain when the car behind did not brake in time and hit my rear bumper.",
+          "verdict": "found",
+          "confidence": 0.9573,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-008",
+          "filename": "doc_3.pdf",
+          "field": "description",
+          "gold": "My car was stolen from a car park off Kelly Rest while I was at work. Both keys are with me.",
+          "predicted": "My car was stolen from a car park off Kelly Rest while | was at work. Both keys are with me.",
+          "verdict": "found",
+          "confidence": 0.9571,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-017",
+          "filename": "doc_3.pdf",
+          "field": "description",
+          "gold": "A deer ran across Fernandez Mountain after dark and I could not avoid it. The front of the car is damaged.",
+          "predicted": "A deer ran across Fernandez Mountain after dark and | could not avoid it. The front of the car is\ndamaged.",
+          "verdict": "found",
+          "confidence": 0.9571,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-037",
+          "filename": "doc_1.pdf",
+          "field": "description",
+          "gold": "The car was taken from outside my home on Sandra Vista overnight. I reported it to the police as soon as I noticed.",
+          "predicted": "The car was taken from outside my home on Sandra Vista overnight. | reported it to the police as soon as | noticed.",
+          "verdict": "found",
+          "confidence": 0.9557,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-039",
+          "filename": "doc_3.pdf",
+          "field": "description",
+          "gold": "I was stopped at the lights on Justin Run when the car behind did not brake in time and hit my rear bumper.",
+          "predicted": "| was stopped at the lights on Justin Run when the car behind did not brake in time and hit my rear bumper.\n| confirm the above is true. Signed Kate Schofield, 2026-07-28.",
+          "verdict": "found",
+          "confidence": 0.9552,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-027",
+          "filename": "doc_3.pdf",
+          "field": "description",
+          "gold": "While reversing out of a parking space on Katrina Estates I hit a concrete bollard that I had not seen.",
+          "predicted": "While reversing out of a parking space on Katrina Estates | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Katherine Herring, 25 October 2024.",
+          "verdict": "found",
+          "confidence": 0.955,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-045",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "A deer ran across Griffith Fort after dark and I could not avoid it. The front of the car is damaged.",
+          "predicted": "A deer ran across Griffith Fort after dark and | could not avoid it. The front of the car is damaged.",
+          "verdict": "found",
+          "confidence": 0.9538,
+          "details": null
+        }
+      ]
+    },
+    "validation": {
+      "split": "dev",
+      "packets": 35,
+      "rule_checks": 233,
+      "per_rule_accuracy": {
+        "R1_NAME_MATCH": 1.0,
+        "R2_INCIDENT_IN_COVERAGE": 1.0,
+        "R3_INVOICE_WITHIN_LIMIT": 1.0,
+        "R4_INVOICE_AFTER_INCIDENT": 1.0,
+        "R5_ID_VALID_ON_INCIDENT": 1.0,
+        "R6_REQUIRED_DOCUMENTS": 1.0,
+        "R7_INCIDENT_DATE_CONSISTENT": 1.0
+      },
+      "mismatches": [],
+      "end_to_end": {
+        "doc_types": "gold",
+        "packets_scored": 32,
+        "packets_skipped": [
+          "PKT-025",
+          "PKT-029",
+          "PKT-030"
+        ],
+        "rule_checks": 212,
+        "per_rule_accuracy": {
+          "R1_NAME_MATCH": 1.0,
+          "R2_INCIDENT_IN_COVERAGE": 1.0,
+          "R3_INVOICE_WITHIN_LIMIT": 0.8846153846153846,
+          "R4_INVOICE_AFTER_INCIDENT": 1.0,
+          "R5_ID_VALID_ON_INCIDENT": 1.0,
+          "R6_REQUIRED_DOCUMENTS": 1.0,
+          "R7_INCIDENT_DATE_CONSISTENT": 1.0
+        },
+        "mismatches": [
+          {
+            "packet_id": "PKT-036",
+            "scenario": "name_mismatch",
+            "variant": null,
+            "rule": "R3_INVOICE_WITHIN_LIMIT",
+            "expected": "found",
+            "actual": "low_confidence",
+            "message": "Low confidence: invoice.total"
+          },
+          {
+            "packet_id": "PKT-043",
+            "scenario": "duplicate_conflicting_invoice",
+            "variant": null,
+            "rule": "R3_INVOICE_WITHIN_LIMIT",
+            "expected": "conflicting",
+            "actual": "low_confidence",
+            "message": "Low confidence: invoice.total"
+          },
+          {
+            "packet_id": "PKT-044",
+            "scenario": "invoice_before_incident",
+            "variant": "day_before",
+            "rule": "R3_INVOICE_WITHIN_LIMIT",
+            "expected": "found",
+            "actual": "low_confidence",
+            "message": "Low confidence: invoice.total"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-043:doc_4.pdf",
+  "request_sha256": "e6e5132dab78450cd2fba593270d57c25db94a774a65f2068d7179852ba07cc1",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Paige West",
+      "confidence": 1.0,
+      "source_text": "Claimant name\nPaige West"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "Policy number\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "28 January 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident\n28 January 2026"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident\nGlass"
+    },
+    "vehicle_plate": {
+      "value": "FJM-1431",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration\nFJM-1431"
+    },
+    "description": {
+      "value": "The windscreen cracked overnight while the car was parked on Jasmine Valley during the cold snap.",
+      "confidence": 1.0,
+      "source_text": "What happened\nThe windscreen cracked overnight while the car was parked on Jasmine Valley during the cold snap."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 573,
+    "output_tokens": 292,
+    "cost_usd": 0.0,
+    "latency_ms": 44357.621582999855
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

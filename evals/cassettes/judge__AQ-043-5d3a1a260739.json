@@ -1,0 +1,42 @@
+{
+  "key": "judge:AQ-043",
+  "request_sha256": "e1d69831bb59e92435233c4e02e2a95798da5438ba836822ce6c8655ee1633f2",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy limit for theft is $18,000 per claim.",
+        "about": "policy",
+        "quote": "We cover loss of the vehicle by theft or attempted theft, and damage caused during a theft or attempted theft, up to a limit of $18,000 per claim.",
+        "supported": true
+      },
+      {
+        "statement": "The theft must be reported to the police within 48 hours of discovery.",
+        "about": "policy",
+        "quote": "The theft must be reported to the police within 48 hours of discovery and the police incident report sent with the claim.",
+        "supported": true
+      },
+      {
+        "statement": "The claim was not reported within the required 48 hours.",
+        "about": "claim",
+        "quote": "",
+        "supported": true
+      },
+      {
+        "statement": "The theft is not covered because it was reported more than 48 hours after discovery.",
+        "about": "policy",
+        "quote": "There is no cover if the keys were left in or on the vehicle.",
+        "supported": false
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 426,
+    "output_tokens": 259,
+    "cost_usd": 0.0,
+    "latency_ms": 36928.00550000538
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

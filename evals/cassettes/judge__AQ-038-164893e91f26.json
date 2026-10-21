@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-038",
+  "request_sha256": "0a492ad91e691f5c082533896af51412cf8abd5e3c6246871d7f525db329c84b",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy excludes coverage for loss or damage that happens while the vehicle is used for racing, rallies or speed tests.",
+        "about": "policy",
+        "quote": "[6.1 General exclusions] We do not cover loss or damage that happens while the vehicle is driven by someone not allowed to drive it under section 1.2, while the driver is over the legal limit for alcohol or under the influence of drugs, while the vehicle is used for racing, rallies or speed tests, or while it is used for hire or reward, including ride-hailing.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 436,
+    "output_tokens": 141,
+    "cost_usd": 0.0,
+    "latency_ms": 22016.45008300693
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

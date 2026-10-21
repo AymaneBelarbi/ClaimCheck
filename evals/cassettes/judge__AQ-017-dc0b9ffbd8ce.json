@@ -1,0 +1,36 @@
+{
+  "key": "judge:AQ-017",
+  "request_sha256": "db5f9406e2cb96880f88cfc39a31d5423dd12dee0cac6756f17e74d7c12ced80",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The claim includes an invoice (doc_1.pdf).",
+        "about": "claim",
+        "quote": "",
+        "supported": false
+      },
+      {
+        "statement": "The claim includes an incident report (doc_2.pdf).",
+        "about": "claim",
+        "quote": "",
+        "supported": false
+      },
+      {
+        "statement": "The claim includes a claim form (doc_3.pdf).",
+        "about": "claim",
+        "quote": "",
+        "supported": false
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 357,
+    "output_tokens": 130,
+    "cost_usd": 0.0,
+    "latency_ms": 21125.166707999597
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-022:doc_3.pdf",
+  "request_sha256": "190f2e3e1abaa671c3813bc4c20bedfcf4550e748dcd0fd96d150b3ee8e5f890",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-792704",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2025-792704"
+    },
+    "incident_date": {
+      "value": "28/07/2025",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 28/07/2025"
+    },
+    "location": {
+      "value": "93873 Michelle Station, Elizabethbury",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 93873 Michelle Station, Elizabethbury"
+    },
+    "description": {
+      "value": "Vehicle BNN-1686 struck a deer on Michelle Station at approximately 19:00. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle BNN-1686 struck a deer on Michelle Station at approximately 19:00. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 554,
+    "output_tokens": 283,
+    "cost_usd": 0.0,
+    "latency_ms": 65775.78333299971
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

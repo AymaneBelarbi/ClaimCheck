@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-046:doc_1.png",
+  "request_sha256": "ae887e84296c6c890a2352b70207f836e1675c541c2dc2dbf520c82cc291de60",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "CHARLES MURPHY",
+      "confidence": 1.0,
+      "source_text": "CHARLES MURPHY"
+    },
+    "id_number": {
+      "value": "D45562859",
+      "confidence": 1.0,
+      "source_text": "Licence no. D45562859"
+    },
+    "date_of_birth": {
+      "value": "1958-02-21",
+      "confidence": 1.0,
+      "source_text": "Born 1958-02-21"
+    },
+    "expiry_date": {
+      "value": "2031-02-15",
+      "confidence": 1.0,
+      "source_text": "Valid until 2031-02-15"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 498,
+    "output_tokens": 178,
+    "cost_usd": 0.0,
+    "latency_ms": 32427.304624998214
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

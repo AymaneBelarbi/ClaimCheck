@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-026:doc_2.pdf",
+  "request_sha256": "5ec8ffc5578c1c6e4b22a5d824f42a599572a469d30e63d1114ac9ee92262ab9",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-647308",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2025-647308"
+    },
+    "incident_date": {
+      "value": "2025-09-26",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 2025-09-26"
+    },
+    "location": {
+      "value": "0554 Daniel Knoll, East Gabrielmouth",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 0554 Daniel Knoll, East Gabrielmouth"
+    },
+    "description": {
+      "value": "Vehicle YWA-5901 struck a deer on Daniel Knoll at approximately 21:30. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle YWA-5901 struck a deer on Daniel Knoll at approximately 21:30. Animal did not survive. Driver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 556,
+    "output_tokens": 287,
+    "cost_usd": 0.0,
+    "latency_ms": 67397.42187500087
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

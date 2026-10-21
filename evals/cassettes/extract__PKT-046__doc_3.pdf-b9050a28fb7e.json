@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-046:doc_3.pdf",
+  "request_sha256": "28752fa632cbff23c634b170a1e26967de8cb5656d48fa1cd5c94968118ec294",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Charles Murphy",
+      "confidence": 1.0,
+      "source_text": "Claimant name\nCharles Murphy"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "17 July 2024",
+      "confidence": 1.0,
+      "source_text": "Date of incident\n17 July 2024"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident\nCollision"
+    },
+    "vehicle_plate": {
+      "value": "EAR-3240",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration\nEAR-3240"
+    },
+    "description": {
+      "value": "A deer ran across Steven Pass after dark and | could not avoid it. The front of the car is damaged.",
+      "confidence": 1.0,
+      "source_text": "What happened\nA deer ran across Steven Pass after dark and | could not avoid it. The front of the car is damaged."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 575,
+    "output_tokens": 298,
+    "cost_usd": 0.0,
+    "latency_ms": 53992.70120800065
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

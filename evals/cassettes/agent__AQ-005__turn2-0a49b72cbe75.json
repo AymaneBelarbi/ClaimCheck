@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-005:turn2",
+  "request_sha256": "b7c4b50257a96de067b6905c6da2c6732d6b1bb46bf799911017e5f4ea222740",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policy pays up to $1,000 for broken glass, less the $50 glass excess.\", \"citations\": [\"4.2\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1591,
+    "output_tokens": 42,
+    "cost_usd": 0.0,
+    "latency_ms": 17526.448749995325
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

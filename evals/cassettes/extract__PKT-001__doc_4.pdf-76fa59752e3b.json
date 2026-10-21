@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-001:doc_4.pdf",
+  "request_sha256": "4ad0dfc61ea73564ffe01841d550ae8d37af1db141f725d5537434e6bb122b64",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-752443",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-752443"
+    },
+    "incident_date": {
+      "value": "2024-02-08",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 2024-02-08"
+    },
+    "location": {
+      "value": "901 Brock Rapids, New Johnhaven",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 901 Brock Rapids, New Johnhaven"
+    },
+    "description": {
+      "value": "Vehicle FCV-6316 was struck on the front nearside by a second vehicle emerging from a side road onto\nBrock Rapids. Minor damage to both vehicles, no injuries. Road was dry.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle FCV-6316 was struck on the front nearside by a second vehicle emerging from a side road onto\nBrock Rapids. Minor damage to both vehicles, no injuries. Road was dry."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 553,
+    "output_tokens": 277,
+    "cost_usd": 0.0,
+    "latency_ms": 25192.68504199954
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-042:doc_3.png",
+  "request_sha256": "2febc1ab7fd6738ad3c7d42552af29dda509a3af116a7e928c5630d3c09d04a5",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "ALONDRA MARTINEZ",
+      "confidence": 1.0,
+      "source_text": "NAME\nALONDRA MARTINEZ"
+    },
+    "id_number": {
+      "value": "D04810205",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD04810205"
+    },
+    "date_of_birth": {
+      "value": "22/12/1971",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n22/12/1971"
+    },
+    "expiry_date": {
+      "value": "24/09/2030",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n24/09/2030"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 498,
+    "output_tokens": 209,
+    "cost_usd": 0.0,
+    "latency_ms": 29337.798917000327
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

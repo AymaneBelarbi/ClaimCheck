@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-014:doc_2.png",
+  "request_sha256": "6c499cc38fa6d7916377d16966c85263aa4a71b0ab3e31bc42cfdc7cb39c4957",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "DONNA COMISSO",
+      "confidence": 1.0,
+      "source_text": "DONNA COMISSO"
+    },
+    "id_number": {
+      "value": "D62299590",
+      "confidence": 1.0,
+      "source_text": "Licence no.\nD62299590"
+    },
+    "date_of_birth": {
+      "value": "1970-10-09",
+      "confidence": 1.0,
+      "source_text": "Born\n1970-10-09"
+    },
+    "expiry_date": {
+      "value": "2028-08-26",
+      "confidence": 1.0,
+      "source_text": "Valid until\n2028-08-26"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 497,
+    "output_tokens": 202,
+    "cost_usd": 0.0,
+    "latency_ms": 62290.64691700114
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

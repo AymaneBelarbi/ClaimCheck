@@ -1,0 +1,36 @@
+{
+  "key": "judge:AQ-030",
+  "request_sha256": "ae6d41cbf1d39a2557b6a043c5fb353be714850d32d587754e41d0b240fcf69a",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy covers a hire car after the vehicle was stolen.",
+        "about": "policy",
+        "quote": "[4.4 Replacement vehicle] While the vehicle is off the road for repairs after a covered collision, or after it has been stolen, we pay for a hire car of similar size",
+        "supported": true
+      },
+      {
+        "statement": "The policy covers a hire car for up to 14 days after the vehicle was stolen.",
+        "about": "policy",
+        "quote": "[4.4 Replacement vehicle] ... for no more than 14 days.",
+        "supported": true
+      },
+      {
+        "statement": "The policy pays for a daily rate of up to $40.",
+        "about": "policy",
+        "quote": "[4.4 Replacement vehicle] at up to $40 a day",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 398,
+    "output_tokens": 205,
+    "cost_usd": 0.0,
+    "latency_ms": 29108.09945899382
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

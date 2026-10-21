@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-041",
+  "request_sha256": "f61841ba02977a8da5496ad162fd84f71cf8d2827d6f0bb4ba9793d7742c70a4",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "No cover applies to incidents on or after the date given in the notice of lapse.",
+        "about": "policy",
+        "quote": "no cover applies to incidents on or after that date.",
+        "supported": true
+      },
+      {
+        "statement": "The notice of lapse was 14 days after the letter regarding the unpaid premium.",
+        "about": "policy",
+        "quote": "If it is still unpaid 14 days after that letter the policy lapses on the date given in our notice, and no cover applies to incidents on or after that date.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 408,
+    "output_tokens": 146,
+    "cost_usd": 0.0,
+    "latency_ms": 21393.80162499583
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

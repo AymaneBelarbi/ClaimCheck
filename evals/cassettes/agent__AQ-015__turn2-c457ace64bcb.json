@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-015:turn2",
+  "request_sha256": "e81e0dfcfb81e71933708f214e7a68b3318c79e1ed9988a5d3c98a7950467c83",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The claim is blocked because the invoice total exceeds the coverage limit by $1,036.08.\", \"citations\": []}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1448,
+    "output_tokens": 34,
+    "cost_usd": 0.0,
+    "latency_ms": 11365.531791998364
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

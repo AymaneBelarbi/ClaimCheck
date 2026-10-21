@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-006:doc_1.pdf",
+  "request_sha256": "b0b4048e68d386d90ab3b2d1ff0591cef31c5481f17b3ba9e50e0fc6efe83023",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-475246",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-475246"
+    },
+    "incident_date": {
+      "value": "30/04/2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 30/04/2025"
+    },
+    "location": {
+      "value": "465 Gina Loaf, Laurenfurt",
+      "confidence": 1.0,
+      "source_text": "Location 465 Gina Loaf, Laurenfurt"
+    },
+    "description": {
+      "value": "Vehicle VEA-4434 reported stolen from outside the owner's residence on Gina Loaf between 19:45 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle VEA-4434 reported stolen from outside the owner's residence on Gina Loaf between 19:45 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 563,
+    "output_tokens": 290,
+    "cost_usd": 0.0,
+    "latency_ms": 46597.880749999604
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

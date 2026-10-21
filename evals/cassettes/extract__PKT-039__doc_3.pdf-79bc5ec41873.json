@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-039:doc_3.pdf",
+  "request_sha256": "daae4724f9e2d5e91941acca170220e6b44a25da6196adb5a8ef79a65dc06cf8",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Kate Schofield",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nKate Schofield"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "2026-07-18",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2026-07-18"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "AUA-5843",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nAUA-5843"
+    },
+    "description": {
+      "value": "| was stopped at the lights on Justin Run when the car behind did not brake in time and hit my rear bumper.\n| confirm the above is true. Signed Kate Schofield, 2026-07-28.",
+      "confidence": 1.0,
+      "source_text": "| was stopped at the lights on Justin Run when the car behind did not brake in time and hit my rear bumper.\n| confirm the above is true. Signed Kate Schofield, 2026-07-28."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 602,
+    "output_tokens": 366,
+    "cost_usd": 0.0,
+    "latency_ms": 62070.18579199939
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-009:doc_3.png",
+  "request_sha256": "f87e9fb3941f2c01fc9b3331bd4e7591cd96a0c25196da6e302aee16da50c05d",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "FERREIRA EMA",
+      "confidence": 1.0,
+      "source_text": "FERREIRA EMA"
+    },
+    "id_number": {
+      "value": "D51127233",
+      "confidence": 1.0,
+      "source_text": "Licence no. D51127233"
+    },
+    "date_of_birth": {
+      "value": "1979-04-22",
+      "confidence": 1.0,
+      "source_text": "Born 1979-04-22"
+    },
+    "expiry_date": {
+      "value": "2031-10-06",
+      "confidence": 1.0,
+      "source_text": "Valid until 2031-10-06"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 499,
+    "output_tokens": 201,
+    "cost_usd": 0.0,
+    "latency_ms": 31158.166208000694
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,18 @@
+{
+  "key": "classify:PKT-023:doc_3.png",
+  "request_sha256": "8b8eff5b9a2a0e328f025409a44b6fbe14d6041e706155d19f5fa9d4ec7c50f7",
+  "kind": "structured",
+  "response": {
+    "doc_type": "other",
+    "confidence": 0.8
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 114,
+    "output_tokens": 20,
+    "cost_usd": 0.0,
+    "latency_ms": 3638.445041000523
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

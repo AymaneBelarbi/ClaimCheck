@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-012",
+  "request_sha256": "e5ab0c9e1414544f6fa9550e287c0701afffddc7892f5fd9a727b8aa1d107b34",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The theft limit is $20,000 per claim.",
+        "about": "policy",
+        "quote": "up to a limit of $20,000 per claim.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 404,
+    "output_tokens": 67,
+    "cost_usd": 0.0,
+    "latency_ms": 11469.699834000494
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

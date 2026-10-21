@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-015:doc_2.pdf",
+  "request_sha256": "1454c100b827c6172e11780bd8a7a4d27ac6a0e9fb74940e84d6ecd4b01b07e7",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Nanni Scarlatti",
+      "confidence": 1.0,
+      "source_text": "Claimant name\nNanni Scarlatti"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "2025-04-03",
+      "confidence": 1.0,
+      "source_text": "Date of incident\n2025-04-03"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident\nGlass"
+    },
+    "vehicle_plate": {
+      "value": "XTP-8443",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration\nXTP-8443"
+    },
+    "description": {
+      "value": "The windscreen cracked overnight while the car was parked on Anita Fort during the cold snap.",
+      "confidence": 1.0,
+      "source_text": "What happened\nThe windscreen cracked overnight while the car was parked on Anita Fort during the cold snap."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 581,
+    "output_tokens": 300,
+    "cost_usd": 0.0,
+    "latency_ms": 76652.91012500165
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

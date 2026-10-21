@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-037:turn1",
+  "request_sha256": "5b7276ba4ba788e847b21c1c4f53faed1084686f9c308e1ce20ae14c38eb3d3e",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_ty3j2zwa",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "drunk driving"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1046,
+    "output_tokens": 24,
+    "cost_usd": 0.0,
+    "latency_ms": 3884.0274999965914
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

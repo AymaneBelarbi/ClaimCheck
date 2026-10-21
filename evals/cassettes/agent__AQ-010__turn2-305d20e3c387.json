@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-010:turn2",
+  "request_sha256": "5a9840dbb27204d7da5e15137d972918d0be33d6cc0f02b03e5794aca8ec0301",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"Yes. Glass damage is covered up to a limit of $1,500 per claim, less the $100 glass excess.\", \"citations\": [\"4.2\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1586,
+    "output_tokens": 48,
+    "cost_usd": 0.0,
+    "latency_ms": 17448.101832997054
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

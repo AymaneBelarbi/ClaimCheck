@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-017:doc_3.pdf",
+  "request_sha256": "b37fb1b7dcf6291776f703cd7b5474528eac468082c72fc5f256901f03abd6c5",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Katherine Chapman",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nKatherine Chapman"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-208817"
+    },
+    "incident_date": {
+      "value": "2026-03-05",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2026-03-05"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "BRS-7945",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nBRS-7945"
+    },
+    "description": {
+      "value": "A deer ran across Fernandez Mountain after dark and | could not avoid it. The front of the car is\ndamaged.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nA deer ran across Fernandez Mountain after dark and | could not avoid it. The front of the car is\ndamaged."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 601,
+    "output_tokens": 325,
+    "cost_usd": 0.0,
+    "latency_ms": 38386.85258299938
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

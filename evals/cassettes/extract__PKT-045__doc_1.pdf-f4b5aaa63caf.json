@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-045:doc_1.pdf",
+  "request_sha256": "7922a5d1e5136006dba27ed0ad39ad1ba57b619da15f3075c2a6c898f1b85176",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "West Madison Collision Centre",
+      "confidence": 1.0,
+      "source_text": "West Madison Collision Centre INVOICE"
+    },
+    "invoice_date": {
+      "value": "2026-03-25",
+      "confidence": 1.0,
+      "source_text": "Date: 2026-03-25"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Tail lamp assembly",
+          "amount": "$587.77"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$576.33"
+        },
+        {
+          "description": "Radiator support",
+          "amount": "$507.32"
+        },
+        {
+          "description": "Paint and refinish materials",
+          "amount": "$646.96"
+        },
+        {
+          "description": "Labour (4.5 hours)",
+          "amount": "$527.54"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Description Amount\nTail lamp assembly $587.77"
+    },
+    "total": {
+      "value": "$2,845.92",
+      "confidence": 1.0,
+      "source_text": "Total due $2,845.92"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 590,
+    "output_tokens": 319,
+    "cost_usd": 0.0,
+    "latency_ms": 53146.88308299992
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

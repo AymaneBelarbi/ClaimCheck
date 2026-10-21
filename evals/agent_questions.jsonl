@@ -1,0 +1,43 @@
+{"id":"AQ-001","packet_id":"PKT-001","question":"What is the collision limit that applies to this claim?","expected_clause_ref":"4.1"}
+{"id":"AQ-002","packet_id":"PKT-001","question":"Is glass damage covered for this claim?","expected_clause_ref":"6.3"}
+{"id":"AQ-003","packet_id":"PKT-001","question":"Which rule is blocking this claim?","expected_clause_ref":null}
+{"id":"AQ-004","packet_id":"PKT-002","question":"Is glass damage covered for this claim?","expected_clause_ref":"4.2"}
+{"id":"AQ-005","packet_id":"PKT-002","question":"What is the most the policy pays for broken glass on this claim?","expected_clause_ref":"4.2"}
+{"id":"AQ-006","packet_id":"PKT-004","question":"Which rule is blocking this claim?","expected_clause_ref":null}
+{"id":"AQ-007","packet_id":"PKT-004","question":"Is the claim covered if the driver's licence had expired?","expected_clause_ref":"1.2"}
+{"id":"AQ-008","packet_id":"PKT-009","question":"Is there an excess for theft?","expected_clause_ref":"5.1"}
+{"id":"AQ-009","packet_id":"PKT-009","question":"How soon must a theft be reported to the police?","expected_clause_ref":"4.3"}
+{"id":"AQ-010","packet_id":"PKT-012","question":"Is glass damage covered for this claim?","expected_clause_ref":"4.2"}
+{"id":"AQ-011","packet_id":"PKT-012","question":"Why is this claim not ready for a decision?","expected_clause_ref":null}
+{"id":"AQ-012","packet_id":"PKT-018","question":"What is the theft limit that applies?","expected_clause_ref":"4.3"}
+{"id":"AQ-013","packet_id":"PKT-018","question":"Will the policy pay for a hire car while the stolen vehicle is missing?","expected_clause_ref":"6.4"}
+{"id":"AQ-014","packet_id":"PKT-024","question":"What is the collision limit that applies to this claim?","expected_clause_ref":"4.1"}
+{"id":"AQ-015","packet_id":"PKT-024","question":"Which validation rules failed on this claim?","expected_clause_ref":null}
+{"id":"AQ-016","packet_id":"PKT-027","question":"Which documents does a collision claim need?","expected_clause_ref":"7.2"}
+{"id":"AQ-017","packet_id":"PKT-027","question":"Which documents were uploaded with this claim?","expected_clause_ref":null}
+{"id":"AQ-018","packet_id":"PKT-031","question":"Is there an excess for collision claims?","expected_clause_ref":"5.1"}
+{"id":"AQ-019","packet_id":"PKT-033","question":"Does the policy pay for a replacement car while the vehicle is being repaired?","expected_clause_ref":"4.4"}
+{"id":"AQ-020","packet_id":"PKT-039","question":"What is the collision limit that applies?","expected_clause_ref":"4.1"}
+{"id":"AQ-021","packet_id":"PKT-039","question":"Is damage to a tyre from a puncture covered?","expected_clause_ref":"6.2"}
+{"id":"AQ-022","packet_id":"PKT-041","question":"What does the policy say about altered or false invoices?","expected_clause_ref":"7.3"}
+{"id":"AQ-023","packet_id":"PKT-041","question":"What totals do the invoices on this claim show?","expected_clause_ref":null}
+{"id":"AQ-024","packet_id":"PKT-049","question":"Is the vehicle covered while it is driven in Mexico?","expected_clause_ref":"3.1"}
+{"id":"AQ-025","packet_id":"PKT-032","question":"Is collision damage covered for this claim?","expected_clause_ref":null}
+{"id":"AQ-026","packet_id":"PKT-003","question":"How much will the policy pay at most for collision damage on this claim?","expected_clause_ref":"4.1"}
+{"id":"AQ-027","packet_id":"PKT-005","question":"What excess does the policyholder pay on this glass claim?","expected_clause_ref":"5.1"}
+{"id":"AQ-028","packet_id":"PKT-006","question":"What does the policy say about a claim supported by a licence in another person's name?","expected_clause_ref":"7.3"}
+{"id":"AQ-029","packet_id":"PKT-007","question":"Which document is missing from this claim?","expected_clause_ref":null}
+{"id":"AQ-030","packet_id":"PKT-007","question":"Does the policy cover a hire car after the vehicle was stolen, and for how long?","expected_clause_ref":"4.4"}
+{"id":"AQ-031","packet_id":"PKT-010","question":"What is the most the policy pays for replacing the windscreen on this claim?","expected_clause_ref":"4.2"}
+{"id":"AQ-032","packet_id":"PKT-011","question":"Which policy version applies to this claim?","expected_clause_ref":null}
+{"id":"AQ-033","packet_id":"PKT-014","question":"Is the theft covered if the keys were left in the vehicle?","expected_clause_ref":"4.3"}
+{"id":"AQ-034","packet_id":"PKT-015","question":"Which documents does a glass claim need?","expected_clause_ref":"7.2"}
+{"id":"AQ-035","packet_id":"PKT-020","question":"Is the vehicle covered if it was being used for ride-hailing at the time of the incident?","expected_clause_ref":"6.1"}
+{"id":"AQ-036","packet_id":"PKT-046","question":"Which validation rule failed on this claim?","expected_clause_ref":null}
+{"id":"AQ-037","packet_id":"PKT-001","question":"Is the damage covered if the driver was over the legal alcohol limit?","expected_clause_ref":"6.1"}
+{"id":"AQ-038","packet_id":"PKT-039","question":"Is the claim covered if the car was being used in a rally at the time?","expected_clause_ref":"6.1"}
+{"id":"AQ-039","packet_id":"PKT-024","question":"Is the claim covered if the accident happened in Europe?","expected_clause_ref":"3.1"}
+{"id":"AQ-040","packet_id":"PKT-031","question":"Is the claim covered if the driver's licence had been suspended?","expected_clause_ref":"1.2"}
+{"id":"AQ-041","packet_id":"PKT-018","question":"Is the claim covered if the policy had lapsed because the premium was not paid?","expected_clause_ref":"2.2"}
+{"id":"AQ-042","packet_id":"PKT-033","question":"Is the damage covered if it was caused by a mechanical breakdown?","expected_clause_ref":"6.2"}
+{"id":"AQ-043","packet_id":"PKT-009","question":"Is the theft covered if it was reported to the police three days after it was discovered?","expected_clause_ref":"4.3"}

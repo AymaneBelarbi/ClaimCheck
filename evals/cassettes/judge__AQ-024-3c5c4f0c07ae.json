@@ -1,0 +1,36 @@
+{
+  "key": "judge:AQ-024",
+  "request_sha256": "3723a707fac3c9b61100e73bb296bd55fa526159686f98e938784b7d477ac265",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The vehicle is covered for collision damage while driven in Mexico.",
+        "about": "policy",
+        "quote": "Trips into Mexico of up to 30 days are covered for collision only, provided you buy the local liability insurance that Mexican law requires.",
+        "supported": true
+      },
+      {
+        "statement": "The coverage is limited to up to 30 days.",
+        "about": "policy",
+        "quote": "Trips into Mexico of up to 30 days are covered for collision only, provided you buy the local liability insurance that Mexican law requires.",
+        "supported": true
+      },
+      {
+        "statement": "Local liability insurance must be purchased for the coverage to apply.",
+        "about": "policy",
+        "quote": "Trips into Mexico of up to 30 days are covered for collision only, provided you buy the local liability insurance that Mexican law requires.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 385,
+    "output_tokens": 215,
+    "cost_usd": 0.0,
+    "latency_ms": 36852.434292006365
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

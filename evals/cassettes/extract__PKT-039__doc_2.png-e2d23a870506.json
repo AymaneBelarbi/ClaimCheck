@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-039:doc_2.png",
+  "request_sha256": "ea15681b56c0c3c6202e66fcc8c2c94743b4dac7778fd29ceb42166ca39518ce",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Kate Schofield",
+      "confidence": 1.0,
+      "source_text": "Kate Schofield"
+    },
+    "id_number": {
+      "value": "p94562391",
+      "confidence": 1.0,
+      "source_text": "Licence no. p94562391"
+    },
+    "date_of_birth": {
+      "value": "March 28, 1991",
+      "confidence": 1.0,
+      "source_text": "Born March 28, 1991"
+    },
+    "expiry_date": {
+      "value": "February 11, 2032",
+      "confidence": 1.0,
+      "source_text": "Valid until February 11, 2032"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 491,
+    "output_tokens": 195,
+    "cost_usd": 0.0,
+    "latency_ms": 33895.0902079996
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-047:doc_1.pdf",
+  "request_sha256": "5eda7fb3a12169618978ac53e88a35455052c7cce822e72036874d1cf2629c9e",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-454143",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2025-454143"
+    },
+    "incident_date": {
+      "value": "3 February 2025",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 3 February 2025"
+    },
+    "location": {
+      "value": "94589 Tanner Locks, Martinmouth",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 94589 Tanner Locks, Martinmouth"
+    },
+    "description": {
+      "value": "Vehicle LZA-4414 was struck on the front nearside by a second vehicle emerging from a side road onto Tanner Locks. Minor damage to both vehicles, no injuries. Road was dry.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nVehicle LZA-4414 was struck on the front nearside by a second vehicle emerging from a side road onto Tanner Locks. Minor damage to both vehicles, no injuries. Road was dry."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 551,
+    "output_tokens": 281,
+    "cost_usd": 0.0,
+    "latency_ms": 44679.65233399991
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-041:doc_5.png",
+  "request_sha256": "db8c338f16d5119d4404a590554873c38cc3ac444f277f1a546bbb8e244c5c30",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "SAULI SABATINO",
+      "confidence": 1.0,
+      "source_text": "NAME\nSAULI SABATINO"
+    },
+    "id_number": {
+      "value": "D34382457",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD34382457"
+    },
+    "date_of_birth": {
+      "value": "1 July 1953",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n1 July 1953"
+    },
+    "expiry_date": {
+      "value": "27/09/2026",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n27/09/2026"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 496,
+    "output_tokens": 182,
+    "cost_usd": 0.0,
+    "latency_ms": 27513.678624998647
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

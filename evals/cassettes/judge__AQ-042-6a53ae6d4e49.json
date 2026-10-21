@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-042",
+  "request_sha256": "c7a9fbe515cd572ab849b9c17dc93bca01cc0add004a9718672503173a311841",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy does not cover mechanical breakdowns.",
+        "about": "policy",
+        "quote": "[6.2 Wear, tear and mechanical failure] We do not cover wear and tear, loss of value, mechanical or electrical breakdown, or damage to tyres caused by braking, punctures, cuts or bursts.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 363,
+    "output_tokens": 89,
+    "cost_usd": 0.0,
+    "latency_ms": 13408.465250002337
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

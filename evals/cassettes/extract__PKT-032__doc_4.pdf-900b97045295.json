@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-032:doc_4.pdf",
+  "request_sha256": "0ebed0e73ed90acb009492c9903fd3693d5a370f4726773adb71067903e70c24",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "SHAW & SONS PANELWORKS",
+      "confidence": 1.0,
+      "source_text": "SHAW & SONS PANELWORKS"
+    },
+    "invoice_date": {
+      "value": "March 26, 2024",
+      "confidence": 1.0,
+      "source_text": "Issued: March 26, 2024"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Radiator support",
+          "amount": "$755.17"
+        },
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$777.40"
+        },
+        {
+          "description": "Labour (9.0 hours)",
+          "amount": "$3,057.13"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Radiator support\n2 Bonnet, repair and refinish\n3 Labour (9.0 hours)"
+    },
+    "total": {
+      "value": "$3,057.13",
+      "confidence": 1.0,
+      "source_text": "$3,057.13"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 574,
+    "output_tokens": 282,
+    "cost_usd": 0.0,
+    "latency_ms": 46345.45954100031
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

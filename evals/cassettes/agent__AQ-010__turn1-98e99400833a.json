@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-010:turn1",
+  "request_sha256": "f50a3b5f4fad7c175e7d857261074ce82976c8304d9a08df4bc49c31054edee5",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_qq99se6g",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "glass breakage"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1040,
+    "output_tokens": 24,
+    "cost_usd": 0.0,
+    "latency_ms": 3868.283165997127
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

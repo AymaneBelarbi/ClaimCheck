@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-038:turn3",
+  "request_sha256": "237ffcb3c2ec1ec0ebb700677afe4da3b26bc4a4deeb0f17263248b20cd42c7a",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The policy excludes coverage for loss or damage that happens while the vehicle is used for racing, rallies or speed tests.\", \"citations\": [\"6.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2113,
+    "output_tokens": 39,
+    "cost_usd": 0.0,
+    "latency_ms": 13522.23766699899
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

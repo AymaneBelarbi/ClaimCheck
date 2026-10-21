@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-039",
+  "request_sha256": "759d1ce2f9084d7da49dfe7d4692dd3eab648c33e0a708c8f4c411ff3ded5aae",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "No policy version was in force on the incident date.",
+        "about": "policy",
+        "quote": "",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 330,
+    "output_tokens": 49,
+    "cost_usd": 0.0,
+    "latency_ms": 8061.047792005411
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

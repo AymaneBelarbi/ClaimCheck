@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-012:doc_1.pdf",
+  "request_sha256": "7652934ec6389604f350f8b1c6d9d55a9d821e5a88d284a1c1293f73bb3e34f9",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "ClearView Glass",
+      "confidence": 1.0,
+      "source_text": "ClearView Glass"
+    },
+    "invoice_date": {
+      "value": "10 December 2025",
+      "confidence": 1.0,
+      "source_text": "Date: 10 December 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Urethane adhesive and primer",
+          "amount": "$161.29"
+        },
+        {
+          "description": "Side window glass",
+          "amount": "$125.29"
+        },
+        {
+          "description": "ADAS camera recalibration",
+          "amount": "$125.12"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$245.55"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Urethane adhesive and primer\n$161.29\nSide window glass\n$125.29\nADAS camera recalibration\n$125.12\nLabour (2.0 hours)\n$245.55"
+    },
+    "total": {
+      "value": "$657.25",
+      "confidence": 1.0,
+      "source_text": "Total due $657.25"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 590,
+    "output_tokens": 326,
+    "cost_usd": 0.0,
+    "latency_ms": 38593.99654200024
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

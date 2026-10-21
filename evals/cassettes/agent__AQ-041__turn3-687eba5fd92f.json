@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-041:turn3",
+  "request_sha256": "6e05282fef0b9eaa364ad53b11e60dbe79b6049d3e43633431424f960d24d528",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No cover applies to incidents on or after the date given in the notice of lapse, which is 14 days after the letter regarding the unpaid premium.\", \"citations\": [\"2.2\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1651,
+    "output_tokens": 45,
+    "cost_usd": 0.0,
+    "latency_ms": 14610.172625005362
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

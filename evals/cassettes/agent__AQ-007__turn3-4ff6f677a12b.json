@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-007:turn3",
+  "request_sha256": "235df00e8b6a2abbb99fdfbd6817edae64c9a674ee988a51c0abde681976ed98",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The policy excludes coverage for incidents where the driver's licence has expired.\", \"citations\": [\"1.2\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2080,
+    "output_tokens": 30,
+    "cost_usd": 0.0,
+    "latency_ms": 13273.8784999965
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

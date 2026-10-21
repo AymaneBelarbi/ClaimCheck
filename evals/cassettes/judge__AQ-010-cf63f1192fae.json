@@ -1,0 +1,36 @@
+{
+  "key": "judge:AQ-010",
+  "request_sha256": "e49c46d16d6210452f475cc647b533a563e77e6eec5440c9f3443c0c3008df45",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "Glass damage is covered.",
+        "about": "policy",
+        "quote": "[4.2 Glass breakage] We cover repair or replacement of the windscreen, side windows, rear window and sunroof of the vehicle, including recalibration of cameras and sensors mounted on the windscreen, up to a limit of $1,500 per claim.",
+        "supported": true
+      },
+      {
+        "statement": "The coverage limit is $1,500 per claim.",
+        "about": "policy",
+        "quote": "[4.2 Glass breakage] We cover repair or replacement of the windscreen, side windows, rear window and sunroof of the vehicle, including recalibration of cameras and sensors mounted on the windscreen, up to a limit of $1,500 per claim.",
+        "supported": true
+      },
+      {
+        "statement": "There is a $100 excess for glass claims.",
+        "about": "policy",
+        "quote": "[5.1 Excess] You pay the following excess on each claim: collision claims $500; glass claims $100; theft claims $750. We deduct the excess from the amount we pay.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 481,
+    "output_tokens": 280,
+    "cost_usd": 0.0,
+    "latency_ms": 44900.32241700101
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

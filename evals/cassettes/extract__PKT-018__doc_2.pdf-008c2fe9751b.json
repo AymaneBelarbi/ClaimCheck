@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-018:doc_2.pdf",
+  "request_sha256": "cb607e29fab69e4c5bf7cb5e145ef54260473cf80b9fcd4f5861989e60d72bb4",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Elise Hardy",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nElise Hardy"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "June 9, 2025",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\nJune 9, 2025"
+    },
+    "incident_type": {
+      "value": "THEFT",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nTHEFT"
+    },
+    "vehicle_plate": {
+      "value": "WRK-5074",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nWRK-5074 2018 Ford Focus"
+    },
+    "description": {
+      "value": "parked the car on Schwartz Inlet in the evening and it was gone the next morning. | still have both\nkeys.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\n| parked the car on Schwartz Inlet in the evening and it was gone the next morning. | still have both\nkeys."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 602,
+    "output_tokens": 333,
+    "cost_usd": 0.0,
+    "latency_ms": 30917.254082999534
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

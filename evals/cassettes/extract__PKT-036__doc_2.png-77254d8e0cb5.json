@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-036:doc_2.png",
+  "request_sha256": "dd7907e4f9cc10fcfd8d4417e4c019d00eb82a3b370359d2acfb4aee824c96be",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Kimberley Lewis",
+      "confidence": 1.0,
+      "source_text": "Kimberley Lewis"
+    },
+    "id_number": {
+      "value": "D62285934",
+      "confidence": 1.0,
+      "source_text": "Licence no. D62285934"
+    },
+    "date_of_birth": {
+      "value": "2001-10-13",
+      "confidence": 1.0,
+      "source_text": "Born 2001-10-13"
+    },
+    "expiry_date": {
+      "value": "2032-09-19",
+      "confidence": 1.0,
+      "source_text": "Valid until 2032-09-19"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 493,
+    "output_tokens": 199,
+    "cost_usd": 0.0,
+    "latency_ms": 30688.23125000017
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

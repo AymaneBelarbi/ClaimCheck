@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-022:doc_2.pdf",
+  "request_sha256": "5f3d68c0be512a4828c99cdac90c3e5a31271494355cae4888f409b6b46109a7",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Knight & Sons Panelworks",
+      "confidence": 1.0,
+      "source_text": "Knight & Sons Panelworks"
+    },
+    "invoice_date": {
+      "value": "19 August 2025",
+      "confidence": 1.0,
+      "source_text": "Date: 19 August 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Wing panel, replace",
+          "amount": "$922.31"
+        },
+        {
+          "description": "Wheel alignment",
+          "amount": "$805.49"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$445.41"
+        },
+        {
+          "description": "Labour (9.0 hours)",
+          "amount": "$844.20"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Wing panel, replace\nWheel alignment\nRear bumper cover, replace\nLabour (9.0 hours)"
+    },
+    "total": {
+      "value": "$3,017.41",
+      "confidence": 1.0,
+      "source_text": "Total due $3,017.41"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 587,
+    "output_tokens": 299,
+    "cost_usd": 0.0,
+    "latency_ms": 63561.90795800285
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

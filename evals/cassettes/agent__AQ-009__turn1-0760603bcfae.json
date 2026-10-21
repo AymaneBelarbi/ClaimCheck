@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-009:turn1",
+  "request_sha256": "530bb7d30d585a2ac3171fa7d98f6d6ff4c701cd052ed17309beaae8ef56c112",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_h4a71ycu",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "theft reporting"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1043,
+    "output_tokens": 24,
+    "cost_usd": 0.0,
+    "latency_ms": 4069.4121249980526
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

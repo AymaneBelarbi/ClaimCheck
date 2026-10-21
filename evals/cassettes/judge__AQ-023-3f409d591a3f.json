@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-023",
+  "request_sha256": "51430f913e031c7ef31c4d550c551cb79b4b638ed01c5d319d5748ae470f85b1",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The invoices show totals of $4,698.62 and $4,977.98.",
+        "about": "claim",
+        "quote": "",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 354,
+    "output_tokens": 63,
+    "cost_usd": 0.0,
+    "latency_ms": 12046.239792005508
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

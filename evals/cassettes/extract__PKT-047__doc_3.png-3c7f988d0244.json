@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-047:doc_3.png",
+  "request_sha256": "de26c6cada7a916f1a5cdf2e23753ab875764ef43feeeac1991f9d1501516a85",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Michelle Bailey",
+      "confidence": 1.0,
+      "source_text": "NAME\nMichelle Bailey"
+    },
+    "id_number": {
+      "value": "D19522219",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD19522219"
+    },
+    "date_of_birth": {
+      "value": "December 1, 1964",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\nDecember 1, 1964"
+    },
+    "expiry_date": {
+      "value": "November 5, 2031",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\nNovember 5, 2031"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 174,
+    "cost_usd": 0.0,
+    "latency_ms": 30104.95612500017
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

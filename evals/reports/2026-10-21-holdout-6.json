@@ -1,0 +1,959 @@
+{
+  "split": "holdout",
+  "stages": [
+    "classification",
+    "extraction",
+    "retrieval",
+    "validation",
+    "agent"
+  ],
+  "generated_at": "2026-10-21T10:40:17.328865+00:00",
+  "llm_backend": "replay",
+  "llm_model": "qwen2.5:7b-instruct",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "replay_drift_count": 6,
+  "cost": {
+    "backend": "replay",
+    "model": "qwen2.5:7b-instruct",
+    "packets": 15,
+    "avg_cost_usd_per_packet": 0.0,
+    "p95_latency_ms_per_packet": 271847.5,
+    "p95_wall_ms_per_packet": 2411.1,
+    "avg_llm_calls_per_packet": 3.3333333333333335
+  },
+  "metrics": {
+    "classification.accuracy": 1.0,
+    "classification.llm_fallback_rate": 0.061224489795918366,
+    "classification.unreadable_flagged_rate": 1.0,
+    "extraction.precision": 0.9436619718309859,
+    "extraction.recall": 0.9220183486238532,
+    "extraction.f1": 0.9327146171693735,
+    "retrieval.recall_at_5": 1.0,
+    "retrieval.recall_at_1": 1.0,
+    "retrieval.mrr": 1.0,
+    "retrieval.wrong_version_hits": 0.0,
+    "validation.accuracy": 1.0,
+    "validation.end_to_end_accuracy": 1.0,
+    "agent.faithfulness": 0.875,
+    "agent.citation_hit": 0.875,
+    "agent.claim_data_accuracy": 0.6666666666666666
+  },
+  "details": {
+    "classification": {
+      "split": "holdout",
+      "documents": {
+        "readable": 47,
+        "unreadable": 2
+      },
+      "per_doc_type": {
+        "claim_form": {
+          "correct": 15,
+          "total": 15,
+          "accuracy": 1.0
+        },
+        "id_card": {
+          "correct": 13,
+          "total": 13,
+          "accuracy": 1.0
+        },
+        "invoice": {
+          "correct": 9,
+          "total": 9,
+          "accuracy": 1.0
+        },
+        "incident_report": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "claim_form": {
+          "claim_form": 15
+        },
+        "id_card": {
+          "id_card": 13
+        },
+        "invoice": {
+          "invoice": 9
+        },
+        "incident_report": {
+          "incident_report": 10
+        }
+      },
+      "misclassified": []
+    },
+    "extraction": {
+      "split": "holdout",
+      "documents": {
+        "scored": 47,
+        "skipped_unreadable": 2
+      },
+      "counts": {
+        "tp": 201,
+        "fp": 12,
+        "fn": 17,
+        "precision": 0.9436619718309859,
+        "recall": 0.9220183486238532,
+        "f1": 0.9327146171693735
+      },
+      "verdicts": {
+        "found": 213,
+        "low_confidence": 5
+      },
+      "per_doc_type": {
+        "claim_form": {
+          "tp": 79,
+          "fp": 10,
+          "fn": 11,
+          "precision": 0.8876404494382022,
+          "recall": 0.8777777777777778,
+          "f1": 0.88268156424581
+        },
+        "id_card": {
+          "tp": 50,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9803921568627451,
+          "recall": 0.9615384615384616,
+          "f1": 0.970873786407767
+        },
+        "invoice": {
+          "tp": 35,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9722222222222222,
+          "recall": 0.9722222222222222,
+          "f1": 0.9722222222222222
+        },
+        "incident_report": {
+          "tp": 37,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.925,
+          "f1": 0.961038961038961
+        }
+      },
+      "per_field": {
+        "claim_form.claimant_name": {
+          "tp": 14,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "f1": 0.9333333333333333
+        },
+        "claim_form.description": {
+          "tp": 5,
+          "fp": 9,
+          "fn": 10,
+          "precision": 0.35714285714285715,
+          "recall": 0.3333333333333333,
+          "f1": 0.3448275862068965
+        },
+        "claim_form.incident_date": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "claim_form.incident_type": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "claim_form.policy_number": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "claim_form.vehicle_plate": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "id_card.date_of_birth": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1": 0.9600000000000001
+        },
+        "id_card.expiry_date": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "id_card.full_name": {
+          "tp": 12,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9230769230769231,
+          "recall": 0.9230769230769231,
+          "f1": 0.9230769230769231
+        },
+        "id_card.id_number": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.description": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.incident_date": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.location": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "incident_report.report_number": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1": 0.8235294117647058
+        },
+        "invoice.invoice_date": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "invoice.line_items": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8888888888888888,
+          "recall": 0.8888888888888888,
+          "f1": 0.8888888888888888
+        },
+        "invoice.total": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "invoice.vendor": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "worst_misses": [
+        {
+          "packet_id": "PKT-026",
+          "filename": "doc_1.pdf",
+          "field": "claimant_name",
+          "gold": "F\u00e1bio Neto",
+          "predicted": "Fabio Neto",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-026",
+          "filename": "doc_4.png",
+          "field": "full_name",
+          "gold": "F\u00c1BIO NETO",
+          "predicted": "FABIO NETO",
+          "verdict": "found",
+          "confidence": 0.96,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-026",
+          "filename": "doc_1.pdf",
+          "field": "description",
+          "gold": "A deer ran across Daniel Knoll after dark and I could not avoid it. The front of the car is damaged.",
+          "predicted": "A deer ran across Daniel Knoll after dark and | could not avoid it. The front of the car is damaged.",
+          "verdict": "found",
+          "confidence": 0.9581,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-019",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "The car was taken from outside my home on Robert Harbor overnight. I reported it to the police as soon as I noticed.",
+          "predicted": "The car was taken from outside my home on Robert Harbor overnight. | reported it to the police as soon as | noticed.",
+          "verdict": "found",
+          "confidence": 0.9574,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-022",
+          "filename": "doc_4.pdf",
+          "field": "description",
+          "gold": "A deer ran across Michelle Station after dark and I could not avoid it. The front of the car is damaged.",
+          "predicted": "A deer ran across Michelle Station after dark and | could not avoid it. The front of the car is damaged.",
+          "verdict": "found",
+          "confidence": 0.9567,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-046",
+          "filename": "doc_3.pdf",
+          "field": "description",
+          "gold": "A deer ran across Steven Pass after dark and I could not avoid it. The front of the car is damaged.",
+          "predicted": "A deer ran across Steven Pass after dark and | could not avoid it. The front of the car is damaged.",
+          "verdict": "found",
+          "confidence": 0.9562,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-007",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "The car was taken from outside my home on Jenkins Valleys overnight. I reported it to the police as soon as I noticed.",
+          "predicted": "The car was taken from outside my home on Jenkins Valleys overnight. | reported it to the police as soon as\n| noticed.",
+          "verdict": "found",
+          "confidence": 0.9561,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-011",
+          "filename": "doc_1.pdf",
+          "field": "description",
+          "gold": "The car was taken from outside my home on Small Knoll overnight. I reported it to the police as soon as I noticed.",
+          "predicted": "The car was taken from outside my home on Small Knoll overnight. | reported it to the police as soon as | noticed.",
+          "verdict": "found",
+          "confidence": 0.9557,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-023",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "I parked the car on Jones Ranch in the evening and it was gone the next morning. I still have both keys.",
+          "predicted": "parked the car on Jones Ranch in the evening and it was gone the next morning. | still have both\nkeys.\n| confirm the above is true. Signed Romeo Disdero, 2024-02-04.",
+          "verdict": "found",
+          "confidence": 0.9532,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-014",
+          "filename": "doc_1.pdf",
+          "field": "description",
+          "gold": "I parked the car on Garner Avenue in the evening and it was gone the next morning. I still have both keys.",
+          "predicted": "parked the car on Garner Avenue in the evening and it was gone the next morning. | still have both\nkeys.\n| confirm the above is true. Signed Donna Comisso, 27/12/2024.",
+          "verdict": "found",
+          "confidence": 0.9519,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-003",
+          "filename": "doc_5.pdf",
+          "field": "description",
+          "gold": "While reversing out of a parking space on Tucker Vista I hit a concrete bollard that I had not seen.",
+          "predicted": "While reversing out of a parking space on Tucker Vista | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Angela Mann, 2025-07-30.",
+          "verdict": "found",
+          "confidence": 0.9493,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-003",
+          "filename": "doc_4.pdf",
+          "field": "line_items",
+          "gold": "[{\"description\": \"Wheel alignment\", \"amount\": \"2523.30\"}, {\"description\": \"Headlamp assembly\", \"amount\": \"1239.67\"}, {\"description\": \"Labour (6.0 hours)\", \"amount\": \"1737.86\"}]",
+          "predicted": "[{\"amount\": \"1239.67\", \"description\": \"Wheel alignment\"}, {\"amount\": \"1737.86\", \"description\": \"Headlamp assembly\"}, {\"amount\": \"2523.30\", \"description\": \"Labour (6.0 hours)\"}]",
+          "verdict": "found",
+          "confidence": 0.93,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-022",
+          "filename": "doc_3.pdf",
+          "field": "report_number",
+          "gold": "IR-2025-792704",
+          "predicted": "IR-2025-792704",
+          "verdict": "low_confidence",
+          "confidence": 0.69,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-046",
+          "filename": "doc_4.pdf",
+          "field": "report_number",
+          "gold": "IR-2024-595176",
+          "predicted": "IR-2024-595176",
+          "verdict": "low_confidence",
+          "confidence": 0.69,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-020",
+          "filename": "doc_1.png",
+          "field": "date_of_birth",
+          "gold": "1958-06-01",
+          "predicted": null,
+          "verdict": "low_confidence",
+          "confidence": 0.6867,
+          "details": "unparseable_date"
+        },
+        {
+          "packet_id": "PKT-014",
+          "filename": "doc_3.pdf",
+          "field": "report_number",
+          "gold": "IR-2024-514463",
+          "predicted": "IR-2024-514463",
+          "verdict": "low_confidence",
+          "confidence": 0.68,
+          "details": null
+        },
+        {
+          "packet_id": "PKT-006",
+          "filename": "doc_2.pdf",
+          "field": "description",
+          "gold": "The car was taken from outside my home on Gina Loaf overnight. I reported it to the police as soon as I noticed.",
+          "predicted": "The car was taken from outside my home on Gina Loaf overnight. | reported it to the police as soon as noticed.",
+          "verdict": "low_confidence",
+          "confidence": 0.5,
+          "details": "source_not_found"
+        }
+      ]
+    },
+    "retrieval": {
+      "split": "holdout",
+      "questions": 14,
+      "per_question": [
+        {
+          "id": "CQ-001",
+          "rank": 1
+        },
+        {
+          "id": "CQ-002",
+          "rank": 1
+        },
+        {
+          "id": "CQ-009",
+          "rank": 1
+        },
+        {
+          "id": "CQ-010",
+          "rank": 1
+        },
+        {
+          "id": "CQ-015",
+          "rank": 1
+        },
+        {
+          "id": "CQ-016",
+          "rank": 1
+        },
+        {
+          "id": "CQ-018",
+          "rank": 1
+        },
+        {
+          "id": "CQ-020",
+          "rank": 1
+        },
+        {
+          "id": "CQ-022",
+          "rank": 1
+        },
+        {
+          "id": "CQ-024",
+          "rank": 1
+        },
+        {
+          "id": "CQ-026",
+          "rank": 1
+        },
+        {
+          "id": "CQ-035",
+          "rank": 1
+        },
+        {
+          "id": "CQ-039",
+          "rank": 1
+        },
+        {
+          "id": "CQ-044",
+          "rank": 1
+        }
+      ],
+      "misses": [],
+      "control": {
+        "description": "same questions, version filter removed (all versions of the policy)",
+        "control_wrong_version_top1": {
+          "count": 8,
+          "total": 14
+        },
+        "control_wrong_version_hits": {
+          "count": 44,
+          "returned": 70
+        },
+        "control_recall_at_5": 1.0
+      }
+    },
+    "validation": {
+      "split": "holdout",
+      "packets": 15,
+      "rule_checks": 93,
+      "per_rule_accuracy": {
+        "R1_NAME_MATCH": 1.0,
+        "R2_INCIDENT_IN_COVERAGE": 1.0,
+        "R3_INVOICE_WITHIN_LIMIT": 1.0,
+        "R4_INVOICE_AFTER_INCIDENT": 1.0,
+        "R5_ID_VALID_ON_INCIDENT": 1.0,
+        "R6_REQUIRED_DOCUMENTS": 1.0,
+        "R7_INCIDENT_DATE_CONSISTENT": 1.0
+      },
+      "mismatches": [],
+      "end_to_end": {
+        "doc_types": "gold",
+        "packets_scored": 13,
+        "packets_skipped": [
+          "PKT-023",
+          "PKT-035"
+        ],
+        "rule_checks": 81,
+        "per_rule_accuracy": {
+          "R1_NAME_MATCH": 1.0,
+          "R2_INCIDENT_IN_COVERAGE": 1.0,
+          "R3_INVOICE_WITHIN_LIMIT": 1.0,
+          "R4_INVOICE_AFTER_INCIDENT": 1.0,
+          "R5_ID_VALID_ON_INCIDENT": 1.0,
+          "R6_REQUIRED_DOCUMENTS": 1.0,
+          "R7_INCIDENT_DATE_CONSISTENT": 1.0
+        },
+        "mismatches": []
+      }
+    },
+    "agent": {
+      "split": "holdout",
+      "questions": 11,
+      "policy_questions": 8,
+      "failures": {
+        "budget": 1,
+        "unfaithful": 1
+      },
+      "answers": [
+        {
+          "id": "AQ-026",
+          "packet_id": "PKT-003",
+          "question": "How much will the policy pay at most for collision damage on this claim?",
+          "expected_clause_ref": "4.1",
+          "answer": "The policy will pay up to $14,000 for collision damage, less the collision excess of $300.",
+          "citations": [
+            "4.1",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.1",
+            "5.1",
+            "3.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-027",
+          "packet_id": "PKT-005",
+          "question": "What excess does the policyholder pay on this glass claim?",
+          "expected_clause_ref": "5.1",
+          "answer": "The policyholder pays a $50 excess on this glass claim.",
+          "citations": [
+            "4.2",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage excess"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "5.1",
+            "4.1",
+            "6.2",
+            "1.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-028",
+          "packet_id": "PKT-006",
+          "question": "What does the policy say about a claim supported by a licence in another person's name?",
+          "expected_clause_ref": "7.3",
+          "answer": "The policy excludes claims supported by a licence in another person's name, as it considers such claims dishonest and will refuse the whole claim.",
+          "citations": [
+            "7.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "license in another person's name"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "license in another person's name"
+              }
+            }
+          ],
+          "retrieved": [
+            "1.2",
+            "7.3",
+            "7.2",
+            "6.1",
+            "7.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-029",
+          "packet_id": "PKT-007",
+          "question": "Which document is missing from this claim?",
+          "expected_clause_ref": null,
+          "answer": "I could not answer within the tool budget.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "budget",
+          "tool_calls": [
+            {
+              "name": "get_claim_summary",
+              "arguments": {}
+            },
+            {
+              "name": "list_claim_documents",
+              "arguments": {}
+            },
+            {
+              "name": "get_extracted_fields",
+              "arguments": {}
+            },
+            {
+              "name": "get_policy_version",
+              "arguments": {}
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft excess"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "5.1",
+            "1.1",
+            "4.1",
+            "4.4"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": false,
+          "citation_hit": null,
+          "failure": "budget"
+        },
+        {
+          "id": "AQ-030",
+          "packet_id": "PKT-007",
+          "question": "Does the policy cover a hire car after the vehicle was stolen, and for how long?",
+          "expected_clause_ref": "4.4",
+          "answer": "The policy covers a hire car for up to 14 days after the vehicle was stolen, at a daily rate of up to $40.",
+          "citations": [
+            "4.4"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.4",
+            "1.2",
+            "6.1",
+            "1.1",
+            "3.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-031",
+          "packet_id": "PKT-010",
+          "question": "What is the most the policy pays for replacing the windscreen on this claim?",
+          "expected_clause_ref": "4.2",
+          "answer": "The policy pays up to $1,200 for replacing the windscreen, less the glass excess of $75.",
+          "citations": [
+            "4.2",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "5.1",
+            "6.2",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-032",
+          "packet_id": "PKT-011",
+          "question": "Which policy version applies to this claim?",
+          "expected_clause_ref": null,
+          "answer": "No policy version was in force on the incident date, so no clause applies.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_policy_version",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-033",
+          "packet_id": "PKT-014",
+          "question": "Is the theft covered if the keys were left in the vehicle?",
+          "expected_clause_ref": "4.3",
+          "answer": "No. The theft is not covered because the keys were left in or on the vehicle, which is excluded by the policy.",
+          "citations": [
+            "4.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "6.4",
+            "5.1",
+            "7.3",
+            "7.2"
+          ],
+          "faithful": false,
+          "unsupported_statements": [
+            "The claim is not covered due to the keys being left in the vehicle."
+          ],
+          "passed": false,
+          "citation_hit": true,
+          "failure": "unfaithful"
+        },
+        {
+          "id": "AQ-034",
+          "packet_id": "PKT-015",
+          "question": "Which documents does a glass claim need?",
+          "expected_clause_ref": "7.2",
+          "answer": "A glass claim needs the invoice or estimate for the repair or replacement of the windscreen, side windows, rear window, or sunroof, up to a limit of $1,500 per claim, less the $100 glass excess.",
+          "citations": [
+            "4.2",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "6.2",
+            "5.1",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": false,
+          "failure": null
+        },
+        {
+          "id": "AQ-035",
+          "packet_id": "PKT-020",
+          "question": "Is the vehicle covered if it was being used for ride-hailing at the time of the incident?",
+          "expected_clause_ref": "6.1",
+          "answer": "No. The policy excludes coverage for the vehicle being used for hire or reward, including ride-hailing.",
+          "citations": [
+            "6.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.4",
+            "1.2",
+            "6.1",
+            "1.1",
+            "3.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-036",
+          "packet_id": "PKT-046",
+          "question": "Which validation rule failed on this claim?",
+          "expected_clause_ref": null,
+          "answer": "The validation rule R4_INVOICE_AFTER_INCIDENT failed because the invoice dated 2024-06-30 is before the incident on 2024-07-17.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_validation_results",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        }
+      ]
+    }
+  }
+}

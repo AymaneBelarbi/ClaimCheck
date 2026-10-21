@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-033:turn2",
+  "request_sha256": "65694f11330038cbc77f7636cffe64c71bf9f14ffecbe870424a5320393349d6",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The theft is not covered because the keys were left in or on the vehicle, which is excluded by the policy.\", \"citations\": [\"4.3\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1511,
+    "output_tokens": 39,
+    "cost_usd": 0.0,
+    "latency_ms": 14000.054750002164
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

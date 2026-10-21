@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-035:doc_2.pdf",
+  "request_sha256": "14e0f03fd0f5bf798fd20ecd337f339585b3b554361c3888fb60670cb0efa37b",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Deborah Vaughan",
+      "confidence": 1.0,
+      "source_text": "Claimant name Deborah Vaughan"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "18 June 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 18 June 2026"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "YFR-6443",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration YFR-6443"
+    },
+    "description": {
+      "value": "Driving on Guerrero River a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "Driving on Guerrero River a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 572,
+    "output_tokens": 298,
+    "cost_usd": 0.0,
+    "latency_ms": 54264.19004100171
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

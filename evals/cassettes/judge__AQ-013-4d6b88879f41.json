@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-013",
+  "request_sha256": "0b7ff289bfab53cec8a5e064b293ec1366e806712c06ce889e4f0fcaf5f12c97",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy does not cover hire cars while the vehicle is being repaired or after it has been stolen.",
+        "about": "policy",
+        "quote": "[6.4 Hire cars and replacement transport] We do not pay for a hire car, taxi or other replacement transport while the vehicle is being repaired or after it has been stolen.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 370,
+    "output_tokens": 94,
+    "cost_usd": 0.0,
+    "latency_ms": 13639.304000003904
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

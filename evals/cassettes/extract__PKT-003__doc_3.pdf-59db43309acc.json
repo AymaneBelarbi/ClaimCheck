@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-003:doc_3.pdf",
+  "request_sha256": "96c1367a03971f94656b1201018d851cd90dc18feb0640dd347ac08b4461e3ca",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-189183",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-189183"
+    },
+    "incident_date": {
+      "value": "2025-07-14",
+      "confidence": 1.0,
+      "source_text": "Date of incident 2025-07-14"
+    },
+    "location": {
+      "value": "88992 Tucker Vista, West David",
+      "confidence": 1.0,
+      "source_text": "Location 88992 Tucker Vista, West David"
+    },
+    "description": {
+      "value": "Single-vehicle incident in a car park on Tucker Vista. Driver of PXB-5993 reports striking a bollard at low speed while reversing. No injuries.",
+      "confidence": 1.0,
+      "source_text": "Single-vehicle incident in a car park on Tucker Vista. Driver of PXB-5993 reports striking a bollard at low speed while reversing. No injuries."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 548,
+    "output_tokens": 265,
+    "cost_usd": 0.0,
+    "latency_ms": 44202.1584590002
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

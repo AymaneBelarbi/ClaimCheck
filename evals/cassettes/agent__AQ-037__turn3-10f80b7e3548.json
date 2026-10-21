@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-037:turn3",
+  "request_sha256": "e80ec569b9a01987468150bcb083c4a3ec6d902e28cd84389e22f38a729a5c50",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The policy excludes damage caused while the driver is over the legal limit for alcohol or under the influence of drugs.\", \"citations\": [\"6.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2162,
+    "output_tokens": 38,
+    "cost_usd": 0.0,
+    "latency_ms": 15658.181375001732
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-028:doc_2.pdf",
+  "request_sha256": "955e704b4488d5197a0cd03ac7a920c0d488bb0794cd377b52172286b3403894",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-694536",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-694536"
+    },
+    "incident_date": {
+      "value": "November 19, 2024",
+      "confidence": 1.0,
+      "source_text": "Occurred on: November 19, 2024"
+    },
+    "location": {
+      "value": "67849 Lopez Dale, Grossland",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 67849 Lopez Dale, Grossland"
+    },
+    "description": {
+      "value": "Owner states vehicle SHS-7804 was left locked on Lopez Dale at 21:00 and found missing the following morning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nOwner states vehicle SHS-7804 was left locked on Lopez Dale at 21:00 and found missing the following morning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 557,
+    "output_tokens": 284,
+    "cost_usd": 0.0,
+    "latency_ms": 47258.357208000234
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

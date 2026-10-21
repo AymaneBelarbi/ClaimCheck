@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-026:doc_3.pdf",
+  "request_sha256": "a03ff9f064e5d61094aa48753790af8fbf36692f396feb382a2d5a2f8a3c2e5d",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "EVANS AUTO BODY",
+      "confidence": 1.0,
+      "source_text": "EVANS AUTO BODY"
+    },
+    "invoice_date": {
+      "value": "October 13, 2025",
+      "confidence": 1.0,
+      "source_text": "Issued: October 13, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Parking sensor, replace",
+          "amount": "$1,593.62"
+        },
+        {
+          "description": "Wing panel, replace",
+          "amount": "$2,316.46"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$3,752.36"
+        },
+        {
+          "description": "Rear bumper cover, replace",
+          "amount": "$2,856.92"
+        },
+        {
+          "description": "Labour (7.5 hours)",
+          "amount": "$4,036.58"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Parking sensor, replace $1,593.62"
+    },
+    "total": {
+      "value": "$14,555.94",
+      "confidence": 1.0,
+      "source_text": "Amount due $14,555.94"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 601,
+    "output_tokens": 334,
+    "cost_usd": 0.0,
+    "latency_ms": 62981.96333300075
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

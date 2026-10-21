@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-017:doc_4.pdf",
+  "request_sha256": "0db52d60501793e374630f5b2c1ea7855276a2a67cad297e16b2a37e5daf9730",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-546276",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2026-546276"
+    },
+    "incident_date": {
+      "value": "5 March 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 5 March 2026"
+    },
+    "location": {
+      "value": "17294 Fernandez Mountain, Wolfeborough",
+      "confidence": 1.0,
+      "source_text": "Location 17294 Fernandez Mountain, Wolfeborough"
+    },
+    "description": {
+      "value": "Vehicle BRS-7945 struck a deer on Fernandez Mountain at approximately 19:00. Animal did not survive.\nDriver uninjured. Front-end damage, vehicle driven from scene.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle BRS-7945 struck a deer on Fernandez Mountain at approximately 19:00. Animal did not survive.\nDriver uninjured. Front-end damage, vehicle driven from scene."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 548,
+    "output_tokens": 274,
+    "cost_usd": 0.0,
+    "latency_ms": 34287.67683299975
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

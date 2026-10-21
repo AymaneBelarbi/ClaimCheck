@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-039:doc_1.pdf",
+  "request_sha256": "399518c0ecdf3e3cd83edb7ced6961d358b0bb9ed5bc3cd109b181d56391ba9a",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-978685",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2026-978685"
+    },
+    "incident_date": {
+      "value": "July 18, 2026",
+      "confidence": 1.0,
+      "source_text": "Occurred on: July 18, 2026"
+    },
+    "location": {
+      "value": "21464 Justin Run, Lake Lindaville",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 21464 Justin Run, Lake Lindaville"
+    },
+    "description": {
+      "value": "Two-vehicle collision on Justin Run. Vehicle AUA-5843 was struck from behind while stationary at a red signal. No injuries reported. Both drivers exchanged details.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nTwo-vehicle collision on Justin Run. Vehicle AUA-5843 was struck from behind while stationary at a red\nsignal. No injuries reported. Both drivers exchanged details."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 549,
+    "output_tokens": 277,
+    "cost_usd": 0.0,
+    "latency_ms": 53455.33987499948
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,410 @@
+{
+  "split": "holdout",
+  "stages": [
+    "agent"
+  ],
+  "generated_at": "2026-10-21T09:11:16.086997+00:00",
+  "llm_backend": "replay",
+  "llm_model": "qwen2.5:7b-instruct",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "replay_drift_count": 0,
+  "metrics": {
+    "agent.faithfulness": 0.875,
+    "agent.citation_hit": 0.875,
+    "agent.claim_data_accuracy": 0.6666666666666666
+  },
+  "details": {
+    "agent": {
+      "split": "holdout",
+      "questions": 11,
+      "policy_questions": 8,
+      "failures": {
+        "budget": 1,
+        "unfaithful": 1
+      },
+      "answers": [
+        {
+          "id": "AQ-026",
+          "packet_id": "PKT-003",
+          "question": "How much will the policy pay at most for collision damage on this claim?",
+          "expected_clause_ref": "4.1",
+          "answer": "The policy will pay up to $14,000 for collision damage, less the collision excess of $300.",
+          "citations": [
+            "4.1",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "collision limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.1",
+            "5.1",
+            "3.1",
+            "6.1",
+            "4.3"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-027",
+          "packet_id": "PKT-005",
+          "question": "What excess does the policyholder pay on this glass claim?",
+          "expected_clause_ref": "5.1",
+          "answer": "The policyholder pays a $50 excess on this glass claim.",
+          "citations": [
+            "4.2",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage excess"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "5.1",
+            "4.1",
+            "6.2",
+            "1.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-028",
+          "packet_id": "PKT-006",
+          "question": "What does the policy say about a claim supported by a licence in another person's name?",
+          "expected_clause_ref": "7.3",
+          "answer": "The policy excludes claims supported by a licence in another person's name, as it considers such claims dishonest and will refuse the whole claim.",
+          "citations": [
+            "7.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "license in another person's name"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "license in another person's name"
+              }
+            }
+          ],
+          "retrieved": [
+            "1.2",
+            "7.3",
+            "7.2",
+            "6.1",
+            "7.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-029",
+          "packet_id": "PKT-007",
+          "question": "Which document is missing from this claim?",
+          "expected_clause_ref": null,
+          "answer": "I could not answer within the tool budget.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "budget",
+          "tool_calls": [
+            {
+              "name": "get_claim_summary",
+              "arguments": {}
+            },
+            {
+              "name": "list_claim_documents",
+              "arguments": {}
+            },
+            {
+              "name": "get_extracted_fields",
+              "arguments": {}
+            },
+            {
+              "name": "get_policy_version",
+              "arguments": {}
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft excess"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "5.1",
+            "1.1",
+            "4.1",
+            "4.4"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": false,
+          "citation_hit": null,
+          "failure": "budget"
+        },
+        {
+          "id": "AQ-030",
+          "packet_id": "PKT-007",
+          "question": "Does the policy cover a hire car after the vehicle was stolen, and for how long?",
+          "expected_clause_ref": "4.4",
+          "answer": "The policy covers a hire car for up to 14 days after the vehicle was stolen, at a daily rate of up to $40.",
+          "citations": [
+            "4.4"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.4",
+            "1.2",
+            "6.1",
+            "1.1",
+            "3.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-031",
+          "packet_id": "PKT-010",
+          "question": "What is the most the policy pays for replacing the windscreen on this claim?",
+          "expected_clause_ref": "4.2",
+          "answer": "The policy pays up to $1,200 for replacing the windscreen, less the glass excess of $75.",
+          "citations": [
+            "4.2",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage limit"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "5.1",
+            "6.2",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-032",
+          "packet_id": "PKT-011",
+          "question": "Which policy version applies to this claim?",
+          "expected_clause_ref": null,
+          "answer": "No policy version was in force on the incident date, so no clause applies.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_policy_version",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        },
+        {
+          "id": "AQ-033",
+          "packet_id": "PKT-014",
+          "question": "Is the theft covered if the keys were left in the vehicle?",
+          "expected_clause_ref": "4.3",
+          "answer": "No. The theft is not covered because the keys were left in or on the vehicle, which is excluded by the policy.",
+          "citations": [
+            "4.3"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "theft"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.3",
+            "6.4",
+            "5.1",
+            "7.3",
+            "7.2"
+          ],
+          "faithful": false,
+          "unsupported_statements": [
+            "The claim is not covered due to the keys being left in the vehicle."
+          ],
+          "passed": false,
+          "citation_hit": true,
+          "failure": "unfaithful"
+        },
+        {
+          "id": "AQ-034",
+          "packet_id": "PKT-015",
+          "question": "Which documents does a glass claim need?",
+          "expected_clause_ref": "7.2",
+          "answer": "A glass claim needs the invoice or estimate for the repair or replacement of the windscreen, side windows, rear window, or sunroof, up to a limit of $1,500 per claim, less the $100 glass excess.",
+          "citations": [
+            "4.2",
+            "5.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "glass breakage"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.2",
+            "6.2",
+            "5.1",
+            "4.1",
+            "6.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": false,
+          "failure": null
+        },
+        {
+          "id": "AQ-035",
+          "packet_id": "PKT-020",
+          "question": "Is the vehicle covered if it was being used for ride-hailing at the time of the incident?",
+          "expected_clause_ref": "6.1",
+          "answer": "No. The policy excludes coverage for the vehicle being used for hire or reward, including ride-hailing.",
+          "citations": [
+            "6.1"
+          ],
+          "dropped_citations": [],
+          "uncited": false,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            },
+            {
+              "name": "search_policy_clauses",
+              "arguments": {
+                "query": "hire car"
+              }
+            }
+          ],
+          "retrieved": [
+            "4.4",
+            "1.2",
+            "6.1",
+            "1.1",
+            "3.1"
+          ],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": true,
+          "failure": null
+        },
+        {
+          "id": "AQ-036",
+          "packet_id": "PKT-046",
+          "question": "Which validation rule failed on this claim?",
+          "expected_clause_ref": null,
+          "answer": "The validation rule R4_INVOICE_AFTER_INCIDENT failed because the invoice dated 2024-06-30 is before the incident on 2024-07-17.",
+          "citations": [],
+          "dropped_citations": [],
+          "uncited": true,
+          "stop_reason": "answered",
+          "tool_calls": [
+            {
+              "name": "get_validation_results",
+              "arguments": {}
+            }
+          ],
+          "retrieved": [],
+          "faithful": true,
+          "unsupported_statements": [],
+          "passed": true,
+          "citation_hit": null,
+          "failure": null
+        }
+      ]
+    }
+  }
+}

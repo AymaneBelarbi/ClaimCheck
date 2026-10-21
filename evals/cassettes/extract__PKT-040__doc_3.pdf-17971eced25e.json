@@ -1,0 +1,45 @@
+{
+  "key": "extract:PKT-040:doc_3.pdf",
+  "request_sha256": "b62ef27ccc7234632ee883a507b76a97f19c75c3851a54794caee19d01f50111",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "NORTH ANDREW AUTO GLASS",
+      "confidence": 1.0,
+      "source_text": "NORTH ANDREW AUTO GLASS"
+    },
+    "invoice_date": {
+      "value": "August 14, 2026",
+      "confidence": 1.0,
+      "source_text": "Issued: August 14, 2026"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Side window glass",
+          "amount": "$545.40"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$654.61"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Side window glass\n2 Labour (2.0 hours)"
+    },
+    "total": {
+      "value": "$1,200.01",
+      "confidence": 1.0,
+      "source_text": "Line total\n$1,200.01"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 555,
+    "output_tokens": 244,
+    "cost_usd": 0.0,
+    "latency_ms": 37349.10262500125
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

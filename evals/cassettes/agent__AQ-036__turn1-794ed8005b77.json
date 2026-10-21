@@ -1,0 +1,24 @@
+{
+  "key": "agent:AQ-036:turn1",
+  "request_sha256": "bf8eb4073332d3687c1b8aebc401cb1a078466529497b3ca1bed02340ac58743",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_4rvhvdc6",
+        "name": "get_validation_results",
+        "arguments": {}
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1040,
+    "output_tokens": 17,
+    "cost_usd": 0.0,
+    "latency_ms": 3211.2571249963366
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

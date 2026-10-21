@@ -1,0 +1,18 @@
+{
+  "key": "classify:PKT-009:doc_2.pdf",
+  "request_sha256": "911154f1f7d987eda372f81ce5424d56b8bb6bcca7faf2b33a22a72ae69e394d",
+  "kind": "structured",
+  "response": {
+    "doc_type": "claim_form",
+    "confidence": 1.0
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 250,
+    "output_tokens": 19,
+    "cost_usd": 0.0,
+    "latency_ms": 3019.001666999884
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

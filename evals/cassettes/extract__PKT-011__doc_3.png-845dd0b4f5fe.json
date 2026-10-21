@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-011:doc_3.png",
+  "request_sha256": "cf73e6bc546e96723acae5e1e71a72ccee65b16e2c45fdba4524d8a141527396",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Connor Edwards",
+      "confidence": 1.0,
+      "source_text": "Connor Edwards"
+    },
+    "id_number": {
+      "value": "D39951176",
+      "confidence": 1.0,
+      "source_text": "Licence no. D39951176"
+    },
+    "date_of_birth": {
+      "value": "1955-01-13",
+      "confidence": 1.0,
+      "source_text": "Born 1955-01-13"
+    },
+    "expiry_date": {
+      "value": "2026-07-25",
+      "confidence": 1.0,
+      "source_text": "Valid until 2026-07-25"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 492,
+    "output_tokens": 195,
+    "cost_usd": 0.0,
+    "latency_ms": 76347.31020899926
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

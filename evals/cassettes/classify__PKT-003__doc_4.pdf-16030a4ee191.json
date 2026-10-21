@@ -1,0 +1,18 @@
+{
+  "key": "classify:PKT-003:doc_4.pdf",
+  "request_sha256": "6be47e5d8b74fc5c179ec262d80585dbc1426bc961c9630d15eb534ad0a474a0",
+  "kind": "structured",
+  "response": {
+    "doc_type": "invoice",
+    "confidence": 1.0
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 262,
+    "output_tokens": 16,
+    "cost_usd": 0.0,
+    "latency_ms": 3447.617709000042
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

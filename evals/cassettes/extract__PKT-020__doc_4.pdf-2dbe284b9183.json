@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-020:doc_4.pdf",
+  "request_sha256": "b4194f0ade2cad5106900bf8b0b140b3c780df922aa1caea744b10e8e3dd1b9c",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Francesca Morpurgo",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nFrancesca Morpurgo"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-208817"
+    },
+    "incident_date": {
+      "value": "2026-02-20",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2026-02-20"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "MBW-7280",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nMBW-7280"
+    },
+    "description": {
+      "value": "Another driver pulled out of a side road onto Wolfe Valleys and hit the front left of my car. Nobody was hurt.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nAnother driver pulled out of a side road onto Wolfe Valleys and hit the front left of my car. Nobody was hurt."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 608,
+    "output_tokens": 331,
+    "cost_usd": 0.0,
+    "latency_ms": 65831.04741599891
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-004:doc_4.pdf",
+  "request_sha256": "d22497cb8c20d7e8878dd20e81919902f9a64604b460cd50c77782c64cb9c00e",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Roland Leclerc",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nRoland Leclerc"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "August 8, 2024",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\nAugust 8, 2024"
+    },
+    "incident_type": {
+      "value": "collision",
+      "confidence": 0.8,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "GTR-4125",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nGTR-4125"
+    },
+    "description": {
+      "value": "A deer ran across Traci Trafficway after dark and | could not avoid it. The front of the car is damaged.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nA deer ran across Traci Trafficway after dark and | could not avoid it. The front of the car is damaged."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 601,
+    "output_tokens": 325,
+    "cost_usd": 0.0,
+    "latency_ms": 30753.66079200012
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

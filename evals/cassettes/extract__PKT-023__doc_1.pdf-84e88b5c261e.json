@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-023:doc_1.pdf",
+  "request_sha256": "3185089faa026c328fcdf3d37b2b4cfb3bbc832d07d83aa27d9a8c7f62cf8fa4",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-194141",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-194141"
+    },
+    "incident_date": {
+      "value": "January 22, 2024",
+      "confidence": 1.0,
+      "source_text": "Occurred on: January 22, 2024"
+    },
+    "location": {
+      "value": "254 Jones Ranch, Lake Jessica",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 254 Jones Ranch, Lake Jessica"
+    },
+    "description": {
+      "value": "Owner states vehicle WPE-3776 was left locked on Jones Ranch at 23:00 and found missing the following morning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nOwner states vehicle WPE-3776 was left locked on Jones Ranch at 23:00 and found missing the following morning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 554,
+    "output_tokens": 288,
+    "cost_usd": 0.0,
+    "latency_ms": 68450.0416660012
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

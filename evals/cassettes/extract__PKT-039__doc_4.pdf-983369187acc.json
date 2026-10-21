@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-039:doc_4.pdf",
+  "request_sha256": "5e4916a0851e72b88c6bd1affafeba4e44be27bbad6c7fc63832d164ed1054d5",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Lake Lindaville Collision Centre",
+      "confidence": 1.0,
+      "source_text": "Lake Lindaville Collision Centre INVOICE"
+    },
+    "invoice_date": {
+      "value": "July 29, 2026",
+      "confidence": 1.0,
+      "source_text": "Date: July 29, 2026"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Headlamp assembly",
+          "amount": "$2,593.00"
+        },
+        {
+          "description": "Tail lamp assembly",
+          "amount": "$3,715.50"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$6,901.49"
+        },
+        {
+          "description": "Labour (6.0 hours)",
+          "amount": "$7,017.22"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Description Amount\nHeadlamp assembly $2,593.00"
+    },
+    "total": {
+      "value": "$20,227.21",
+      "confidence": 1.0,
+      "source_text": "Total due $20,227.21"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 588,
+    "output_tokens": 307,
+    "cost_usd": 0.0,
+    "latency_ms": 50356.39791599897
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

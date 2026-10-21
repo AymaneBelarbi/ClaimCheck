@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-027",
+  "request_sha256": "bca3805035088108497127387d8ceb661a73743953f04d5a0e68ad4064018c5c",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policyholder pays a $50 excess on this glass claim.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: glass claims $50;",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 469,
+    "output_tokens": 67,
+    "cost_usd": 0.0,
+    "latency_ms": 10636.293165996904
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

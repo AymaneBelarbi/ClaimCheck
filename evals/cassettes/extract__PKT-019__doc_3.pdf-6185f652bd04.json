@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-019:doc_3.pdf",
+  "request_sha256": "f547e6ad18a079f0a23862e4dabee9c226f59cceefdecbabc7c42dae93659173",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-675155",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2026-675155"
+    },
+    "incident_date": {
+      "value": "9 August 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 9 August 2026"
+    },
+    "location": {
+      "value": "015 Robert Harbor, Reginashire",
+      "confidence": 1.0,
+      "source_text": "Location 015 Robert Harbor, Reginashire"
+    },
+    "description": {
+      "value": "Vehicle AJP-8534 reported stolen from outside the owner's residence on Robert Harbor between 21:45 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle AJP-8534 reported stolen from outside the owner's residence on Robert Harbor between 21:45 and 07:00. No signs of broken glass at the scene. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 557,
+    "output_tokens": 282,
+    "cost_usd": 0.0,
+    "latency_ms": 62222.924624998996
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

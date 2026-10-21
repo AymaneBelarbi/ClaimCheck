@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-007:doc_2.pdf",
+  "request_sha256": "6451915c459473a5a70e2da633c75877ec196935bb384acc6426619151f56ca4",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Concetta Hofmann",
+      "confidence": 1.0,
+      "source_text": "Claimant name Concetta Hofmann"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "March 26, 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident March 26, 2026"
+    },
+    "incident_type": {
+      "value": "Theft",
+      "confidence": 1.0,
+      "source_text": "Type of incident Theft"
+    },
+    "vehicle_plate": {
+      "value": "UPZ-5128",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration UPZ-5128"
+    },
+    "description": {
+      "value": "The car was taken from outside my home on Jenkins Valleys overnight. | reported it to the police as soon as\n| noticed.",
+      "confidence": 1.0,
+      "source_text": "The car was taken from outside my home on Jenkins Valleys overnight. | reported it to the police as soon as\n| noticed."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 580,
+    "output_tokens": 310,
+    "cost_usd": 0.0,
+    "latency_ms": 65232.80708299717
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

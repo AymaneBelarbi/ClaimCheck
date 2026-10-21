@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-031:doc_2.png",
+  "request_sha256": "30ebee8ed1ccffe7f12c32ab399cad0ad0961c806cbcdd407a6bbdc4cb07c926",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Christopher Schmidt",
+      "confidence": 1.0,
+      "source_text": "Christopher Schmidt"
+    },
+    "id_number": {
+      "value": "D97910553",
+      "confidence": 1.0,
+      "source_text": "Licence no. D97910553"
+    },
+    "date_of_birth": {
+      "value": "9 February 1967",
+      "confidence": 1.0,
+      "source_text": "Born 9 February 1967"
+    },
+    "expiry_date": {
+      "value": "2 July 2030",
+      "confidence": 1.0,
+      "source_text": "Valid until 2 July 2030"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 485,
+    "output_tokens": 160,
+    "cost_usd": 0.0,
+    "latency_ms": 32533.990040999925
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

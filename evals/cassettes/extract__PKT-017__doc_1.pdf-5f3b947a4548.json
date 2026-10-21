@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-017:doc_1.pdf",
+  "request_sha256": "ad731d095241d30d200537088c827ce263686ba09eed11224cee829e3b6d8f8e",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "WOLFEBOROUGH COLLISION CENTRE",
+      "confidence": 1.0,
+      "source_text": "WOLFEBOROUGH COLLISION CENTRE\n65385 Harrington Turnpike, Wolfeborough | (555) 990-8441"
+    },
+    "invoice_date": {
+      "value": "2026-03-16",
+      "confidence": 1.0,
+      "source_text": "Issued: 2026-03-16"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Paint and refinish materials",
+          "amount": "$583.41"
+        },
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "$582.78"
+        },
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$640.49"
+        },
+        {
+          "description": "Labour (7.5 hours)",
+          "amount": "$616.23"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Paint and refinish materials\n2 Front bumper cover, replace\n3 Bonnet, repair and refinish\n4 Labour (7.5 hours)"
+    },
+    "total": {
+      "value": "$2,422.91",
+      "confidence": 1.0,
+      "source_text": "Line total\n$2,422.91"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 590,
+    "output_tokens": 315,
+    "cost_usd": 0.0,
+    "latency_ms": 36313.07816700064
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

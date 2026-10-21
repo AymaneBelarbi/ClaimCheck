@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-009:doc_2.pdf",
+  "request_sha256": "6aaa136e8e364055461f64cf03f367c29cbb1ea40493ce3f4dfb9f9f7f2722af",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Ema Ferreira",
+      "confidence": 1.0,
+      "source_text": "Ema Ferreira"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "AUT-208817"
+    },
+    "incident_date": {
+      "value": "2025-08-16",
+      "confidence": 1.0,
+      "source_text": "2025-08-16"
+    },
+    "incident_type": {
+      "value": "Theft",
+      "confidence": 1.0,
+      "source_text": "Theft"
+    },
+    "vehicle_plate": {
+      "value": "FHX-5100",
+      "confidence": 1.0,
+      "source_text": "FHX-5100"
+    },
+    "description": {
+      "value": "My car was stolen from a car park off Hale Course while | was at work. Both keys are with me.",
+      "confidence": 1.0,
+      "source_text": "My car was stolen from a car park off Hale Course while | was at work. Both keys are with me."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 586,
+    "output_tokens": 289,
+    "cost_usd": 0.0,
+    "latency_ms": 46422.409875000085
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

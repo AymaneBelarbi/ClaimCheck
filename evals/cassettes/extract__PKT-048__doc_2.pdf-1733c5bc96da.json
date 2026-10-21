@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-048:doc_2.pdf",
+  "request_sha256": "ecd39e4f3e851b1942e3cdc2403890ef54aae258efdbd1668d472100c601e630",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "WEST WINDSCREEN SERVICES",
+      "confidence": 1.0,
+      "source_text": "WEST WINDSCREEN SERVICES"
+    },
+    "invoice_date": {
+      "value": "2026-05-04",
+      "confidence": 1.0,
+      "source_text": "Issued: 2026-05-04"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Urethane adhesive and primer",
+          "amount": "$38.69"
+        },
+        {
+          "description": "Windscreen, OEM equivalent",
+          "amount": "$27.99"
+        },
+        {
+          "description": "Rain sensor gel pad",
+          "amount": "$44.54"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$78.89"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Urethane adhesive and primer\n$38.69"
+    },
+    "total": {
+      "value": "$190.11",
+      "confidence": 1.0,
+      "source_text": "Amount due\n$190.11"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 580,
+    "output_tokens": 290,
+    "cost_usd": 0.0,
+    "latency_ms": 51706.29383300002
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

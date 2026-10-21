@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-005:doc_2.pdf",
+  "request_sha256": "eadd10165da36f49171c5ced379801a39e3c5fc0d9e691e9f0df1f802c740ffa",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "BELL WINDSCREEN SERVICES",
+      "confidence": 1.0,
+      "source_text": "BELL WINDSCREEN SERVICES\n24241 Quinn Mountain, New Daniel | (555) 992-5270"
+    },
+    "invoice_date": {
+      "value": "November 3, 2025",
+      "confidence": 1.0,
+      "source_text": "Issued: November 3, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Rain sensor gel pad",
+          "amount": "$92.84"
+        },
+        {
+          "description": "ADAS camera recalibration",
+          "amount": "$73.71"
+        },
+        {
+          "description": "Labour (2.0 hours)",
+          "amount": "$69.08"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "1 Rain sensor gel pad\n2 ADAS camera recalibration\n3 Labour (2.0 hours)"
+    },
+    "total": {
+      "value": "$235.63",
+      "confidence": 1.0,
+      "source_text": "Line total\n$235.63"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 564,
+    "output_tokens": 255,
+    "cost_usd": 0.0,
+    "latency_ms": 43511.31883299968
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

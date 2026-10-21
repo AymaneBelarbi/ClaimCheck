@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-033:doc_1.pdf",
+  "request_sha256": "1f1885ad8bf9c11d1bdeb27290201520ba01e612ebecdab185455cd05f8a3864",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "CLEARVIEW GLASS",
+      "confidence": 1.0,
+      "source_text": "CLEARVIEW GLASS"
+    },
+    "invoice_date": {
+      "value": "2026-03-14",
+      "confidence": 1.0,
+      "source_text": "Issued: 2026-03-14"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Rain sensor gel pad",
+          "amount": "$112.83"
+        },
+        {
+          "description": "Urethane adhesive and primer",
+          "amount": "$342.33"
+        },
+        {
+          "description": "ADAS camera recalibration",
+          "amount": "$326.84"
+        },
+        {
+          "description": "Labour (1.5 hours)",
+          "amount": "$117.12"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Rain sensor gel pad\nUrethane adhesive and primer\nADAS camera recalibration\nLabour (1.5 hours)"
+    },
+    "total": {
+      "value": "$899.12",
+      "confidence": 1.0,
+      "source_text": "Line total\n$899.12"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 587,
+    "output_tokens": 266,
+    "cost_usd": 0.0,
+    "latency_ms": 42364.506165999046
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

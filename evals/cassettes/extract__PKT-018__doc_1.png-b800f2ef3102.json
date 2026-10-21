@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-018:doc_1.png",
+  "request_sha256": "fa788765e3f83a3bcde92864a66ff5de9b41c8543c7640cd5c6d63d4dbed80a5",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "ELISE HARDY",
+      "confidence": 1.0,
+      "source_text": "NAME\nELISE HARDY"
+    },
+    "id_number": {
+      "value": "D73417603",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD73417603"
+    },
+    "date_of_birth": {
+      "value": "1996-09-10",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n1996-09-10"
+    },
+    "expiry_date": {
+      "value": "2024-09-07",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n2024-09-07"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 499,
+    "output_tokens": 182,
+    "cost_usd": 0.0,
+    "latency_ms": 92887.34845899945
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-024:doc_2.pdf",
+  "request_sha256": "51a9a1cc91f500454d9f15e4b92450c1bce09555e3d626547291486dcad9c0f1",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Bruno Antunes",
+      "confidence": 1.0,
+      "source_text": "Claimant name Bruno Antunes"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-208817"
+    },
+    "incident_date": {
+      "value": "19/09/2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 19/09/2025"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident Collision"
+    },
+    "vehicle_plate": {
+      "value": "SZG-5915",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration SZG-5915"
+    },
+    "description": {
+      "value": "Another driver pulled out of a side road onto Mercedes Knolls and hit the front left of my car. Nobody was hurt.",
+      "confidence": 1.0,
+      "source_text": "What happened\nAnother driver pulled out of a side road onto Mercedes Knolls and hit the front left of my car. Nobody was hurt."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 578,
+    "output_tokens": 295,
+    "cost_usd": 0.0,
+    "latency_ms": 44413.35141699983
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

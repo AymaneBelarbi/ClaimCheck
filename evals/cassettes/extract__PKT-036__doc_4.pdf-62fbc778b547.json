@@ -1,0 +1,53 @@
+{
+  "key": "extract:PKT-036:doc_4.pdf",
+  "request_sha256": "c3bd2ca6bd6e4efd05d8a842d430212e90b0ac2ab6aa3622e0d41e91983d1523",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Kristachester Collision Centre",
+      "confidence": 1.0,
+      "source_text": "Kristachester Collision Centre"
+    },
+    "invoice_date": {
+      "value": "28/09/2026",
+      "confidence": 1.0,
+      "source_text": "Date: 28/09/2026"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Paint and refinish materials",
+          "amount": "$1,819.37"
+        },
+        {
+          "description": "Tail lamp assembly",
+          "amount": "$2,272.06"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "$1,950.18"
+        },
+        {
+          "description": "Labour (6.0 hours)",
+          "amount": "$8,607.93"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Paint and refinish materials\n$1,819.37"
+    },
+    "total": {
+      "value": "INVOICE\nInvoice no. INV-23113\nDate: 28/09/2026\nAmount\n$2,566.32",
+      "confidence": 1.0,
+      "source_text": "$2,566.32"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 592,
+    "output_tokens": 293,
+    "cost_usd": 0.0,
+    "latency_ms": 46420.455916999344
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

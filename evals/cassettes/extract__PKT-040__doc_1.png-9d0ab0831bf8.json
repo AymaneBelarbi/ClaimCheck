@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-040:doc_1.png",
+  "request_sha256": "6a0090f51abf68758bca9e358b20b3b01b73279cbc9025912f030f50321e9121",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "Stéphanie Fournier",
+      "confidence": 1.0,
+      "source_text": "Stéphanie Fournier"
+    },
+    "id_number": {
+      "value": "D40306344",
+      "confidence": 1.0,
+      "source_text": "Licence no. D40306344"
+    },
+    "date_of_birth": {
+      "value": "12 April 1980",
+      "confidence": 1.0,
+      "source_text": "Born 12 April 1980"
+    },
+    "expiry_date": {
+      "value": "26/11/2029",
+      "confidence": 1.0,
+      "source_text": "Valid until 26/11/2029"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 494,
+    "output_tokens": 178,
+    "cost_usd": 0.0,
+    "latency_ms": 28016.86195899856
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

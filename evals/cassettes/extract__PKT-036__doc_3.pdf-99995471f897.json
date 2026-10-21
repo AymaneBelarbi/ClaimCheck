@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-036:doc_3.pdf",
+  "request_sha256": "285d45b4ac0f8e263a8e9d9cb694b3ed2183c96fdd648034fc78aac7eb989f1e",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-452547",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2026-452547"
+    },
+    "incident_date": {
+      "value": "September 19, 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident September 19, 2026"
+    },
+    "location": {
+      "value": "44350 Brittany Village, Kristachester",
+      "confidence": 1.0,
+      "source_text": "Location 44350 Brittany Village, Kristachester"
+    },
+    "description": {
+      "value": "Vehicle NSF-3380 was struck on the front nearside by a second vehicle emerging from a side road onto Brittany Village. Minor damage to both vehicles, no injuries. Road was dry.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle NSF-3380 was struck on the front nearside by a second vehicle emerging from a side road onto\nBrittany Village. Minor damage to both vehicles, no injuries. Road was dry."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 553,
+    "output_tokens": 272,
+    "cost_usd": 0.0,
+    "latency_ms": 47786.64808300164
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

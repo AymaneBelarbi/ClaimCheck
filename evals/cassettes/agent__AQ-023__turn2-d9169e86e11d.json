@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-023:turn2",
+  "request_sha256": "90c9589cea941ffb390501505d7020dbe7a2299e2ab65e9885ca9b8e4c20ee1b",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The invoices show totals of $4,698.62 and $4,977.98.\", \"citations\": []}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2890,
+    "output_tokens": 36,
+    "cost_usd": 0.0,
+    "latency_ms": 37589.6995410003
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

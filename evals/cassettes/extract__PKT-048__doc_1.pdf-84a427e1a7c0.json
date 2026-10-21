@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-048:doc_1.pdf",
+  "request_sha256": "209a13edfbb12a7152de8ec788986cf199dd963d7f59c84b5747d04e95f1eadd",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Roger Deleon",
+      "confidence": 1.0,
+      "source_text": "Claimant name Roger Deleon"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-208817"
+    },
+    "incident_date": {
+      "value": "April 22, 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident April 22, 2026"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "YAE-3539",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration YAE-3539"
+    },
+    "description": {
+      "value": "Driving on Parker Mall a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen.",
+      "confidence": 1.0,
+      "source_text": "Driving on Parker Mall a piece of gravel chipped the windscreen. The chip has now cracked and needs a new screen."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 578,
+    "output_tokens": 290,
+    "cost_usd": 0.0,
+    "latency_ms": 55576.53433300038
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

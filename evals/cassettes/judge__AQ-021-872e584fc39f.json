@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-021",
+  "request_sha256": "26931f5be248fb7f90ba6779fed77c21165f7284086667901816a2ff820d73bd",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "Damage to a tyre from a puncture is not covered.",
+        "about": "policy",
+        "quote": "[6.2 Wear, tear and mechanical failure] We do not cover wear and tear, loss of value, mechanical or electrical breakdown, or damage to tyres caused by braking, punctures, cuts or bursts.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 373,
+    "output_tokens": 92,
+    "cost_usd": 0.0,
+    "latency_ms": 15704.846000000543
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

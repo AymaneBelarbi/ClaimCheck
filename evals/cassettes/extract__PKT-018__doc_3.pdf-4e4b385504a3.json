@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-018:doc_3.pdf",
+  "request_sha256": "7f5fcfb7bd1958d4d79cfc5611c4e38798cdec687c3b2518a067ad0d6d451229",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-906477",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-906477"
+    },
+    "incident_date": {
+      "value": "9 June 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 9 June 2025"
+    },
+    "location": {
+      "value": "185 Schwartz Inlet, West Ralph",
+      "confidence": 1.0,
+      "source_text": "Location 185 Schwartz Inlet, West Ralph"
+    },
+    "description": {
+      "value": "Owner states vehicle WRK-5074 was left locked on Schwartz Inlet at 21:45 and found missing the following morning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register.",
+      "confidence": 1.0,
+      "source_text": "Owner states vehicle WRK-5074 was left locked on Schwartz Inlet at 21:45 and found missing the following morning. No witnesses. Owner holds both keys. Vehicle entered on the stolen vehicle register."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 555,
+    "output_tokens": 279,
+    "cost_usd": 0.0,
+    "latency_ms": 32619.72274999971
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

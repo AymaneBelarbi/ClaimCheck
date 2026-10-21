@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-013:turn3",
+  "request_sha256": "f8ea3803a0f98db7541023f213f0e80e01a7c1bf615e4b5f680e64bb1066c398",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"No. The policy does not cover hire cars while the vehicle is being repaired or after it has been stolen.\", \"citations\": [\"6.4\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2065,
+    "output_tokens": 36,
+    "cost_usd": 0.0,
+    "latency_ms": 13587.638708006125
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

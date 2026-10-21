@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-021:turn3",
+  "request_sha256": "cc514a6bf2665c5f7b66d0e59d2d2073cab7569539918d95b1ac2908da39e063",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"Damage to a tyre from a puncture is not covered as it is excluded under wear and tear and mechanical failure.\", \"citations\": [\"6.2\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2071,
+    "output_tokens": 37,
+    "cost_usd": 0.0,
+    "latency_ms": 15471.064292003575
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

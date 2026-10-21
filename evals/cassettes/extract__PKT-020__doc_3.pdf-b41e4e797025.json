@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-020:doc_3.pdf",
+  "request_sha256": "cd4b43bebc5dd36c438d6915d34dbbd3b5cb11eaf57e6a08a56287c2c856c276",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "MILLER & SONS PANELWORKS",
+      "confidence": 1.0,
+      "source_text": "MILLER & SONS PANELWORKS"
+    },
+    "invoice_date": {
+      "value": "2026-02-20",
+      "confidence": 1.0,
+      "source_text": "Issued: 2026-02-20"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$409.25"
+        },
+        {
+          "description": "Parking sensor, replace",
+          "amount": "$594.15"
+        },
+        {
+          "description": "Labour (6.0 hours)",
+          "amount": "$629.89"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Bonnet, repair and refinish\n$409.25"
+    },
+    "total": {
+      "value": "$1,633.29",
+      "confidence": 1.0,
+      "source_text": "Line total\n$1,633.29"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 576,
+    "output_tokens": 282,
+    "cost_usd": 0.0,
+    "latency_ms": 59025.012457997946
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

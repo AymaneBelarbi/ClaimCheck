@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-023:doc_2.pdf",
+  "request_sha256": "1d306c1173c52dc163d98d5cc580cc1ce818f5fbefaf953fb7616c1b6141d06b",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Romeo Disdero",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nRomeo Disdero"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-104233"
+    },
+    "incident_date": {
+      "value": "2024-01-22",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2024-01-22"
+    },
+    "incident_type": {
+      "value": "THEFT",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nTHEFT"
+    },
+    "vehicle_plate": {
+      "value": "WPE-3776",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nWPE-3776 2022 Hyundai Tucson"
+    },
+    "description": {
+      "value": "parked the car on Jones Ranch in the evening and it was gone the next morning. | still have both\nkeys.\n| confirm the above is true. Signed Romeo Disdero, 2024-02-04.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\n| parked the car on Jones Ranch in the evening and it was gone the next morning. | still have both\nkeys.\n| confirm the above is true. Signed Romeo Disdero, 2024-02-04."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 607,
+    "output_tokens": 391,
+    "cost_usd": 0.0,
+    "latency_ms": 87614.34566699972
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

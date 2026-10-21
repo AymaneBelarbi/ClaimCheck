@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-034:doc_1.png",
+  "request_sha256": "449301810fe609d0ed2cdd8f758ae59ab36174951e08b8b14d04a51a05756449",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "EMILIA TORRES",
+      "confidence": 1.0,
+      "source_text": "EMILIA TORRES"
+    },
+    "id_number": {
+      "value": "D46777209",
+      "confidence": 1.0,
+      "source_text": "Licence no. D46777209"
+    },
+    "date_of_birth": {
+      "value": "19 July 1979",
+      "confidence": 1.0,
+      "source_text": "Born 19 July 1979"
+    },
+    "expiry_date": {
+      "value": "24 May 2032",
+      "confidence": 1.0,
+      "source_text": "Valid until 24 May 2032"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 490,
+    "output_tokens": 193,
+    "cost_usd": 0.0,
+    "latency_ms": 28714.219250001406
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

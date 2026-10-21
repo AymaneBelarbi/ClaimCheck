@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-038:doc_3.pdf",
+  "request_sha256": "97f966e344c6427c99f921bf89e9d38a78ba58b0a5a7ac3145c4c13b1efb520e",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Mélanie Rocha",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nMélanie Rocha"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "30 October 2025",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n30 October 2025"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "KXN-3507",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nKXN-3507"
+    },
+    "description": {
+      "value": "| was stopped at the lights on Brown Greens when the car behind did not brake in time and hit my\n| rear bumper.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\n| was stopped at the lights on Brown Greens when the car behind did not brake in time and hit my\n| rear bumper."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 603,
+    "output_tokens": 330,
+    "cost_usd": 0.0,
+    "latency_ms": 67695.74691699927
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

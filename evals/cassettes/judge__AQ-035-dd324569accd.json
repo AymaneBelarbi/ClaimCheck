@@ -1,0 +1,24 @@
+{
+  "key": "judge:AQ-035",
+  "request_sha256": "52a39d751de91a54819fa689241775b23210ed88f47f9382e0ed887a9e501e19",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy excludes coverage for the vehicle being used for hire or reward, including ride-hailing.",
+        "about": "policy",
+        "quote": "[6.1 General exclusions] We do not cover loss or damage that happens while the vehicle is driven by someone not allowed to drive it under section 1.2, while the driver is over the legal limit for alcohol or under the influence of drugs, while the vehicle is used for racing, rallies or speed tests, or while it is used for hire or reward, including ride-hailing.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 435,
+    "output_tokens": 137,
+    "cost_usd": 0.0,
+    "latency_ms": 21165.64975000074
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

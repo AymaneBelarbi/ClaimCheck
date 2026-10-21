@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-033:doc_3.png",
+  "request_sha256": "22732cd7b625f0a9200cc972bf44d6f89ae9594e90e5c2a481148012cff6c37e",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "TRUJILLO MELISSA",
+      "confidence": 1.0,
+      "source_text": "TRUJILLO MELISSA"
+    },
+    "id_number": {
+      "value": "D74394465",
+      "confidence": 1.0,
+      "source_text": "Licence no. D74394465"
+    },
+    "date_of_birth": {
+      "value": "9 September 1989",
+      "confidence": 1.0,
+      "source_text": "Born 9 September 1989"
+    },
+    "expiry_date": {
+      "value": "21 October 2027",
+      "confidence": 1.0,
+      "source_text": "Valid until 21 October 2027"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 496,
+    "output_tokens": 176,
+    "cost_usd": 0.0,
+    "latency_ms": 26743.60366700057
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

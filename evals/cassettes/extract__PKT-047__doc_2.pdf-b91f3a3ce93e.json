@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-047:doc_2.pdf",
+  "request_sha256": "75dff27239039d557ff59576d6e2ca62c49c8f97aec09bcdeb5097923af23ed3",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Michelle Bailey",
+      "confidence": 1.0,
+      "source_text": "Claimant name Michelle Bailey"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "2025-02-03",
+      "confidence": 1.0,
+      "source_text": "Date of incident 2025-02-03"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident Collision"
+    },
+    "vehicle_plate": {
+      "value": "LZA-4414",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration LZA-4414"
+    },
+    "description": {
+      "value": "Another driver pulled out of a side road onto Tanner Locks and hit the front left of my car. Nobody was hurt.",
+      "confidence": 1.0,
+      "source_text": "What happened\nAnother driver pulled out of a side road onto Tanner Locks and hit the front left of my car. Nobody was hurt."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 576,
+    "output_tokens": 304,
+    "cost_usd": 0.0,
+    "latency_ms": 48916.82779099938
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

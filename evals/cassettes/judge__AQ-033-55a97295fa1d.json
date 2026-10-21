@@ -1,0 +1,30 @@
+{
+  "key": "judge:AQ-033",
+  "request_sha256": "4b33a6fea7290bc2d2411c3f8f4686bbc95455272bf823ccae5fcc0d8250d504",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "The policy excludes theft if the keys were left in or on the vehicle.",
+        "about": "policy",
+        "quote": "There is no cover if the keys were left in or on the vehicle.",
+        "supported": true
+      },
+      {
+        "statement": "The claim is not covered due to the keys being left in the vehicle.",
+        "about": "claim",
+        "quote": "",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 420,
+    "output_tokens": 110,
+    "cost_usd": 0.0,
+    "latency_ms": 17180.888124996272
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

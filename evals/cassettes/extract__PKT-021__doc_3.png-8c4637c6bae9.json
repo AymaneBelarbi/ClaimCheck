@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-021:doc_3.png",
+  "request_sha256": "bca451b5f0192a89dafa38e8fef5cef59b9fe157f3658bb31ec20e60a90ee2ca",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "SA CRISTIANO",
+      "confidence": 1.0,
+      "source_text": "SA CRISTIANO"
+    },
+    "id_number": {
+      "value": "D72941945",
+      "confidence": 1.0,
+      "source_text": "Licence no. D72941945"
+    },
+    "date_of_birth": {
+      "value": "7 August 1967",
+      "confidence": 1.0,
+      "source_text": "Born 7 August 1967"
+    },
+    "expiry_date": {
+      "value": "27 June 2025",
+      "confidence": 1.0,
+      "source_text": "Valid until 27 June 2025"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 491,
+    "output_tokens": 168,
+    "cost_usd": 0.0,
+    "latency_ms": 27475.708916999793
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

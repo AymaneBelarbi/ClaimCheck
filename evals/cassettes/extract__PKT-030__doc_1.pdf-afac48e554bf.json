@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-030:doc_1.pdf",
+  "request_sha256": "8728804d74a475985e5ea377a8ebf4b967c3b2bb58640ef1416f6e9d1dee97a5",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Viviana Cerezo",
+      "confidence": 1.0,
+      "source_text": "Claimant name Viviana Cerezo"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-208817"
+    },
+    "incident_date": {
+      "value": "17 February 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 17 February 2025"
+    },
+    "incident_type": {
+      "value": "Collision",
+      "confidence": 1.0,
+      "source_text": "Type of incident Collision"
+    },
+    "vehicle_plate": {
+      "value": "UZK-6640",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration UZK-6640"
+    },
+    "description": {
+      "value": "| was stopped at the lights on Jones Keys when the car behind did not brake in time and hit my rear bumper.",
+      "confidence": 1.0,
+      "source_text": "What happened\n| was stopped at the lights on Jones Keys when the car behind did not brake in time and hit my rear bumper."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 577,
+    "output_tokens": 294,
+    "cost_usd": 0.0,
+    "latency_ms": 48953.30883299994
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

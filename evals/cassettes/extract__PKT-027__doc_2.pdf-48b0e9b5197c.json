@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-027:doc_2.pdf",
+  "request_sha256": "c0bf5b6554293615659986f574df28f361d0fc8776e2e7e5272996d23c5ca90e",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2024-601697",
+      "confidence": 1.0,
+      "source_text": "INCIDENT REPORT IR-2024-601697"
+    },
+    "incident_date": {
+      "value": "6 October 2024",
+      "confidence": 1.0,
+      "source_text": "Occurred on: 6 October 2024"
+    },
+    "location": {
+      "value": "1349 Katrina Estates, East Donald",
+      "confidence": 1.0,
+      "source_text": "Place of occurrence: 1349 Katrina Estates, East Donald"
+    },
+    "description": {
+      "value": "Single-vehicle incident in a car park on Katrina Estates. Driver of GHS-4878 reports striking a bollard at low speed while reversing. No injuries.",
+      "confidence": 1.0,
+      "source_text": "Summary of events\nSingle-vehicle incident in a car park on Katrina Estates. Driver of GHS-4878 reports striking a bollard at low speed while reversing. No injuries."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 540,
+    "output_tokens": 257,
+    "cost_usd": 0.0,
+    "latency_ms": 48494.58316699929
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

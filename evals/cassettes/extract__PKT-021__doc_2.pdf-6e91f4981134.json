@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-021:doc_2.pdf",
+  "request_sha256": "a2ac95097b5c38932a7844ac4844dda51f4248cf9f0782608c4d29e6d6152a8f",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Cristiano Sa",
+      "confidence": 1.0,
+      "source_text": "Claimant name Cristiano Sa"
+    },
+    "policy_number": {
+      "value": "AUT-104233",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-104233"
+    },
+    "incident_date": {
+      "value": "2025-06-27",
+      "confidence": 1.0,
+      "source_text": "Date of incident 2025-06-27"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "HVF-3512",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration HVF-3512"
+    },
+    "description": {
+      "value": "A stone thrown up by a truck on Wilson Crossing hit the windscreen and the crack has spread across the driver's side.",
+      "confidence": 1.0,
+      "source_text": "What happened\nA stone thrown up by a truck on Wilson Crossing hit the windscreen and the crack has spread across the driver's side."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 578,
+    "output_tokens": 294,
+    "cost_usd": 0.0,
+    "latency_ms": 41253.335332999995
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-020:doc_2.pdf",
+  "request_sha256": "f91e010c24e976d1292742530325b816997de0cd06af5b8f1ce2c4ddcceddec2",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-096116",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2026-096116"
+    },
+    "incident_date": {
+      "value": "February 20, 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident February 20, 2026"
+    },
+    "location": {
+      "value": "224 Wolfe Valleys, East Heatherberg",
+      "confidence": 1.0,
+      "source_text": "Location 224 Wolfe Valleys, East Heatherberg"
+    },
+    "description": {
+      "value": "Vehicle MBW-7280 was struck on the front nearside by a second vehicle emerging from a side road onto Wolfe Valleys. Minor damage to both vehicles, no injuries. Road was dry.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle MBW-7280 was struck on the front nearside by a second vehicle emerging from a side road onto Wolfe Valleys. Minor damage to both vehicles, no injuries. Road was dry."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 557,
+    "output_tokens": 271,
+    "cost_usd": 0.0,
+    "latency_ms": 48522.52475000205
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

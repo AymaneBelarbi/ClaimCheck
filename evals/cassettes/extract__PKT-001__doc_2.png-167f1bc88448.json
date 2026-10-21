@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-001:doc_2.png",
+  "request_sha256": "d4cceb19437ef2ee2b7710ccbefea23eb4a6a4cb82362786996d23cd06d71d06",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "BECERRA DESIDERIO",
+      "confidence": 1.0,
+      "source_text": "NAME\nBECERRA DESIDERIO"
+    },
+    "id_number": {
+      "value": "D30736241",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD30736241"
+    },
+    "date_of_birth": {
+      "value": "18 January 1962",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n18 January 1962"
+    },
+    "expiry_date": {
+      "value": "6 March 2030",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n6 March 2030"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 491,
+    "output_tokens": 201,
+    "cost_usd": 0.0,
+    "latency_ms": 18724.016082999697
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

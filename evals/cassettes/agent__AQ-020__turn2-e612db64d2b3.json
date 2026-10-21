@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-020:turn2",
+  "request_sha256": "e9bb1f4896c99ebe7a35457132eb01f00219d3e4ce76ee9051905dc90d827bc6",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The collision limit that applies is $25,000 per claim, less the collision excess of $500.\", \"citations\": [\"4.1\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1596,
+    "output_tokens": 45,
+    "cost_usd": 0.0,
+    "latency_ms": 17694.418708997546
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

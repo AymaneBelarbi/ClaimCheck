@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-010:doc_1.png",
+  "request_sha256": "f43fb75b57bc707f9f87de42555540130fc21c0a558ca26ae35eaa750cb24b05",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "AMY WILLIS",
+      "confidence": 1.0,
+      "source_text": "NAME\nAMY WILLIS"
+    },
+    "id_number": {
+      "value": "D75559061",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD75559061"
+    },
+    "date_of_birth": {
+      "value": "16/05/1972",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n16/05/1972"
+    },
+    "expiry_date": {
+      "value": "13/09/2028",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n13/09/2028"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 494,
+    "output_tokens": 180,
+    "cost_usd": 0.0,
+    "latency_ms": 44340.63645800052
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

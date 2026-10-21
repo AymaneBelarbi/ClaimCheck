@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-008:doc_2.pdf",
+  "request_sha256": "f00f482e4d4e82f3ac19362996342cbea53fa7d550eb2b8c90490093a731cebc",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2026-327055",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2026-327055"
+    },
+    "incident_date": {
+      "value": "1 April 2026",
+      "confidence": 1.0,
+      "source_text": "Date of incident 1 April 2026"
+    },
+    "location": {
+      "value": "5792 Kelly Rest, South Michelle",
+      "confidence": 1.0,
+      "source_text": "Location 5792 Kelly Rest, South Michelle"
+    },
+    "description": {
+      "value": "Vehicle JNF-2900 taken from a pay-and-display car park off Kelly Rest during the working day. Owner holds both keys. CCTV request made to the car park operator.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle JNF-2900 taken from a pay-and-display car park off Kelly Rest during the working day. Owner holds both keys. CCTV request made to the car park operator."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 545,
+    "output_tokens": 256,
+    "cost_usd": 0.0,
+    "latency_ms": 24296.61441600001
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

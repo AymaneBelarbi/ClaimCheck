@@ -1,0 +1,49 @@
+{
+  "key": "extract:PKT-031:doc_4.pdf",
+  "request_sha256": "b71d0d7354d216120bd65e53a3d188b402e65f221df3ae32071fb3c2acacf9ff",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "ADAMS & SONS PANELWORKS",
+      "confidence": 1.0,
+      "source_text": "ADAMS & SONS PANELWORKS"
+    },
+    "invoice_date": {
+      "value": "June 22, 2025",
+      "confidence": 1.0,
+      "source_text": "Issued: June 22, 2025"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "$759.07"
+        },
+        {
+          "description": "Headlamp assembly",
+          "amount": "$728.34"
+        },
+        {
+          "description": "Labour (12.0 hours)",
+          "amount": "$1,509.37"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Bonnet, repair and refinish"
+    },
+    "total": {
+      "value": "$2,996.78",
+      "confidence": 1.0,
+      "source_text": "$2,996.78"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 572,
+    "output_tokens": 269,
+    "cost_usd": 0.0,
+    "latency_ms": 40589.699583000765
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

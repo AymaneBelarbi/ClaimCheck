@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-027:turn2",
+  "request_sha256": "04eeb79d30a8eaf51ab51fd5db6cb0a317913c13f653223b7d6843b04abe80e9",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policyholder pays a $50 excess on this glass claim.\", \"citations\": [\"4.2\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1569,
+    "output_tokens": 33,
+    "cost_usd": 0.0,
+    "latency_ms": 12003.417874999286
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

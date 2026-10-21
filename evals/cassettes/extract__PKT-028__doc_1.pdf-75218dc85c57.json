@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-028:doc_1.pdf",
+  "request_sha256": "ee3cc505f89eb9b681c797ff3d30980ac98288ed19d17e8b74754293dee52109",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Paco Borras",
+      "confidence": 1.0,
+      "source_text": "Claimant name Paco Borras"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-208817"
+    },
+    "incident_date": {
+      "value": "2024-11-19",
+      "confidence": 1.0,
+      "source_text": "Date of incident 2024-11-19"
+    },
+    "incident_type": {
+      "value": "Theft",
+      "confidence": 1.0,
+      "source_text": "Type of incident Theft"
+    },
+    "vehicle_plate": {
+      "value": "SHS-7804",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration SHS-7804"
+    },
+    "description": {
+      "value": "parked the car on Lopez Dale in the evening and it was gone the next morning. | still have both keys.",
+      "confidence": 1.0,
+      "source_text": "What happened\n| parked the car on Lopez Dale in the evening and it was gone the next morning. | still have both keys."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 580,
+    "output_tokens": 295,
+    "cost_usd": 0.0,
+    "latency_ms": 47860.01162499997
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

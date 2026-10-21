@@ -1,0 +1,57 @@
+{
+  "key": "extract:PKT-004:doc_3.pdf",
+  "request_sha256": "8255cfbb0f55ac1644821a46830c6fa5f86deb74031c792a9a3a3c4c87251689",
+  "kind": "structured",
+  "response": {
+    "vendor": {
+      "value": "Sandoval Auto Body",
+      "confidence": 1.0,
+      "source_text": "Sandoval Auto Body"
+    },
+    "invoice_date": {
+      "value": "2024-08-28",
+      "confidence": 1.0,
+      "source_text": "Date: 2024-08-28"
+    },
+    "line_items": {
+      "value": [
+        {
+          "description": "Front bumper cover, replace",
+          "amount": "549.72"
+        },
+        {
+          "description": "Radiator support",
+          "amount": "1,320.08"
+        },
+        {
+          "description": "Parking sensor, replace",
+          "amount": "836.14"
+        },
+        {
+          "description": "Bonnet, repair and refinish",
+          "amount": "1,219.26"
+        },
+        {
+          "description": "Labour (9.0 hours)",
+          "amount": "698.05"
+        }
+      ],
+      "confidence": 1.0,
+      "source_text": "Front bumper cover, replace\n$549.72\nRadiator support\n$1,320.08\nParking sensor, replace\n$836.14\nBonnet, repair and refinish\n$1,219.26\nLabour (9.0 hours)\n$698.05"
+    },
+    "total": {
+      "value": "4,623.25",
+      "confidence": 1.0,
+      "source_text": "Total due $4,623.25"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 608,
+    "output_tokens": 387,
+    "cost_usd": 0.0,
+    "latency_ms": 35675.62300000009
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

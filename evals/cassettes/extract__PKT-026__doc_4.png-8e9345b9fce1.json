@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-026:doc_4.png",
+  "request_sha256": "6f0313d5a018674ef4b12672af7d29f45c885adeade1036b7c1c0d31b5d0b587",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "FABIO NETO",
+      "confidence": 1.0,
+      "source_text": "FABIO NETO"
+    },
+    "id_number": {
+      "value": "D88211114",
+      "confidence": 1.0,
+      "source_text": "Licence no.\nD88211114"
+    },
+    "date_of_birth": {
+      "value": "January 6, 1988",
+      "confidence": 1.0,
+      "source_text": "Born\nJanuary 6, 1988"
+    },
+    "expiry_date": {
+      "value": "January 25, 2027",
+      "confidence": 1.0,
+      "source_text": "Valid until\nJanuary 25, 2027"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 498,
+    "output_tokens": 177,
+    "cost_usd": 0.0,
+    "latency_ms": 32542.820292001124
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

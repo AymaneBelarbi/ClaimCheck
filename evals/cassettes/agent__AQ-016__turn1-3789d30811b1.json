@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-016:turn1",
+  "request_sha256": "b3ec8e38e8305a762e92ba55fd74bc4b74bf765d6718843c9838d7b17e6df500",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_u4tgsh0j",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "documents we need"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1040,
+    "output_tokens": 24,
+    "cost_usd": 0.0,
+    "latency_ms": 4191.975041998376
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

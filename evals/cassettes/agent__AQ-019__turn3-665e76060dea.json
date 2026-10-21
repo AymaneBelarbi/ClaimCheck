@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-019:turn3",
+  "request_sha256": "4409e76946f6bc3047cdaac56af972dbbff8d910d77813cddb0571c0ee9f5730",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"Yes. The policy pays for a hire car of similar size at up to $40 a day for no more than 14 days while the vehicle is off the road for repairs after a covered collision.\", \"citations\": [\"4.4\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 2097,
+    "output_tokens": 56,
+    "cost_usd": 0.0,
+    "latency_ms": 17697.223957999086
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

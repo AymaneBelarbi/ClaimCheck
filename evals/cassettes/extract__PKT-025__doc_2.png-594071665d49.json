@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-025:doc_2.png",
+  "request_sha256": "332e68f06b847b8737b6733342f43bb6c2b13fa899c1972f1a400ccfbedd66cb",
+  "kind": "structured",
+  "response": {
+    "full_name": {
+      "value": "MOREIRA MATILDE",
+      "confidence": 1.0,
+      "source_text": "NAME\nMOREIRA MATILDE"
+    },
+    "id_number": {
+      "value": "D43623691",
+      "confidence": 1.0,
+      "source_text": "DL NO.\nD43623691"
+    },
+    "date_of_birth": {
+      "value": "25/04/1969",
+      "confidence": 1.0,
+      "source_text": "DATE OF BIRTH\n25/04/1969"
+    },
+    "expiry_date": {
+      "value": "22/02/2030",
+      "confidence": 1.0,
+      "source_text": "EXPIRES\n22/02/2030"
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 498,
+    "output_tokens": 184,
+    "cost_usd": 0.0,
+    "latency_ms": 27947.317084000133
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-037:turn2",
+  "request_sha256": "f25495076a66d94f93ba20312926dc639e4750669fc268a20f1dcca11508a507",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_zs30us1v",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "drunk driving limit"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1597,
+    "output_tokens": 25,
+    "cost_usd": 0.0,
+    "latency_ms": 12855.176666998887
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

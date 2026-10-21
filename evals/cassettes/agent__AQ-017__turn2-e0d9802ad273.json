@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-017:turn2",
+  "request_sha256": "e9270d8cd42d475ab0eb1004e14a3380f947f936743561ffa0a19c5f0e167c79",
+  "kind": "chat",
+  "response": {
+    "text": "The claim includes an invoice (doc_1.pdf), an incident report (doc_2.pdf), and a claim form (doc_3.pdf).",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1222,
+    "output_tokens": 31,
+    "cost_usd": 0.0,
+    "latency_ms": 8730.219125005533
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

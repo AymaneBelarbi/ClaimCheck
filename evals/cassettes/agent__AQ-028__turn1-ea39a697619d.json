@@ -1,0 +1,26 @@
+{
+  "key": "agent:AQ-028:turn1",
+  "request_sha256": "088ef6eb9ad0c8614df7ba2932a64dd83284e84942bfafec928a2f973258f07f",
+  "kind": "chat",
+  "response": {
+    "text": null,
+    "tool_calls": [
+      {
+        "id": "call_odps25ap",
+        "name": "search_policy_clauses",
+        "arguments": {
+          "query": "license in another person's name"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1050,
+    "output_tokens": 27,
+    "cost_usd": 0.0,
+    "latency_ms": 4187.433791004878
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

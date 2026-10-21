@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-016:doc_2.pdf",
+  "request_sha256": "4b3eeb55e7e66fad6a53673b1ea51fd224344998f1261a8ecada36c6c9fec8ab",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Clinton Coleman",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nClinton Coleman"
+    },
+    "policy_number": {
+      "value": "AUT-208817",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-208817"
+    },
+    "incident_date": {
+      "value": "4 October 2025",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n4 October 2025"
+    },
+    "incident_type": {
+      "value": "THEFT",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nTHEFT"
+    },
+    "vehicle_plate": {
+      "value": "MNJ-3776",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE) MAKE AND MODEL\nMNJ-3776 2020 Volkswagen Golf"
+    },
+    "description": {
+      "value": "My car was stolen from a car park off Shannon Trace while | was at work. Both keys are with me.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nMy car was stolen from a car park off Shannon Trace while | was at work. Both keys are with me."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 593,
+    "output_tokens": 321,
+    "cost_usd": 0.0,
+    "latency_ms": 46226.35029199955
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

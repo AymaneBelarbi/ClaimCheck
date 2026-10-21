@@ -1,0 +1,36 @@
+{
+  "key": "extract:PKT-009:doc_1.pdf",
+  "request_sha256": "87b54d4f584cb09319902f88cd3d4cd66fd759b896762a23f26f0aa45f3aaa41",
+  "kind": "structured",
+  "response": {
+    "report_number": {
+      "value": "IR-2025-189635",
+      "confidence": 1.0,
+      "source_text": "Report number IR-2025-189635"
+    },
+    "incident_date": {
+      "value": "16 August 2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 16 August 2025"
+    },
+    "location": {
+      "value": "3452 Hale Course, Christopherfurt",
+      "confidence": 1.0,
+      "source_text": "Location 3452 Hale Course, Christopherfurt"
+    },
+    "description": {
+      "value": "Vehicle FHX-5100 taken from a pay-and-display car park off Hale Course during the working day. Owner holds both keys. CCTV request made to the car park operator.",
+      "confidence": 1.0,
+      "source_text": "Narrative\nVehicle FHX-5100 taken from a pay-and-display car park off Hale Course during the working day. Owner holds both keys. CCTV request made to the car park operator."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 548,
+    "output_tokens": 258,
+    "cost_usd": 0.0,
+    "latency_ms": 57224.948750000294
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-034:doc_3.pdf",
+  "request_sha256": "88a16433e79fda0a1aff392b718773759bf6feb54174ccf391c60bd08b064fe4",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "José Torres",
+      "confidence": 1.0,
+      "source_text": "Claimant name José Torres"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "Policy number AUT-311590"
+    },
+    "incident_date": {
+      "value": "18/09/2025",
+      "confidence": 1.0,
+      "source_text": "Date of incident 18/09/2025"
+    },
+    "incident_type": {
+      "value": "Glass",
+      "confidence": 1.0,
+      "source_text": "Type of incident Glass"
+    },
+    "vehicle_plate": {
+      "value": "UWU-2018",
+      "confidence": 1.0,
+      "source_text": "Vehicle registration UWU-2018"
+    },
+    "description": {
+      "value": "A stone thrown up by a truck on Cassandra Center hit the windscreen and the crack has spread across the driver's side.",
+      "confidence": 1.0,
+      "source_text": "What happened\nA stone thrown up by a truck on Cassandra Center hit the windscreen and the crack has spread across the driver's side."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 578,
+    "output_tokens": 306,
+    "cost_usd": 0.0,
+    "latency_ms": 45618.90974999915
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

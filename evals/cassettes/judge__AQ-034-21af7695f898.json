@@ -1,0 +1,36 @@
+{
+  "key": "judge:AQ-034",
+  "request_sha256": "1148be0424c73fe78a04abfd8804a88c49c8f3637d47e392beff635905baad34",
+  "kind": "structured",
+  "response": {
+    "statements": [
+      {
+        "statement": "A glass claim needs the invoice or estimate for the repair or replacement of the windscreen, side windows, rear window, or sunroof.",
+        "about": "claim",
+        "quote": "We cover repair or replacement of the windscreen, side windows, rear window and sunroof of the vehicle, including recalibration of cameras and sensors mounted on the windscreen, up to a limit of $1,500 per claim.",
+        "supported": true
+      },
+      {
+        "statement": "The limit per claim is $1,500.",
+        "about": "policy",
+        "quote": "up to a limit of $1,500 per claim",
+        "supported": true
+      },
+      {
+        "statement": "The excess for a glass claim is $100.",
+        "about": "policy",
+        "quote": "You pay the following excess on each claim: collision claims $500; glass claims $100; theft claims $500.",
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 503,
+    "output_tokens": 237,
+    "cost_usd": 0.0,
+    "latency_ms": 35703.71445899946
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

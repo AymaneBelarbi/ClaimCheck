@@ -1,0 +1,46 @@
+{
+  "key": "extract:PKT-003:doc_5.pdf",
+  "request_sha256": "5df9eafc75cf8ad2539818526313962214328233e2684f110feb89d5934cbc53",
+  "kind": "structured",
+  "response": {
+    "claimant_name": {
+      "value": "Angela Mann",
+      "confidence": 1.0,
+      "source_text": "POLICYHOLDER / CLAIMANT\nAngela Mann"
+    },
+    "policy_number": {
+      "value": "AUT-311590",
+      "confidence": 1.0,
+      "source_text": "POLICY NO.\nAUT-311590"
+    },
+    "incident_date": {
+      "value": "2025-07-14",
+      "confidence": 1.0,
+      "source_text": "DATE OF LOSS\n2025-07-14"
+    },
+    "incident_type": {
+      "value": "COLLISION",
+      "confidence": 1.0,
+      "source_text": "INCIDENT TYPE\nCOLLISION"
+    },
+    "vehicle_plate": {
+      "value": "PXB-5993",
+      "confidence": 1.0,
+      "source_text": "REGISTRATION (PLATE)\nPXB-5993"
+    },
+    "description": {
+      "value": "While reversing out of a parking space on Tucker Vista | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Angela Mann, 2025-07-30.",
+      "confidence": 1.0,
+      "source_text": "DESCRIPTION OF THE INCIDENT\nWhile reversing out of a parking space on Tucker Vista | hit a concrete bollard that | had not seen.\n| confirm the above is true. Signed Angela Mann, 2025-07-30."
+    }
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 598,
+    "output_tokens": 368,
+    "cost_usd": 0.0,
+    "latency_ms": 69592.54795800007
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}

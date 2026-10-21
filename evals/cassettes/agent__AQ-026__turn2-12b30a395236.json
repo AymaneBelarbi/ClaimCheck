@@ -1,0 +1,18 @@
+{
+  "key": "agent:AQ-026:turn2",
+  "request_sha256": "4f145b3fcd0987ef9839807e41e04283dc63e396f034a928de9e1a4431d1d0f6",
+  "kind": "chat",
+  "response": {
+    "text": "{\"answer\": \"The policy will pay up to $14,000 for collision damage, less the collision excess of $300.\", \"citations\": [\"4.1\", \"5.1\"]}",
+    "tool_calls": []
+  },
+  "usage": {
+    "model": "qwen2.5:7b-instruct",
+    "input_tokens": 1602,
+    "output_tokens": 46,
+    "cost_usd": 0.0,
+    "latency_ms": 13261.93562499975
+  },
+  "model": "qwen2.5:7b-instruct",
+  "is_cloud": false
+}
