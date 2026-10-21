@@ -33,7 +33,7 @@ jobs:
       # role passwords. The evals sign no tokens, so JWT_SECRET is not needed.
       FASTEMBED_CACHE: var/models
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
