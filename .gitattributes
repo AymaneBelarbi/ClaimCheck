@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.png binary
+*.pdf binary
+
+# Recorded model responses, eval reports and lockfiles: kept out of diffs and language stats.
+evals/cassettes/** linguist-generated=true -diff
+evals/reports/*.json linguist-generated=true
+uv.lock linguist-generated=true -diff
+ui/package-lock.json linguist-generated=true -diff

@@ -1,0 +1,19 @@
+.venv/
+.git/
+.github/
+.env
+var/
+# Database backups written by the runbook's backup steps hold claim data and role password
+# hashes; they must never end up in an image layer.
+backup/
+*.dump
+evals/data/
+evals/reports/
+docs/
+tests/
+ui/node_modules/
+ui/dist/
+**/__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

@@ -1,0 +1,113 @@
+# Application services share one image (see Dockerfile).
+x-app: &app
+  build: .
+  env_file:
+    - path: .env
+      required: false
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+# Each service gets only its own database login: the owner for migrations, claimcheck_app for
+# the API and claimcheck_worker for the worker. The two service roles are subject to
+# row-level security and have only the privileges they use (migrations 0002 and 0003).
+x-app-env: &app-env
+  # Model calls are answered from the recorded cassettes unless LLM_BACKEND says otherwise,
+  # so `docker compose up -d && make demo` works without a model. LLM_BACKEND=ollama uses a
+  # local model, LLM_BACKEND=anthropic (or openai) a cloud one with its API key. See ADR-006.
+  LLM_BACKEND: ${LLM_BACKEND:-replay}
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+  OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+  # Host Ollama by default; set COMPOSE_OLLAMA_URL=http://ollama:11434 with the ollama profile.
+  OLLAMA_URL: ${COMPOSE_OLLAMA_URL:-http://host.docker.internal:11434}
+  OTEL_ENDPOINT: http://jaeger:4318
+  STORAGE_DIR: /data/storage
+  JWT_SECRET: ${JWT_SECRET:-dev-only-change-me-not-a-secret-0123456789}
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-claimcheck}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-claimcheck}
+      POSTGRES_DB: ${POSTGRES_DB:-claimcheck}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  migrate:
+    <<: *app
+    command: ["alembic", "upgrade", "head"]
+    environment:
+      <<: *app-env
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-claimcheck}:${POSTGRES_PASSWORD:-claimcheck}@db:5432/${POSTGRES_DB:-claimcheck}
+      # The passwords the migration gives the two service roles it creates; the API and the
+      # worker log in with the same variables below.
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD:-claimcheck_app}
+      WORKER_DB_PASSWORD: ${WORKER_DB_PASSWORD:-claimcheck_worker}
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    <<: *app
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment:
+      <<: *app-env
+      APP_DATABASE_URL: postgresql+psycopg://claimcheck_app:${APP_DB_PASSWORD:-claimcheck_app}@db:5432/${POSTGRES_DB:-claimcheck}
+    ports:
+      - "8000:8000"
+    volumes: &app-volumes
+      - storage:/data/storage
+      # The embedding model, downloaded on first use and kept between restarts.
+      - models:/app/var/models
+      # Mounted rather than baked in, so re-recorded cassettes apply without a rebuild.
+      - ./evals/cassettes:/app/evals/cassettes:ro
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      jaeger:
+        condition: service_started
+
+  worker:
+    <<: *app
+    command: ["python", "-m", "worker.main"]
+    environment:
+      <<: *app-env
+      WORKER_DATABASE_URL: postgresql+psycopg://claimcheck_worker:${WORKER_DB_PASSWORD:-claimcheck_worker}@db:5432/${POSTGRES_DB:-claimcheck}
+    volumes: *app-volumes
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      jaeger:
+        condition: service_started
+
+  jaeger:
+    image: jaegertracing/all-in-one:1.62.0
+    environment:
+      COLLECTOR_OTLP_ENABLED: "true"
+    ports:
+      - "16686:16686"
+      - "4318:4318"
+
+  # Optional containerised Ollama: `docker compose --profile ollama up -d` with
+  # COMPOSE_OLLAMA_URL=http://ollama:11434. Without it the services use Ollama on the host.
+  ollama:
+    image: ollama/ollama:0.40.0
+    profiles: ["ollama"]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  pgdata:
+  storage:
+  models:
+  ollama:
