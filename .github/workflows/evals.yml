@@ -41,7 +41,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends tesseract-ocr
       - run: uv sync --frozen
       - name: Cache the embedding model
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: var/models
           key: fastembed-BAAI-bge-small-en-v1.5
