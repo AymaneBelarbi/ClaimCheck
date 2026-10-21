@@ -38,6 +38,8 @@ jobs:
       - run: uv run ruff check .
       - run: uv run ruff format --check .
       - run: uv run mypy .
+      # Some eval tests read the generated packets, which are not committed.
+      - run: make dataset
       - run: uv run pytest -q
 
   ui:
