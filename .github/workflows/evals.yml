@@ -1,0 +1,63 @@
+name: evals
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # The release gate: every stage on the holdout split, LLM calls answered from the cassettes
+  # in evals/cassettes. A cassette miss stops the run with the missing key in the log.
+  evals:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: claimcheck
+          POSTGRES_PASSWORD: claimcheck
+          POSTGRES_DB: claimcheck
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U claimcheck -d claimcheck"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    env:
+      # The application's defaults already point at localhost:5432/claimcheck with the dev
+      # role passwords. The evals sign no tokens, so JWT_SECRET is not needed.
+      FASTEMBED_CACHE: var/models
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install tesseract
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends tesseract-ocr
+      - run: uv sync --frozen
+      - name: Cache the embedding model
+        uses: actions/cache@v4
+        with:
+          path: var/models
+          key: fastembed-BAAI-bge-small-en-v1.5
+      - run: make dataset
+      # `make demo` runs on the recorded cassettes; this fails if a call it makes was never
+      # recorded. It needs the generated packets, so it runs here and not in `checks`.
+      - name: Demo cassettes
+        run: uv run pytest -q tests/scripts/test_demo_cassettes.py
+      - run: uv run alembic upgrade head
+      - run: make seed
+      - name: Holdout gate
+        run: LLM_BACKEND=replay uv run python -m evals.run --split holdout --stages classification,extraction,retrieval,validation,agent --gate --require-all-gates --out-dir eval-report
+      - name: Upload the eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: holdout-eval-report
+          path: eval-report/
+          if-no-files-found: warn

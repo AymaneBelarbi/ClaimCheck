@@ -1,0 +1,45 @@
+name: Bug report
+description: Something does not work as documented.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Commands, the packet id or files involved, and the claim id if there is one.
+      render: shell
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - API
+        - Worker pipeline (OCR, classify, extract, validate)
+        - Retrieval
+        - Adjuster agent / MCP tools
+        - LLM gateway
+        - Evals
+        - Review UI
+        - Docker / CI
+    validations:
+      required: true
+  - type: input
+    id: backend
+    attributes:
+      label: LLM_BACKEND
+      placeholder: replay, ollama, anthropic or openai
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: API or worker output, or the eval report. Remove anything that is not synthetic data.
+      render: text
