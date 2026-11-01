@@ -15,9 +15,9 @@ classifiers = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "alembic>=1.20.0",
-    "fastapi>=0.156.4",
-    "fastembed>=0.2.7",
+    "alembic>=1.20.1",
+    "fastapi>=0.162.0",
+    "fastembed>=0.9.1",
     "httpx>=0.28.1",
     "mcp>=2.3.0",
     "numpy>=2.5.4",
@@ -28,13 +28,13 @@ dependencies = [
     "pillow>=13.0.0",
     "psycopg[binary]>=3.3.6",
     "pydantic>=2.9",
-    "pydantic-settings>=2.6",
+    "pydantic-settings>=2.16.2",
     "pyjwt>=2.15.1",
     "pypdfium2>=5.14.0",
     "pytesseract>=0.3.13",
     "python-multipart>=0.0.32",
     "rapidfuzz>=3.14.6",
-    "sqlalchemy>=2.1.5",
+    "sqlalchemy>=2.1.6",
     "uvicorn>=0.54.0",
 ]
 
@@ -47,18 +47,18 @@ Changelog = "https://github.com/AymaneBelarbi/ClaimCheck/blob/main/CHANGELOG.md"
 # Only `make dataset` (evals/dataset/) and a few tests that build PDFs need these; the
 # application image is installed without them.
 dataset = [
-    "faker>=40.43.0",
-    "reportlab>=5.0.1",
+    "faker>=40.44.0",
+    "reportlab>=5.1.0",
 ]
 dev = [
     # starlette.testclient imports it; nothing in the code does.
-    "httpx2>=2.15.1",
-    "mypy>=1.13",
+    "httpx2>=2.16.0",
+    "mypy>=2.4.1",
     "pre-commit>=4.7.0",
-    "pytest>=8.3",
+    "pytest>=9.2.0",
     "pytest-cov>=6.0",
     "respx>=0.21",
-    "ruff>=0.8",
+    "ruff>=0.17.3",
     "types-reportlab>=5.0.0.20261008",
 ]
 
