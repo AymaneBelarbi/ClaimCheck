@@ -20,6 +20,8 @@ x-app-env: &app-env
   # Host Ollama by default; set COMPOSE_OLLAMA_URL=http://ollama:11434 with the ollama profile.
   OLLAMA_URL: ${COMPOSE_OLLAMA_URL:-http://host.docker.internal:11434}
   OTEL_ENDPOINT: http://jaeger:4318
+  LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+  LANGSMITH_PROJECT: ${LANGSMITH_PROJECT:-claimcheck}
   STORAGE_DIR: /data/storage
   JWT_SECRET: ${JWT_SECRET:-dev-only-change-me-not-a-secret-0123456789}
 

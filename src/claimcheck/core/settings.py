@@ -46,8 +46,13 @@ class Settings(BaseSettings):
     # (claimcheck.api.auth), so the evals, the seed command and the worker do not need one.
     jwt_secret: SecretStr | None = None
     otel_endpoint: str | None = None
+    # Sends the same spans to LangSmith. They carry no prompt, output or document text there
+    # either (claimcheck.core.tracing), so this does not widen what leaves the process.
+    langsmith_api_key: SecretStr | None = None
+    langsmith_project: str = "claimcheck"
+    langsmith_endpoint: str = "https://api.smith.langchain.com"
 
-    @field_validator("replay_inner", "otel_endpoint", mode="before")
+    @field_validator("replay_inner", "otel_endpoint", "langsmith_api_key", mode="before")
     @classmethod
     def _blank_is_unset(cls, value: object) -> object:
         # An empty `KEY=` line in .env should mean "not set", not an invalid literal.

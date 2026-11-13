@@ -61,10 +61,15 @@ dev = [
     "ruff>=0.8",
     "types-reportlab>=5.0.0.20261008",
 ]
+# `python -m evals.run --langsmith` publishes a run as a LangSmith experiment.
+evals = [
+    "langsmith>=0.14",
+]
 
 [tool.uv]
-# Host commands (`uv sync`, `uv run`) get the dataset generator and the dev tools.
-default-groups = ["dataset", "dev"]
+# Host commands (`uv sync`, `uv run`) get the dataset generator, the dev tools and the eval
+# publisher.
+default-groups = ["dataset", "dev", "evals"]
 
 [build-system]
 requires = ["hatchling"]

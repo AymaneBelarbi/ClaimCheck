@@ -19,7 +19,7 @@ from sqlalchemy import Engine
 from sqlalchemy.orm import Session
 
 from claimcheck.core.settings import Settings, get_settings
-from claimcheck.core.tracing import setup_tracing
+from claimcheck.core.tracing import LangSmithTarget, setup_tracing
 from claimcheck.db.models import Job
 from claimcheck.db.session import SYSTEM, SessionFactory, engine_for, session_factory
 from claimcheck.gateway.factory import get_gateway
@@ -118,7 +118,9 @@ def main() -> None:
     signal.signal(signal.SIGINT, request_stop)
 
     settings = get_settings()
-    setup_tracing("claimcheck-worker", settings.otel_endpoint)
+    setup_tracing(
+        "claimcheck-worker", settings.otel_endpoint, LangSmithTarget.from_settings(settings)
+    )
     deps = PipelineDeps(
         storage=Storage(Path(settings.storage_dir)),
         embedder=FastEmbedEmbedder(),

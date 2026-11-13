@@ -1,4 +1,4 @@
-.PHONY: install lint typecheck test up down migrate seed dataset evals gate record-holdout record-demo demo token ui
+.PHONY: install lint typecheck test up down migrate seed dataset evals evals-langsmith gate record-holdout record-demo demo token ui
 
 install:
 	uv sync
@@ -33,6 +33,9 @@ STAGES := classification,extraction,retrieval,validation,agent
 
 evals:
 	uv run python -m evals.run --split dev --stages $(STAGES)
+
+evals-langsmith:
+	uv run python -m evals.run --split dev --stages $(STAGES) --langsmith
 
 # What CI runs: the holdout split from the recorded cassettes, every gate required.
 gate:

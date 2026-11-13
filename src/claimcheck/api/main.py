@@ -14,7 +14,7 @@ from claimcheck.api.auth import PLACEHOLDER_SECRETS, BearerPrecheckMiddleware, s
 from claimcheck.api.limits import BodyLimitMiddleware
 from claimcheck.api.routes import claims, health
 from claimcheck.core.settings import get_settings
-from claimcheck.core.tracing import setup_tracing
+from claimcheck.core.tracing import LangSmithTarget, setup_tracing
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +27,8 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
             "JWT_SECRET is a published placeholder: anyone can sign adjuster tokens for this "
             "API. Fine for a local demo; set a random JWT_SECRET anywhere else (.env.example)."
         )
-    setup_tracing("claimcheck-api", get_settings().otel_endpoint)
+    settings = get_settings()
+    setup_tracing("claimcheck-api", settings.otel_endpoint, LangSmithTarget.from_settings(settings))
     yield
 
 

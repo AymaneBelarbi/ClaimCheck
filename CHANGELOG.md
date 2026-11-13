@@ -4,6 +4,11 @@ All notable changes to this project are recorded here. The format follows [Keep 
 
 ## [Unreleased]
 
+### Added
+
+- LangSmith as a tracing destination: with `LANGSMITH_API_KEY` set, every service also exports its spans to LangSmith's OTLP intake, typed as LLM and chain runs. Spans keep the same content rules as Jaeger.
+- `--langsmith` for `evals.run` (and `make evals-langsmith`): publishes a run as a LangSmith experiment over a per-split dataset with stable example ids, per-case feedback and the stage metrics.
+
 ### Changed
 
 - Application code moved under `src/claimcheck/` as one installable package; imports are now `claimcheck.*`.

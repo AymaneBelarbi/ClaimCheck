@@ -166,7 +166,9 @@ class TracingGateway:
     def _span(self, purpose: str, cache_key: str | None) -> Iterator[Span]:
         attributes: dict[str, AttributeValue] = {
             "gen_ai.system": self._system,
+            "gen_ai.operation.name": "chat",
             "gen_ai.request.model": self._inner.model,
+            "langsmith.span.kind": "llm",
             "claimcheck.purpose": purpose,
         }
         if cache_key is not None:

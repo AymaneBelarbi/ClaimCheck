@@ -12,7 +12,7 @@ import argparse
 from collections.abc import Sequence
 
 from claimcheck.core.settings import get_settings
-from claimcheck.core.tracing import setup_tracing
+from claimcheck.core.tracing import LangSmithTarget, setup_tracing
 from claimcheck.db.session import engine_for
 from claimcheck.mcp_server.server import build_server, tool_sessions
 from claimcheck.rag.embedder import FastEmbedEmbedder
@@ -25,7 +25,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     )
     args = parser.parse_args(argv)
     settings = get_settings()
-    setup_tracing("claimcheck-mcp", settings.otel_endpoint)
+    setup_tracing("claimcheck-mcp", settings.otel_endpoint, LangSmithTarget.from_settings(settings))
     sessions = tool_sessions(engine_for(settings.app_database_url), args.actor)
     build_server(sessions, FastEmbedEmbedder(), args.actor).run("stdio")
 

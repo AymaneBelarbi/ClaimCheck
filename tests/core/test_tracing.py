@@ -5,7 +5,9 @@ from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanE
 from pydantic import BaseModel
 
 from claimcheck.core import tracing
+from claimcheck.core.settings import Settings
 from claimcheck.core.tracing import (
+    LangSmithTarget,
     build_provider,
     otlp_traces_url,
     setup_tracing,
@@ -80,6 +82,64 @@ def test_provider_carries_the_service_name() -> None:
     provider.shutdown()
 
 
+def test_langsmith_target_posts_to_the_otlp_intake_of_its_project(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    made: list[dict[str, object]] = []
+    monkeypatch.setattr(tracing, "OTLPSpanExporter", lambda **kwargs: made.append(kwargs))
+
+    LangSmithTarget(api_key="lsv2_test", project="claimcheck-dev").exporter()
+    LangSmithTarget("k", "p", "https://eu.api.smith.langchain.com/").exporter()
+
+    assert made == [
+        {
+            "endpoint": "https://api.smith.langchain.com/otel/v1/traces",
+            "headers": {"x-api-key": "lsv2_test", "Langsmith-Project": "claimcheck-dev"},
+        },
+        {
+            "endpoint": "https://eu.api.smith.langchain.com/otel/v1/traces",
+            "headers": {"x-api-key": "k", "Langsmith-Project": "p"},
+        },
+    ]
+
+
+def test_langsmith_target_needs_an_api_key(monkeypatch: pytest.MonkeyPatch) -> None:
+    assert LangSmithTarget.from_settings(Settings(_env_file=None)) is None
+
+    monkeypatch.setenv("LANGSMITH_API_KEY", "lsv2_test")
+    monkeypatch.setenv("LANGSMITH_PROJECT", "claimcheck-ci")
+    target = LangSmithTarget.from_settings(Settings(_env_file=None))
+    assert target == LangSmithTarget(api_key="lsv2_test", project="claimcheck-ci")
+
+
+def test_provider_exports_to_every_configured_destination() -> None:
+    langsmith = LangSmithTarget(api_key="k", project="p")
+    both = build_provider("claimcheck-api", "http://localhost:4318", langsmith)
+    only_langsmith = build_provider("claimcheck-api", None, langsmith)
+    assert len(both._active_span_processor._span_processors) == 2
+    assert len(only_langsmith._active_span_processor._span_processors) == 1
+    both.shutdown()
+    only_langsmith.shutdown()
+
+
+def test_langsmith_alone_is_enough_to_install_a_provider(monkeypatch: pytest.MonkeyPatch) -> None:
+    installed: list[TracerProvider] = []
+    monkeypatch.setattr(tracing, "_configured", False)
+    monkeypatch.setattr(trace, "set_tracer_provider", installed.append)
+
+    setup_tracing("claimcheck-evals", None, LangSmithTarget(api_key="k", project="p"))
+
+    assert len(installed) == 1
+    installed[0].shutdown()
+
+
+def test_spans_default_to_the_chain_kind(spans: InMemorySpanExporter) -> None:
+    with start_span("stage.extract"):
+        pass
+    (stage,) = [s for s in spans.get_finished_spans() if s.name == "stage.extract"]
+    assert (stage.attributes or {})["langsmith.span.kind"] == "chain"
+
+
 def test_setup_without_an_endpoint_changes_nothing(monkeypatch: pytest.MonkeyPatch) -> None:
     installed: list[TracerProvider] = []
     monkeypatch.setattr(tracing, "_configured", False)
@@ -116,7 +176,9 @@ def test_llm_call_span_carries_model_tokens_cost_and_latency(
 
     (span,) = llm_spans(spans)
     assert dict(span.attributes or {}) == {
+        "langsmith.span.kind": "llm",
         "gen_ai.system": "anthropic",
+        "gen_ai.operation.name": "chat",
         "gen_ai.request.model": "m-1",
         "gen_ai.usage.input_tokens": 120,
         "gen_ai.usage.output_tokens": 30,

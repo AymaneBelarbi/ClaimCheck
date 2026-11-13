@@ -27,6 +27,8 @@ def test_defaults() -> None:
     assert s.anthropic_api_key is None
     assert s.openai_api_key is None
     assert s.otel_endpoint is None
+    assert s.langsmith_api_key is None
+    assert s.langsmith_project == "claimcheck"
     assert s.anthropic_model == "claude-haiku-5-5"
     assert s.openai_model == "gpt-5-mini"
     assert s.ollama_model == "qwen2.5:7b-instruct"
@@ -84,6 +86,8 @@ def test_get_settings_is_cached(monkeypatch: pytest.MonkeyPatch) -> None:
 def test_blank_optional_values_mean_unset(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv("REPLAY_INNER", "")
     monkeypatch.setenv("OTEL_ENDPOINT", "")
+    monkeypatch.setenv("LANGSMITH_API_KEY", "")
     s = Settings(_env_file=None)
     assert s.replay_inner is None
     assert s.otel_endpoint is None
+    assert s.langsmith_api_key is None
