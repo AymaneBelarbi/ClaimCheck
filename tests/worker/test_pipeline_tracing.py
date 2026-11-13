@@ -113,7 +113,11 @@ def test_a_packet_is_one_trace_with_a_span_per_stage_and_per_model_call(
 
     (root,) = grouped["claim.process"]
     assert root.parent is None
-    assert dict(root.attributes or {}) == {"claim.id": str(claim_id), "packet.id": PACKET}
+    assert dict(root.attributes or {}) == {
+        "langsmith.span.kind": "chain",
+        "claim.id": str(claim_id),
+        "packet.id": PACKET,
+    }
 
     for name in ("stage.ocr", "stage.classify", "stage.extract", "stage.validate"):
         for span in grouped[name]:
